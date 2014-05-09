@@ -1,0 +1,14 @@
+
+/**
+ *
+ * Nome de classe igual ao nome de um metodo e de um field
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestNameMethodAndField extends Object is
+
+  field NameMethodAndField : String
+
+  method NameMethodAndField : () -> String is
+  	NameMethodAndField

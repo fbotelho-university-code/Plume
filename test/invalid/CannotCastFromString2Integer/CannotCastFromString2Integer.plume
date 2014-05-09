@@ -1,0 +1,10 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class CannotCastFromString2Integer extends Object is
+
+  method main : () -> String is
+    (Integer)"abc"

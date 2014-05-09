@@ -1,0 +1,16 @@
+/**
+ * A.plume
+ *
+ * Test: This class represent a Abstract class A 
+ *
+ * @author namartins
+ * @version $Id: A.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class A extends Object is	
+ 	field  id : Integer
+ 	field  pid : Integer
+ 	field  name : String 
+ 	abstract method  getID: () -> Integer 
+ 	abstract method  getPID: () -> Integer 
+ 	abstract method  getName: () -> String 

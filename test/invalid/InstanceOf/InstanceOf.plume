@@ -1,0 +1,10 @@
+/**
+ * Invalid instanceOf
+ * @author 36994, César Santos
+ */
+class InstanceOf extends Object is
+  method test : (x : Object) -> Boolean is
+    if (x instanceOf true) then
+      x
+    else
+      false

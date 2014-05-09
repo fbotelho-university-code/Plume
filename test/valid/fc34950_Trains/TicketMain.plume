@@ -1,0 +1,23 @@
+/** 
+ * This represent a TicketMain
+ * @author namartins 
+ * @version $Id: TicketMain.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ 
+class TicketMain extends Object is
+	
+	method main : () -> String is
+		new Ticket("Lisbon","Milan",
+			new Train(500,1,new Trenitalia("Trenitalia",10))
+		,23)
+		.toString()
+	/*
+	*departure: Lisbon
+	*arrive: Milan
+	*Train Number : 1
+	*Seat number : 23
+	*Company : Trenitalia
+	*/
+		
+	

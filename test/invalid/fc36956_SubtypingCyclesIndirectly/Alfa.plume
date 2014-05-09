@@ -1,0 +1,10 @@
+/**
+ * Alfa.plume
+ *
+ * Test: a class cannot extend itself indirectly
+ * Alfa extends Beta extends Alfa
+ * @author Carlos Mao de Ferro
+ * @version $Id: Alfa.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Alfa extends Beta is
+	field x : Integer

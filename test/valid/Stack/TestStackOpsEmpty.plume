@@ -1,0 +1,14 @@
+/**
+ * Uma classe para testar varios metodos da pilha vazia
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackOpsEmpty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestStackOpsEmpty extends Object is
+
+  method main : () -> String is
+    testOps(new EmptyStack()).toString()
+	// expected output: true
+			
+  method testOps : (s: Stack) -> Boolean is
+    s.isEmpty() && s.size() == 0 && s.push(3).top() == 3

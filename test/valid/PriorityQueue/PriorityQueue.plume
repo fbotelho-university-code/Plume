@@ -1,0 +1,29 @@
+/**
+ * Uma fila com prioridades abstracta de Strings. As subclasses devem ser filas com prioridade vazias ou nao vazias.
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: PriorityQueue.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+abstract class PriorityQueue extends Object is
+
+  method insert : (prioridade : Integer, elem : String) -> NodePriorityQueue is
+    insertQueue(prioridade, elem, this)
+ 
+  method insertQueue : (prioridade : Integer, elem : String, pq : PriorityQueue) -> NodePriorityQueue is
+    if pq instanceof NodePriorityQueue
+    then if prioridade < pq.priority
+    	 then new NodePriorityQueue(prioridade, elem, pq)
+    	 else new NodePriorityQueue(pq.priority, pq.element, insertQueue(prioridade, elem, pq.tail))
+    else new NodePriorityQueue(prioridade, elem, pq) 
+    
+  abstract method isEmpty : () -> Boolean
+  
+  abstract method size : () -> Integer
+  
+  //requires !isEmpty()
+  abstract method next : () -> String
+  
+  //requires !isEmpty()
+  abstract method remove : () -> PriorityQueue
+  
+  abstract method contains : (elem : String) -> Boolean

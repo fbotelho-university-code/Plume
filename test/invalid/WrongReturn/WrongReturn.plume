@@ -1,0 +1,16 @@
+/**
+ * O return nao e do tipo esperado pela expressao.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: WrongReturn.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class WrongReturn extends Object is
+  
+  method aux : () -> String is
+    "hello"
+
+  method aux2 : (price: Integer) -> String is
+    "hello"
+
+  method main : () -> String is
+    aux2(aux())

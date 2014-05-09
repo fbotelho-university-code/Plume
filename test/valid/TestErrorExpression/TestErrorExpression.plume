@@ -1,0 +1,15 @@
+/**
+ * Uma classe que testa a expressao error
+ * pode ser usado como argumento em qualquer metodo
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestErrorExpression.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestErrorExpression extends Object is
+
+  method main : () -> String is
+  		m(error)
+  		//expected: error neste caso nao eh erro mesmo. Eh a sttring "error"
+  
+  method m : (str : String) -> String is
+  		str

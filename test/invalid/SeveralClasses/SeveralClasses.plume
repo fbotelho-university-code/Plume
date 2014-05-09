@@ -1,0 +1,20 @@
+/**
+ * More than one class defined in file. 
+ * Compiles into error.
+ *   
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class SeveralClasses extends Object is 
+ 	field f : Object 
+ 	
+ 	method override toString : () -> String is 
+ 		"1" 
+ 
+ //Invalid declaration of class. Specification says : one class per file. 
+ class Two extends Object is 
+ 	field ff : Object 
+	
+		

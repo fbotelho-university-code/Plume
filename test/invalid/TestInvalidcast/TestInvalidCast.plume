@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Nao eh possivel fazer um cast de String para Integer
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidCast extends Object is
+
+  method main : () -> String is
+    ("word" as Integer).toString()

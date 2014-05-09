@@ -1,0 +1,33 @@
+/**
+ * An empty Matrix
+ *
+ * @author Robin Burgess 36815
+ */
+class EmptyMatrix extends AbstractMatrix is
+
+	method override getHeight : () -> Integer is
+		0
+		
+	method override getLength : () -> Integer is
+		0
+		
+	method override getValue : (x : Integer,y : Integer) -> Integer is
+		error
+		
+	method override add : (m : AbstractMatrix) -> AbstractMatrix is
+		if m instanceof EmptyMatrix
+		then this
+		else error
+	method override subtract : (m : AbstractMatrix) -> AbstractMatrix is
+		if m instanceof EmptyMatrix
+		then this
+		else error
+	method override multiply : (m : AbstractMatrix) -> AbstractMatrix is
+		if m instanceof EmptyMatrix
+		then this
+		else error
+		
+	method override removeFirstColumn : () -> AbstractMatrix is
+		this
+	method override toString : () -> String is
+		"*"

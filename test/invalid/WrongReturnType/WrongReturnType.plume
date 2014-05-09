@@ -1,0 +1,12 @@
+/**
+ * There is a method in this class which returns the wrong type
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: WrongReturnType.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class WrongReturnType extends Object is
+
+  field radius : String
+  
+  method radius : () -> Integer is
+    radius

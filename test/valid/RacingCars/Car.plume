@@ -1,0 +1,62 @@
+ /**
+ * An non-empty List. Subclasses shall describe empty and non-empty lists
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Car.plume 293 2012-05-01 13:20:43Z fc37017 $
+ */
+class Car extends CarList is
+
+  field price : Integer
+
+  field maxSpeed : Integer
+  
+  field bhp : Integer
+
+  field brand : String
+    
+  field model : String
+  
+  field tail : CarList
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override length : () -> Integer is
+    1 + tail.length()
+    
+  /******** Getters ********/
+  /******** Requires 0 <= index && index < length() ********/
+  
+  method override getPrice : (index: Integer) -> Integer is
+    if index == 0 then price
+    else tail.getPrice(index - 1)  
+  
+  method override getMaxSpeed : (index: Integer) -> Integer is
+    if index == 0 then maxSpeed
+    else tail.getMaxSpeed(index - 1)
+    
+  method override getBhp : (index: Integer) -> Integer is
+    if index == 0 then bhp
+    else tail.getBhp(index - 1)
+  
+  method override getBrand : (index: Integer) -> String is
+    if index == 0 then brand
+    else tail.getBrand(index - 1)
+    
+  method override getModel : (index: Integer) -> String is
+    if index == 0 then model
+    else tail.getModel(index - 1)
+    
+  /******** Scanners ********/
+  method override containsPrice : (elem: Integer) -> Boolean is
+    elem == price || tail.containsPrice(elem)
+    
+  method override containsMaxSpeed : (elem: Integer) -> Boolean is
+    elem == maxSpeed || tail.containsMaxSpeed(elem)
+    
+  method override containsBhp : (elem: Integer) -> Boolean is
+    elem == bhp || tail.containsBhp(elem)
+    
+  method override toString : () -> String is
+    "[" + price.toString() + ", " + maxSpeed.toString() + ", " + bhp.toString() + ", " + brand.toString() + ", " + model.toString() + "] :: " + tail.toString()
+    

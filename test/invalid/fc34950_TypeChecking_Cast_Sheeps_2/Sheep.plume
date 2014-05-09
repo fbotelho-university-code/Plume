@@ -1,0 +1,13 @@
+/**
+ * Sheep.plume
+ *
+ * Test: This class represent a Sheep
+ *
+ * @author namartins
+ * @version $Id: Sheep.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class Sheep extends Object is	.
+ 	field gen : Integer
+ 	method  generation : () -> Integer is
+		 gen

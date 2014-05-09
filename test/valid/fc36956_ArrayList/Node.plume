@@ -1,0 +1,6 @@
+
+abstract class Node extends Object is
+	abstract method hasNextNode : () -> Boolean
+
+	abstract method countMeOn : () -> Integer
+		

@@ -1,0 +1,14 @@
+/**
+ * 
+ * o OR so tem uma |
+ * @author 37060, Roberto Silva
+ */
+class TestOr extends Object is
+	
+	method main : () -> String is
+		max(9, 4).toString()
+			
+	method calculaTabuada : (x : Integer, y : Integer) -> Integer is
+		if x > y | x == y
+		then x
+		else y

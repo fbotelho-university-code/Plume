@@ -1,0 +1,15 @@
+/**
+ * A class to test whether methods are inherited not just from
+ * the first parent but from all the subclassing hierarchy.
+ *
+ * Class BinaryTreeEmpty is a subclass of BinaryTree (abstract) 
+ * which in turn is a subclass of IntegerCollection (also abstract). 
+ * Implementing method IntegerCollection.size() on BinaryTreeEmpty
+ * should work, even if it's not declared in the parent class.  
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestIntegerCollectionSubclassingInheritance extends Object is
+
+ 	method main : () -> String is
+ 		new BinaryTreeEmpty().size().toString()

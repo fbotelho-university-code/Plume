@@ -1,0 +1,8 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class MissingMethodToken extends Object is
+ 	field h : Integer
+ 	field t : Integer
+ 	totalValue : () -> Integer is
+ 		t + h

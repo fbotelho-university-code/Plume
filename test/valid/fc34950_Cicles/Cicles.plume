@@ -1,0 +1,16 @@
+/** 
+ * Creating Cicles in Plume
+ * @author namartins 
+ * @version $Id: Cicles.plume 314 2012-05-03 02:48:12Z fc36815 $ 
+ *
+ */
+ 
+class Cicles extends Object is
+	method for : (count : Integer, max : Integer , exec : Executable) -> Executable is
+			if max < count then 
+				for(count+1,max,exec.run(count))
+			else
+				exec
+	
+		
+	

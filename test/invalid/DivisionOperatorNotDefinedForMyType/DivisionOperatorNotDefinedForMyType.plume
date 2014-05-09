@@ -1,0 +1,9 @@
+/**
+ * Division operator is not defined for some Class.
+ *
+ * @author Diogo Marques, 30100
+ */
+class DivisionOperatorNotDefinedForMyType extends Object is
+	
+	method myMethod : () -> MyClass is
+		this / this

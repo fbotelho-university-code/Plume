@@ -1,0 +1,11 @@
+/**
+ * Gamma.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Gamma.plume 403 2012-05-22 18:35:00Z fc36956 $
+ */
+class Gamma extends Beta is
+	field z : Integer
+	
+	method sumAllFields : () -> Integer is
+		super.x + super.y + this.z 

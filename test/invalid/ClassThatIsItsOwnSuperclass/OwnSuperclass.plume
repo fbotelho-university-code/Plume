@@ -1,0 +1,8 @@
+/**
+ * Another class
+ *
+ * @author Robin Burgess 36815
+ */
+class OwnSuperclass extends OwnSuperclass is
+	method meth : () -> String is
+		"is bad for you"

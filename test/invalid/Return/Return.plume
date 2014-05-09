@@ -1,0 +1,7 @@
+/**
+ * Unknown keyword return
+ * @author 36994, César Santos
+ */
+class Return extends Object is
+  method test : () -> Boolean is
+    return true

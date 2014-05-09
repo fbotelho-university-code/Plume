@@ -1,0 +1,12 @@
+/**
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestPlusMinus extends Object is
+
+  method main : () -> String is
+    ((-5 + (10 - (-2)) * -1 )%6).toString()
+    
+    
+
+    

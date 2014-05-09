@@ -1,0 +1,22 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMathMaxAndMin extends Object is
+
+  method main : () -> String is
+    min(-5, 0).toString() + "; " + max(10, 20).toString()
+    
+    // expect -5; 20 
+    
+  method min : (a : Integer, b : Integer) -> Integer is
+  	if a <= b
+  	then a
+  	else b
+  	
+  method max : (a : Integer, b : Integer) -> Integer is
+  	if a >= b
+  	then a
+  	else b

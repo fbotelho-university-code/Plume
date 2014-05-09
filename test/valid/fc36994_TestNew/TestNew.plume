@@ -1,0 +1,7 @@
+/**
+ * Tests new
+ * @author 36994, César Santos
+ */
+class TestNew extends Object is
+  method main : () -> String is //expected : ola!
+    (new NewTest()).toString()

@@ -1,0 +1,15 @@
+/**
+ * A class to test various list method
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: TestListOps.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestListOps extends Object is
+
+  method main : () -> String is
+    testOps(new Empty().insert(23).insert(3).insert(7).insert(73).insert(9)
+		.insert(0).insert(-8).insert(323).insert(-23)).toString()
+	// expected output: true
+			
+  method testOps : (l: List) -> Boolean is
+    /*!l.contains(73) &&*/ l.contains(323) && l.length() == 9 /*&& l.get(6) == 7*/

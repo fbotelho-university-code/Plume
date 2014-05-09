@@ -1,0 +1,7 @@
+
+
+class TestInheritance extends Object is
+	
+	method main : () -> String is
+		new Gamma(4, 4, 4).sumAllFields().toString()
+		//expects 12

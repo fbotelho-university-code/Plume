@@ -1,0 +1,14 @@
+/*
+ * EvenOdd Class
+ * @author namartins
+ * @version $Id: EvenOdd.plume 462 2012-06-03 11:13:16Z fc34950 $ 
+ */
+class EvenOdd extends Object is
+	method even : (number : Integer ) -> Boolean is
+		number == 0 || odd(number - 1)
+	
+	method odd : (number : Integer ) -> Boolean is
+		number != 0 && even(number - 1)
+
+	method main : () -> String is
+		(odd(3) && even(2)).toString()

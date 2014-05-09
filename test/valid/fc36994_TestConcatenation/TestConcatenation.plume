@@ -1,0 +1,7 @@
+/**
+ * Tests the + operator (concatenation)
+ * @author 36994, César Santos
+ */
+class TestConcatenation extends Object is
+  method main : () -> String is
+    "a" + "b"

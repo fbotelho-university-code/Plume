@@ -1,0 +1,12 @@
+/**
+ * Sum.plume
+ *
+ * Test: overloading property
+ * Wrong: it is not possible to sum two booleans
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class Sum extends Object is
+	method Sum : (ba : Boolean, bb : Boolean) -> Boolean is
+		ba + bb

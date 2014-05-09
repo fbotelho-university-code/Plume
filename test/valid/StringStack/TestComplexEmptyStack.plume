@@ -1,0 +1,11 @@
+/**
+ * A class to test the empty String Stack using some pushes and pops
+ *
+ * @author Robin Burgess 36815
+ */
+class TestComplexEmptyStack extends Object is
+  method main : () -> String is
+    new EmptyStack().push("Hello").push("Bye").pop().push("Yes").pop().pop().toString()
+    
+  method override toString : () -> String is
+	"TestComplexEmptyStack"

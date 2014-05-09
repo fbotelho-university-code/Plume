@@ -1,0 +1,13 @@
+/**
+* logical converse implication operation
+* @author 35237, Marcos Vasco
+* @version $id$ 
+*/
+
+class TestConverseImplication extends Object is 
+
+	method main : () -> String is
+
+		new ConverseImplication().calculate(true, false).toString()
+		
+		//expected output : true

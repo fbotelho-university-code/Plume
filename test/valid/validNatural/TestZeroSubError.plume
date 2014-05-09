@@ -1,0 +1,14 @@
+
+/**
+ *
+ * Classe que testa se uma subtracao do tipo 0 - n da erro
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestZeroSubError extends Object is
+
+  method main : () -> String is
+    new Zero().sub(new Successor(new Zero())).toString()
+    
+    // error

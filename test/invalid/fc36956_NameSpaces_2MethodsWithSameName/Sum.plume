@@ -1,0 +1,13 @@
+/**
+ * Sum.plume
+ *
+ * Test: 2 methods cannot have the same signature
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class Sum extends Object is
+	method Sum : (i : Integer) -> Integer is
+		4 + 2
+	method Sum : (i : Integer) -> Integer is
+		4 + 2

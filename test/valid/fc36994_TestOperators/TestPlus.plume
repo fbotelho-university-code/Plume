@@ -1,0 +1,7 @@
+/**
+ * Tests the + operator (addition)
+ * @author 36994, César Santos
+ */
+class TestPlus extends Object is
+  method main : () -> String is //expected : 8
+    (5 + 3).toString()

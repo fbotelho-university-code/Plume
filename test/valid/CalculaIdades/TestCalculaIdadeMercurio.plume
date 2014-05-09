@@ -1,0 +1,10 @@
+/**
+ * Classe que testa o calculo da idade em mercurio.
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestCalculaIdadeMercurio extends Object is
+	
+	method main : () -> String is
+    	new CalculaIdadeMercurio().calcIdade(23).toString()
+	// expected output: "95"

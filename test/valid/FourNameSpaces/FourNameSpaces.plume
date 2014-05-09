@@ -1,0 +1,16 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: FourNameSpaces.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class FourNameSpaces extends Object is
+
+	field FourNameSpaces : FourNameSpaces
+	
+	method FourNameSpaces : (FourNameSpaces: FourNameSpaces) -> FourNameSpaces is
+		if true
+		then FourNameSpaces
+		else if false
+			then this.FourNameSpaces
+			else FourNameSpaces(FourNameSpaces)
+			
+	// This class cannot be instantiated

@@ -1,0 +1,10 @@
+/**
+* A class to test that the size operation for a one node
+* tree.
+*
+* @author Diogo Marques, 30100
+*/
+class TestBinaryTreeSizeOneNode extends Object is
+	
+	method main : () -> String is
+		new BinaryTreeNode(5, new BinaryTreeEmpty(), new BinaryTreeEmpty()).size().toString()

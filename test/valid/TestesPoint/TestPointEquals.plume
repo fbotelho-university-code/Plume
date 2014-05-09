@@ -1,0 +1,10 @@
+/**
+ * Classe que verifica se dois pontos sao iguais
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestPointEquals extends Object is
+	
+	method main : () -> String is
+    	new Point(5,6).equals(new Point(9,6)).toString()
+	// expected output: false

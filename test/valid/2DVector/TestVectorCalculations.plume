@@ -1,0 +1,11 @@
+/**
+ * A class to test several vector calculations
+ *
+ * @author Robin Burgess 36815
+ */
+class TestVectorCalculations extends Object is
+  method main : () -> String is
+    new Vector(2,4).add(new Vector(-1,1).scalarMultiplication(2)).dotProduct(new Vector(1,0)).toString()
+    
+  method override toString : () -> String is
+	"TestVectorCalculations"

@@ -1,0 +1,47 @@
+/**
+* A class to test that the max operation for a 9 node
+* tree like:
+* @see http://upload.wikimedia.org/wikipedia/commons/d/da/Binary_search_tree.svg
+*
+* @author Diogo Marques, 30100
+*/
+class TestBinaryTreeMaxNineNodes extends Object is
+
+	method main : () -> String is
+		new BinaryTreeNode(
+				8, 
+				new BinaryTreeNode(
+						3,
+						new BinaryTreeNode(
+								1,
+								new BinaryTreeEmpty(),
+								new BinaryTreeEmpty()
+								),
+						new BinaryTreeNode(
+								6,
+								new BinaryTreeNode(
+										4,
+										new BinaryTreeEmpty(),
+										new BinaryTreeEmpty()
+										),
+								new BinaryTreeNode(
+										7,
+										new BinaryTreeEmpty(),
+										new BinaryTreeEmpty()
+										)
+								)
+						), 
+				new BinaryTreeNode(
+						10, 
+						new BinaryTreeEmpty(), 
+						new BinaryTreeNode(
+								14,
+								new BinaryTreeNode(
+										13,
+										new BinaryTreeEmpty(),
+										new BinaryTreeEmpty()
+										),
+								new BinaryTreeEmpty()
+								)
+						)
+				).max().toString()

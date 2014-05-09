@@ -1,0 +1,12 @@
+/**
+ * C.plume
+ *
+ * Test: This class represent a Abstract class B 
+ * C -> B -> A
+ * @author namartins
+ * @version $Id: C.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class C extends B is	
+ 	abstract method  getID: () -> Integer //method getID eh da class A. 
+ 	

@@ -1,0 +1,9 @@
+/**
+ * A class to test the toString method of string.
+ *
+ * @author Diogo Marques, 30100
+ */
+class StringToString extends Object is
+
+  method main : () -> String is
+    "5".toString()

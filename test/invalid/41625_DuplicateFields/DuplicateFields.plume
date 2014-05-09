@@ -1,0 +1,15 @@
+/**
+ * Redeclaration of field inside class body. 
+ * Compiles into error.
+ *   
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $Id: DuplicateFields.plume 343 2012-05-06 13:47:17Z fc41625 $ 
+ *
+ */
+ 
+ class DuplicateFields extends Object is 
+
+ 	field head : Object
+ 	//Duplicate field head.  
+ 	field head : String 
+ 	  

@@ -1,0 +1,12 @@
+/**
+ * Parametros do metodo getNumLugares nao estao bem, pois esta a fazer override.
+ * 
+ * @author 37060, Roberto Silva
+ */
+class Carro extends Veiculo is
+	
+	method override getNumLugares : (x : Integer) -> Integer is
+		5
+		
+	method override getNumRodas : () -> Integer is
+		4

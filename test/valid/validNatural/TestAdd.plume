@@ -1,0 +1,18 @@
+
+/**
+ * 
+ * Classe que testa a soma de dois sucessores
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestAdd extends Object is
+
+  method main : () -> String is
+    new Successor(new Successor(new Successor(new Zero()))).add(
+    new Successor(new Zero())).toString()
+    
+    // 3 + 1 = 4
+    
+  
+

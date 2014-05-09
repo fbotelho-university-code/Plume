@@ -1,0 +1,15 @@
+/**
+ * Classe que calcula o maximo divisor comum
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestMdc extends Object is
+	
+	method main : () -> String is
+    	calculaMdc(348, 156).toString()
+	// expected output: "12"
+	
+	method calculaMdc : (n1 : Integer, n2 : Integer) -> Integer is
+    	if n2 == 0
+    	then n1
+    	else calculaMdc(n2, n1 % n2)

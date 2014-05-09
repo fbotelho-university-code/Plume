@@ -1,0 +1,12 @@
+/**
+ * There is no assignment to Şelds, all objects are immutable.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: AllObjectsAreImmutable.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class AllObjectsAreImmutable extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is
+    radius = radius * 10

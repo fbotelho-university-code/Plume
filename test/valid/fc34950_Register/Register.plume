@@ -1,0 +1,19 @@
+/**
+ * Represent a Register
+ * @author namartins 
+ * @version $Id: Register.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ class Register extends Object is
+	  
+	field id : Integer
+	field cash : Integer
+	field nItens : Integer
+	
+ 	method addProduto : (item : Produto , numItem : Integer) -> Register is 
+ 		new Register(id,cash + item.getPrice() * numItem, nItens+numItem)
+ 		
+ 	method override toString : () -> String is
+ 		"total = " + cash.toString() +"; Number of Itens sell "+ 
+ 		nItens.toString()
+	

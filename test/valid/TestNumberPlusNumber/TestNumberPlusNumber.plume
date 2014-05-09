@@ -1,0 +1,22 @@
+
+/**
+ * 
+ * Classe que verifica se a concatenacao da representacao textual de dois
+ * numeros eh bem feita
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestNumberPlusNumber extends Object is
+
+  method main : () -> String is
+    plus("1", "1")
+    
+    // "11"
+    
+  method plus : (o1 : Object, o2 : Object) -> String is
+  	if o1 instanceof String || o2 instanceof String
+  	then o1.toString() + o2.toString() 
+  	else error
+  
+    

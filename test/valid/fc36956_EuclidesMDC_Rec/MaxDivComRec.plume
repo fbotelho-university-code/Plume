@@ -1,0 +1,16 @@
+/***
+ * O maximo divisor comum entre m e n, pelo metodo de Euclides
+ *
+ * mdc(m, n) = m, se n=0
+ * mdc(m, n) = mdc(n, resto de m/n) , caso contrario
+ *
+ * E.g.: mdc( 150, 20 ) = mdc( 20, 10 ) = mdc( 10, 0 ) = 10
+ *
+ */
+
+class MaxDivComRec extends Object is 
+
+	method mdcRec : (m : Integer, n : Integer) -> Integer is
+		if (n==0)
+		then m
+		else mdcRec(n, m % n)

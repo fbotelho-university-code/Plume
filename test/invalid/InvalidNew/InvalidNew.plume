@@ -1,0 +1,10 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+class InvalidNew extends Object is
+
+  method main : () -> String is
+    new InvalidNew(1,2,3)

@@ -1,0 +1,9 @@
+/**
+ * A class to test the sum() operation in a one node tree.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeSumOneNode extends Object is
+
+	method main : () -> String is
+		new BinaryTreeNode(5, new BinaryTreeEmpty(), new BinaryTreeEmpty()).sum().toString()

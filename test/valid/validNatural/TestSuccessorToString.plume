@@ -1,0 +1,17 @@
+
+/**
+ * 
+ * Classe que testa a representacao textual de um Successor
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestSuccessorToString extends Object is
+
+  method main : () -> String is
+    new Successor(new Successor(new Successor(new Zero()))).toString()
+    
+    // 0 + 1 + 1 + 1
+    
+  
+

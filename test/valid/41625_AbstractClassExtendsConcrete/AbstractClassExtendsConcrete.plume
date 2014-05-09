@@ -1,0 +1,13 @@
+/**
+ * Valid Test.
+ * An abstract class extends a concrete method by overriding.
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ abstract class AbstractClassExtendsConcrete extends A is 
+ 	
+ 	method override fa :  () -> String is 
+ 		"something to see here?"   
+
+ 		

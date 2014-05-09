@@ -1,0 +1,8 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class DoubledIdentifier extends Object is
+ 	field h f : Integer
+ 	field t : Integer
+ 	method totalValue : () -> Integer is
+ 		t + h

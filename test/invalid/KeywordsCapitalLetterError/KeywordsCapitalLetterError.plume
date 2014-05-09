@@ -1,0 +1,17 @@
+/**
+ * Keyword com letra maiuscula: error
+ * Trata-se de um erro soh se nao houver uma classe com nome Error.
+ * de qq modo serah um erro semantico (vv)
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: KeywordsCapitalLetterError.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class KeywordsCapitalLetterError extends Object is
+ 
+  method main : () -> String is
+		getTempo(1).toString()
+
+  method getTempo : (tempo : Object) -> String is
+		if tempo instanceof String
+		then "Sol"
+		else Error

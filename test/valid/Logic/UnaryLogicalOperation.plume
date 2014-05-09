@@ -1,0 +1,7 @@
+/**
+ * Abstract class representing a unary logical operation
+ * @author 35237, Marcos Vasco
+ */
+abstract class UnaryLogicalOperation extends Object is
+  
+  abstract method calculate : (val : Boolean) -> Boolean

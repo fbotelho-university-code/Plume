@@ -1,0 +1,10 @@
+/**
+ * Method with wrong brackets [] instead of ()
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: MethodWithWrongBrackets.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class MethodWithWrongBrackets extends Object is
+
+  method main : [] -> String is
+		"Hello".toString()

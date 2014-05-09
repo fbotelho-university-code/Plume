@@ -1,0 +1,15 @@
+/**
+ * Classe extende uma classe que nao existe
+ *
+ * @author 37060, Roberto Silva
+ */
+class Pinheiro extends Arvore is
+	
+	field nome : String
+	field altura : Integer
+	
+	method getNome : () -> String is
+   		nome
+   		
+   	method getAltura : () -> Integer is
+   		altura

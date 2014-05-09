@@ -1,0 +1,9 @@
+/**
+ * A class to test the min() operation in and empty tree.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeMinEmpty extends Object is
+	
+	method main : () -> String is
+ 		new BinaryTreeEmpty().min().toString()

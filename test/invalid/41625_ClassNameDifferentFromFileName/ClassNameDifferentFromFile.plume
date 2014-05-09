@@ -1,0 +1,9 @@
+/**
+ * Invalid Test. 
+ * Class file has to have the same name as the class appended with .plume
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+
+abstract class NothingDoToWithFileName extends Object is 
+	

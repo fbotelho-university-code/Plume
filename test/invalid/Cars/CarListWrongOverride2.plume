@@ -1,0 +1,41 @@
+/**
+ * O metodo isEmpty esta declarado na classe CarList, como tal tem de ser override.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: CarListWrongOverride2.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class CarListWrongOverride2 extends CarList is
+
+  method isEmpty : () -> Boolean is
+    true
+    
+  method override length : () -> Integer is
+    0
+    
+  method override getPrice : (index: Integer) -> Integer is
+    error 
+  
+  method override getMaxSpeed : (index: Integer) -> Integer is
+    error
+    
+  method override getBhp : (index: Integer) -> Integer is
+    error
+
+  method override getBrand : (index: Integer) -> String is
+    error
+    
+  method override getModel : (index: Integer) -> String is
+    error
+
+  method override containsPrice : (elem: Integer) -> Boolean is
+	false
+	    
+  method override containsMaxSpeed : (elem: Integer) -> Boolean is
+    false
+    
+  method override containsBhp : (elem: Integer) -> Boolean is
+    false
+    
+  method override toString : () -> String is
+    "[]"
+    

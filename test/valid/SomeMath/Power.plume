@@ -1,0 +1,16 @@
+/**
+ * Class to calculate the power operation, given two integers, one for
+ * the base and the other for the exponent
+ * @author 35237, Marcos Vasco
+ */
+class Power extends Object is
+
+  field base : Integer
+  field exp : Integer
+  
+  method getPower : () -> Integer is
+    if exp == 0 then 0
+    else if exp == 1 then base
+    	 else if exp == 2 then base * base
+    		  else if exp > 0 then base * new Power(base, exp-1).getPower()
+   				   else error

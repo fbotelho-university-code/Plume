@@ -1,0 +1,7 @@
+/**
+ * For testing casting with explicit error
+ * @author 36994, César Santos
+ */
+class TestCastingExplicitError extends Object is
+  method main : () -> String is
+    (new CorrectCasting()).isString(7).toString() // expect error

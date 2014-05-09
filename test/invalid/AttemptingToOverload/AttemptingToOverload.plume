@@ -1,0 +1,14 @@
+/**
+ * A class that attempts to overload methods
+ *
+ * @author Robin Burgess 36815
+ */
+class AttemptingToOverload extends Object is
+	method aMethod : (s:String) -> String is
+		"First: " + s
+		
+	method aMethod : (s:String,t:String) -> String is
+		"First: " + s + "," + t
+		
+	method override toString : () -> String is
+		"First!"

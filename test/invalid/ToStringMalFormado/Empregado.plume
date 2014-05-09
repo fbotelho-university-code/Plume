@@ -1,0 +1,24 @@
+/**
+ * metodo toString mal formado
+ *
+ * @author 37060, Roberto Silva
+ */
+class Empregado extends Object is
+
+	field nome : String
+	field idade : Integer
+	field diasTrabalho : Integer
+	field horasTrabalho : Integer
+	field precoHora : Integer
+	field emprego : String
+	
+	method salario : () -> Integer is
+    	horasTrabalho * precoHora * diasTrabalho
+    	
+    method redimentoAnual : () -> Integer is
+    	salario() * 12
+    	
+    method override toString : (x : String) -> String is
+    	"Chama-se " + nome + " e tem: " + idade.toString() + " anos. Trabalha " 
+    	+ horasTrabalho.toString()  + " horas por dia e " + "recebe " + precoHora.toString() 
+    	+ " por hora. " + x

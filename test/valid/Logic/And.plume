@@ -1,0 +1,9 @@
+/**
+ * Class to calculate the logical AND operation
+ * @author 35237, Marcos Vasco
+ */
+class And extends BinaryLogicalOperation is
+  
+  method override calculate : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    if val1 == true && val2 == true then true
+    else false

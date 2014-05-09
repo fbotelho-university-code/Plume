@@ -1,0 +1,7 @@
+/**
+ * For testing an inheritance cycle
+ * @author 36994, César Santos
+ */
+class CycleExtending2Test extends CycleExtending1Test is
+  method nothing2 : () -> Boolean is
+    true

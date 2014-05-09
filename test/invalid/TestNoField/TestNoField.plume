@@ -1,0 +1,11 @@
+/**
+ * 
+ * Nao tem a palavra Field
+ * @author 37060, Roberto Silva
+ */
+class TestNoField extends Object is
+	
+	num : Integer
+		
+	method idadeTerra : (idade : Integer) -> Integer is
+    	idade * num

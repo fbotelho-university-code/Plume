@@ -1,0 +1,15 @@
+/**
+ * Toalha.plume
+ *
+ * Test: if a method is not qualified with keyword override, 
+ * there cannot be a method with the same name in a super class
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Toalha.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ abstract class Toalha extends Object is
+
+	method temNodoas : (estaSuja : Boolean) -> Boolean is
+		if estaSuja
+		then true
+		else false

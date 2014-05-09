@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: CallWithError.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class CallWithError extends Object is
+
+	method m : (x: String) -> String is
+		x
+	
+	method main : () -> String is
+		m (error)

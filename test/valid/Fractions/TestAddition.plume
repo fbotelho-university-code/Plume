@@ -1,0 +1,13 @@
+/**
+ * Tests addition with numbers
+ *
+ * @author Robin Burgess 36815
+ */
+class TestAddition extends Object is
+
+	method main : () -> String is
+		(new IntegerNumber(5)).add(new RationalNumber(3,2).add(new RationalNumber(4,2)))
+				.add(new IntegerNumber(2)).toString()
+		
+	method override toString : () -> String is
+		"Testing Addition"

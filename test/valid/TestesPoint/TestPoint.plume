@@ -1,0 +1,10 @@
+/**
+ * Classe que testa a criacao de um novo ponto
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestPoint extends Object is
+	
+	method main : () -> String is
+    	new Point(5,6).toString()
+	// expected output: "(5,6)"

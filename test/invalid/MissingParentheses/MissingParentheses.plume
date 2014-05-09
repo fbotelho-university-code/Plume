@@ -1,0 +1,7 @@
+/**
+ * Missing parentheses
+ * @author 36994, César Santos
+ */
+class MissingParentheses extends Object is
+  method test : -> Boolean is
+    true

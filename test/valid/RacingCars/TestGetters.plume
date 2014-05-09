@@ -1,0 +1,19 @@
+/**
+ * A class to test the getters
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestGetters.plume 89 2012-04-08 00:52:12Z fc36815 $
+ */
+class TestGetters extends Object is
+
+  method main : () -> String is
+    new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getPrice(0).toString() + ", " +
+    	new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getMaxSpeed(0).toString() + ", " +
+    	new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getBhp(0).toString() + ", " +
+    	new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getBrand(0) + ", " +
+    	new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getModel(0)

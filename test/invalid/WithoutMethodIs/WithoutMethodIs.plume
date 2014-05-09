@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class WithoutMethodIs extends BinaryLogicalOperation is
+  
+  method calculate : (val1 : Boolean, val2 : Boolean) -> Boolean
+    if val1 == false || val2 == false then true
+    else false

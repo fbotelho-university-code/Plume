@@ -1,0 +1,8 @@
+/**
+ * A class that extendsString
+ *
+ * @author Robin Burgess 36815
+ */
+class ExtendsString extends String is
+	method override toString : () -> Integer is
+		"Unibrows!"

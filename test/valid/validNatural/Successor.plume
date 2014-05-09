@@ -1,0 +1,32 @@
+
+/**
+ * 
+ * Uma classe que representa um sucessor de um numero natural
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Successor extends Natural is
+
+	field nat : Natural
+
+	method override add : (n : Natural) -> Natural is
+		nat.add(new Successor(n))
+
+	method predecessor : () -> Natural is
+		nat
+		
+	method override getIntegerValue : () -> Integer is
+		nat.getIntegerValue() + 1
+		
+	// nat - n	
+	method override sub : (n : Natural) -> Natural is
+		if n instanceof Zero 
+		then this
+		else	if n instanceof Successor
+				then this.nat.sub(n.predecessor())
+				else error	
+	
+	method override toString : () -> String is
+		nat.toString() + " + 1" 
+    	

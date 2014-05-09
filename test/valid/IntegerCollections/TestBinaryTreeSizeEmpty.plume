@@ -1,0 +1,10 @@
+/**
+* A class to test that the size operation for an empty
+* tree.
+*
+* @author Diogo Marques, 30100
+*/
+class TestBinaryTreeSizeEmpty extends Object is
+	
+	method main : () -> String is
+		new BinaryTreeEmpty().size().toString()

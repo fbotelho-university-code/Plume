@@ -1,0 +1,10 @@
+/**
+ * class with implements instead of extends
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ClassWithImplementsInsteadOfExtends.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class ClassWithImplementsInsteadOfExtends implements Object is
+
+  method main : () -> String is
+		"Hello".toString()

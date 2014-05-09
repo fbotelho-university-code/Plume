@@ -1,0 +1,15 @@
+/**
+ * 
+ * Falta um else no if
+ * @author 37060, Roberto Silva
+ */
+class FaltaElse extends Object is
+	
+	field x : Integer
+	field y : Integer
+	
+	method equals : (p : Point) -> Boolean is
+    	if this.x==p.x 
+    	then if this.y==p.y
+    		then true
+    		else false

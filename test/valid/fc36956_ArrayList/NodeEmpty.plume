@@ -1,0 +1,10 @@
+
+
+class NodeEmpty extends Node is
+
+ 	method override hasNextNode : () -> Boolean is
+ 		false
+
+	method override countMeOn : () -> Integer is
+		0		
+		

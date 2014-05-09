@@ -1,0 +1,10 @@
+/**
+ * For testing overriding (an abstract method)
+ * @author 36994, César Santos
+ */
+class TestOverrideAbstract extends Object is
+  method main : () -> String is
+    test(new ExtendsAbstract()).toString() // expect 1
+  
+  method test : (a : AbstractClass) -> Integer is
+    a.test(true)

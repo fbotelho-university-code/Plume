@@ -1,0 +1,12 @@
+/**
+ * A class to test the next method
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueNextWith4.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestPriorityQueueNextWith4 extends Object is
+
+  method main : () -> String is
+  	new EmptyPriorityQueue().insert(1, "Hello")
+		.insert(5, "World").insert(2, "Thank").insert(7, "You").next().toString()
+   	// expected output: "Hello"

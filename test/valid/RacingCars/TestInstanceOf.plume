@@ -1,0 +1,23 @@
+/**
+ * A class to test the instanceof operator
+ * As Car is a subclass of CarList, this test must return true
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestInstanceOf.plume 282 2012-05-01 00:26:02Z fc37017 $
+ */
+class TestInstanceOf extends Object is
+
+  method main : () -> String is
+    testInstanceOf(new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+				.insert(250000, 270, 500, "Ford", "Mustang")
+				.insert(300000, 295, 500, "Audi", "R8")
+				.insert(25000, 180, 120, "Opel", "Astra")
+				.insert(1100, 155, 90, "Peugeot", "206")
+				.insert(65000, 225, 200, "Mercedes", "C230"))
+	
+  method testInstanceOf : (cars: CarList) -> String is
+   	if cars instanceof CarList
+   	then "Check."
+    else "nop."
+		
+    	

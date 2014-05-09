@@ -1,0 +1,13 @@
+/**
+ * Classe representando um chefe de departamento, que e' um empregado
+ * @author 35237, Marcos Vasco
+ */
+class ChefeDepartamento extends Empregado is
+
+	field sal : Integer
+	
+	method override getSalary : () -> Integer is
+		sal
+		
+	method override raise : (raiseVal : Integer) -> Empregado is
+		new ChefeDepartamento(sal+raiseVal)

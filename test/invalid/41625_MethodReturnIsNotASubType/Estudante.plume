@@ -1,0 +1,11 @@
+/**
+ * Classe que representa um estudante, sendo este uma pessoa
+ *
+ * @author 37060, Roberto Silva
+ */
+class Estudante extends Pessoa is
+
+	field area : String
+    	
+    method override toString : () -> String is
+    	"Chama-se " + nome + " e tem: " + idade.toString() + " anos. Estuda "+ area

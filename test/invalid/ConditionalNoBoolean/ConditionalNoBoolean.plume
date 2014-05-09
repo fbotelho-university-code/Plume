@@ -1,0 +1,11 @@
+/**
+ * Condition must resolve to boolean
+ * @author Diogo Marques, 30100
+ */
+class ConditionalNoBoolean extends Object is
+	method override toString : () -> String is
+		""
+	method doSmth : () -> Object is
+		if toString()
+			then ""
+			else 0

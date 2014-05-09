@@ -1,0 +1,14 @@
+
+/**
+ * 
+ * Nao deve existir 2 ou mais metodos com o mesmo nome
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestDuplicateMethod extends Object is
+
+  method a : () -> String is
+  
+  
+  method a : () -> String is

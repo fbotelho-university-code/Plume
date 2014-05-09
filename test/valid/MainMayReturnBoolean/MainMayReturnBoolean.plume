@@ -1,0 +1,10 @@
+/**
+ * A main method must resolve to String.
+ *
+ * @author Diogo Marques, 30100
+ * @author Vasco Vasconcelos
+ */
+class MainMayReturnBoolean extends Object is
+
+	method main : () -> Boolean is
+		true

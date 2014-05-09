@@ -1,0 +1,12 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: ImplicitFieldCast.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class ImplicitFieldCast extends Object is
+
+	field f : Object
+	
+	method m : () -> String is
+		if f instanceof String
+		then f
+		else "no way"

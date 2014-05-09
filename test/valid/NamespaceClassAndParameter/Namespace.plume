@@ -1,0 +1,14 @@
+/**
+ * Uma classe com parametro e o nome da class com o mesmo nome
+ * valido no plume pois sao name spaces diferentes
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: Namespace.plume 433 2012-05-27 15:01:20Z fc37059 $
+ */
+class Namespace extends Object is
+  
+  method lastName : (Namespace : String) -> String is
+  		"Last name: " + Namespace
+  
+  method main : () -> String is
+  		lastName("Rocha")

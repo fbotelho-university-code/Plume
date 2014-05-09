@@ -1,0 +1,11 @@
+/**
+ * A concrete parent. Tests method override of abstract method
+ *
+ * @author Robin Burgess 36815
+ */
+class Parent extends AbstractParent is
+
+	method override askQuestion : (s : String) -> String is
+		s + " is a stupid question. Shut up!"
+	method override toString : () -> String is
+		"ThisisAParent"

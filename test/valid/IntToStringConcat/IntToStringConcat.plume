@@ -1,0 +1,9 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class IntToStringConcat extends Object is
+	method m : () -> String is
+		0.toString() + 1.toString() 
+		
+	method main : () -> String is
+		new IntToStringConcat().m()

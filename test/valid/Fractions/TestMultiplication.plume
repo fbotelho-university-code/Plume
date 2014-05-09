@@ -1,0 +1,13 @@
+/**
+ * Tests multiplication with numbers
+ *
+ * @author Robin Burgess 36815
+ */
+class TestMultiplication extends Object is
+
+	method main : () -> String is
+		(new IntegerNumber(5)).multiply(new RationalNumber(3,2).multiply(new RationalNumber(4,2)))
+				.multiply(new IntegerNumber(2)).toString()
+		
+	method override toString : () -> String is
+		"Testing Multiplication"

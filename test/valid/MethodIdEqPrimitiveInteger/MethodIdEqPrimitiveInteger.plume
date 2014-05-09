@@ -1,0 +1,10 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class MethodIdEqPrimitiveInteger extends Object is
+
+	method Integer : () -> String is
+		"abc"
+		 
+	method main : () -> String is
+		new MethodIdEqPrimitiveInteger().Integer()

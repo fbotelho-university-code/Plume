@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: EqualInSubtypeRelation.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class EqualInSubtypeRelation extends Object is
+
+	method m : () -> Boolean is
+		new Object() == "lala"
+		
+	method main : () -> String is
+		m().toString()

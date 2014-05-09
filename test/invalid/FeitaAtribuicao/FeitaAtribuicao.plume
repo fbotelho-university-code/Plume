@@ -1,0 +1,13 @@
+/**
+ * 
+ * Esta a ser feita uma atribuicao a valor
+ * @author 37060, Roberto Silva
+ */
+class FeitaAtribuicao extends Object is
+	
+	field valor : Integer
+	
+	method soma : (limite : Integer) -> Integer is
+    	if limite == 0
+    	then valor = limite
+    	else limite + soma(limite - 1)

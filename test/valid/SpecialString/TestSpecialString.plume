@@ -1,0 +1,21 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestSpecialString extends Object is
+  
+  method main : () -> String is
+  	"Special String: " + getConcatResult("abc", 3, "def", 3).toString() + "\n" +
+  	"Length: " + getConcatResult("abc", 3, "def", 3).length().toString()
+  	
+  	// Special String: abcdef\nLength: 6
+  
+  method getConcatResult : (s1 : String, l1 : Integer,
+  							 s2 : String, l2 : Integer) -> SpecialString is					 
+	getSpecialString(s1, l1).concat(getSpecialString(s2, l2))
+	
+  method getSpecialString : (s : String, i : Integer) -> SpecialString is
+  	new SpecialString(s, i)
+  	

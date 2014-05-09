@@ -1,0 +1,11 @@
+/**
+ * A class to test concatenating strings that come from StringStack peeks
+ *
+ * @author Robin Burgess 36815
+ */
+class TestConcatPeekedStrings extends Object is
+  method main : () -> String is
+    new EmptyStack().push("Hello").peek() + new EmptyStack().push("Bye").peek()
+    
+  method override toString : () -> String is
+	"TestConcatPeekedStrings"

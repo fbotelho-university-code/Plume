@@ -1,0 +1,10 @@
+/**
+ * A unica operacao com overload e o '+'.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MinusOverloaded.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class MinusOverloaded extends Object is
+  
+  method main : () -> String is
+    "a" - "df"

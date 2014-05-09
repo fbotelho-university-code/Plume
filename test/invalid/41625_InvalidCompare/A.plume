@@ -1,0 +1,5 @@
+
+
+class A extends Object is 
+	method t : () -> Boolean is 
+		"viva" == true

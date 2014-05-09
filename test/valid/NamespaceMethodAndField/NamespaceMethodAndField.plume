@@ -1,0 +1,14 @@
+/**
+ * Uma classe com field e metodo com o mesmo nome
+ * valido no plume pois sao name spaces diferentes
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: NamespaceMethodAndField.plume 512 2012-06-05 13:46:25Z fc36815 $
+ */
+class NamespaceMethodAndField extends Object is
+  
+  method local : (local : String) -> String is
+  		"Local: " + local
+  		
+  method main : () -> String is
+  		local("Lisboa")

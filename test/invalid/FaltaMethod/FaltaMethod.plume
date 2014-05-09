@@ -1,0 +1,14 @@
+/**
+ * 
+ * Soma nao tem escrito method
+ * @author 37060, Roberto Silva
+ */
+class FaltaMethod extends Object is
+	
+	method main : () -> String is
+    	soma(10).toString()
+	
+	soma : (limite : Integer) -> Integer is
+    	if limite == 0
+    	then limite
+    	else limite + soma(limite - 1)

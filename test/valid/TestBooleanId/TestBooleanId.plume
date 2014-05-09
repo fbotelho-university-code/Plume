@@ -1,0 +1,14 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: AbstractMethod.plume 615 2012-05-21 14:52:19Z vv $
+ */
+class TestBooleanId extends Object is
+
+	method main : () -> String is
+		m(true).toString()
+		
+	method m : (b: Boolean) -> Boolean is
+		if b then false else true
+
+		
+	

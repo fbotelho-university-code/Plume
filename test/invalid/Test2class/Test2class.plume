@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Deve apenas existir uma classe por ficheiro
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+
+class A extends Object is
+
+class B extends Object is

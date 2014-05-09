@@ -1,0 +1,7 @@
+/**
+ * Tests the / operator
+ * @author 36994, César Santos
+ */
+class TestDiv extends Object is
+  method main : () -> String is //expected : 1
+    (8 / 5).toString()

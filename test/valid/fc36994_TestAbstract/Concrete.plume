@@ -1,0 +1,10 @@
+/**
+ * For testing abstract
+ * @author 36994, César Santos
+ */
+class Concrete extends Abstract is
+  field a : Integer
+  field b : Integer
+  field c : Integer
+  method override sumFields : () -> Integer is
+    a + b + c

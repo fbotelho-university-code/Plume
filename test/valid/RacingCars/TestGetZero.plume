@@ -1,0 +1,15 @@
+/**
+ * A class to test the get of position zero of a list
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestGetZero.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestGetZero extends Object is
+
+  method main : () -> String is
+    new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+				.insert(250000, 270, 500, "Ford", "Mustang")
+				.insert(300000, 295, 500, "Audi", "R8")
+				.insert(25000, 180, 120, "Opel", "Astra")
+				.insert(1100, 155, 90, "Peugeot", "206")
+				.insert(65000, 225, 200, "Mercedes", "C230").getPrice(0).toString()

@@ -1,0 +1,12 @@
+/**
+ * Rectangle.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Rectangle.plume 232 2012-04-29 19:04:17Z fc36956 $
+ */
+class Rectangle extends GraphicObject is
+     method override draw : () -> Boolean is
+     	false
+    
+    method override resize : () -> Boolean is
+    	false

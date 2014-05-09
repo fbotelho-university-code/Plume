@@ -1,0 +1,8 @@
+/**
+ * Class can't extend primitive type except Object - Boolean.
+ *
+ * @author Diogo Marques, 30100
+ */
+class ClassExtendsBoolean extends Boolean is
+	method override toString : () -> String is
+		""

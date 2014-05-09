@@ -1,0 +1,12 @@
+/**
+ * class with a method that return a different type
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ReturnDifferentType.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class ReturnDifferentType extends Object is
+
+  field tipo : Integer
+  
+  method getTipo : () -> String is
+		tipo

@@ -1,0 +1,20 @@
+/**
+ * An abstract list. Subclasses shall describe empty and non-empty lists
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: List.plume 191 2012-04-23 14:28:32Z fc37029 $
+ */
+abstract class List extends Object is
+
+  method insert : (i: Integer) -> Node is
+    new Node(i, this)
+    
+  abstract method isEmpty : () -> Boolean
+  
+  abstract method length : () -> Integer
+
+  // requires 0 <= index && index < length()
+  abstract method get : (index: Integer) -> Integer
+  
+  abstract method contains : (elem: Integer) -> Boolean
+    

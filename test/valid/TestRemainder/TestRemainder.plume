@@ -1,0 +1,10 @@
+/**
+ * A class to test the remainder operator
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestRemainder.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class TestRemainder extends Object is
+
+  method main : () -> String is
+    (11 % 10).toString()

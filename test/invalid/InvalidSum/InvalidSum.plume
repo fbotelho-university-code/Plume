@@ -1,0 +1,12 @@
+/**
+ * The sum symbol is repeated
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: InvalidSum.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class InvalidSum extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is
+    radius + + radius

@@ -1,0 +1,11 @@
+/**
+ * 
+ * Metodo nao tem retorno
+ * @author 37060, Roberto Silva
+ */
+clas TestRetorno extends Object is
+	
+	method soma : (limite : Integer) ->  is
+    	if limite == 0
+    	then limite
+    	else limite + soma(limite - 1)

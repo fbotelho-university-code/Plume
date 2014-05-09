@@ -1,0 +1,10 @@
+/**
+ * An abstract parent. Tests concrete methods in abstract classes
+ *
+ * @author Robin Burgess 36815
+ */
+abstract class AbstractParent extends Object is
+
+	abstract method askQuestion : (s : String) -> String
+	method getName : () -> String is
+		"Your Parent"

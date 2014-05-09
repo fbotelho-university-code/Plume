@@ -1,0 +1,15 @@
+/**
+ * Is a company of trains
+ * @author namartins 
+ * @version $Id: Produto.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ 
+class Produto extends Object is
+	  
+	field name : String
+	field price : Integer
+	
+	method getPrice : () -> Integer is
+	 	price
+		    	

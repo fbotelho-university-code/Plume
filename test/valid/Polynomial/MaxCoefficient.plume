@@ -1,0 +1,13 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: MaxCoefficient.plume 390 2012-05-21 15:00:43Z tcomp000 $
+ */
+class MaxCoefficient extends Object is
+
+  method largestCoefficient : (p : Polynomial) -> Integer is
+    if p instanceof Constant
+    then p.coefficient
+    else max (p.coefficient, largestCoefficient((p as Term).next))
+    
+  method max : (x : Integer, y : Integer) -> Integer is
+    if x > y then x else y 

@@ -1,0 +1,7 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class MissingParenthesis extends Object is
+	field f : Object
+	method changeF : (j:Object -> MissingParenthesis is
+		new MissingParenthesis(j)

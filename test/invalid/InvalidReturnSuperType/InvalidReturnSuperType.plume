@@ -1,0 +1,12 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class InvalidReturnSyperType extends Object is
+
+  method m : () -> SuperType is
+  	if true
+  	then new SubTypeA()
+  	else new TypeB()

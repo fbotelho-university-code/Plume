@@ -1,0 +1,6 @@
+/**
+ * 
+ * Falta o is
+ * @author 37060, Roberto Silva
+ */
+abstract class FaltaIsClass extends Object

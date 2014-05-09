@@ -1,0 +1,11 @@
+/**
+ * Represents a room
+ *
+ * @author Robin Burgess 36815
+ */
+class Room extends Object is
+	field name : String
+	field size : Integer
+	
+	method override toString : () -> String is
+		name + " (" + size.toString() + " m2)"

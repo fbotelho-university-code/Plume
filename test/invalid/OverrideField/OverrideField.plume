@@ -1,0 +1,12 @@
+/**
+ * Nao e possivel fazer override de fields
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: OverrideField.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class OverrideField extends Object is
+
+  field override price : Integer
+
+  method main : () -> String is
+    "hello"

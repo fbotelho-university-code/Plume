@@ -1,0 +1,40 @@
+/**
+ * 
+ * Classe que representa um conjunto sem repeticoes de Doubles
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class DoubleSet extends Object is
+
+	field list : NodeDouble
+	
+	method override toString : () -> String is
+		this.list.toString()
+
+	method add : (d : Double) -> DoubleSet is
+		if !this.list.contains(d)
+		then new DoubleSet(this.list.insert(d))
+		else this
+	
+	method contains : (d : Double) -> Boolean is
+		list.contains(d)
+	
+	method filterGTstring : (d : Double) -> String is
+		list.filterGTstring(d)
+		//if list.getHead().gt(d)
+		//then list.getHead().toString() + "; " 
+		//		+ new DoubleSet(list.getTail() as NodeDouble).filterGTstring(d)
+		//else new DoubleSet(list.getTail() as NodeDouble).filterGTstring(d)
+		
+		
+	method filterLTstring : (d : Double) -> String is
+		list.filterLTstring(d)
+	
+	method union : (ds : DoubleSet) -> DoubleSet is
+		new DoubleSet(list.union(ds.list))
+		
+	method getNodeDouble : () -> NodeDouble is
+		this.list
+		
+		

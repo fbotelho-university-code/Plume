@@ -1,0 +1,7 @@
+/**
+ * Missing arrow
+ * @author 36994, César Santos
+ */
+class MissingArrow extends Object is
+  method test : () Boolean is
+    true

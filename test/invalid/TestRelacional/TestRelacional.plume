@@ -1,0 +1,13 @@
+
+/**
+ * 
+ * O operador >= deve ser usado com Integers e nao Strings
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestRelacional extends Object is
+
+  method main : () -> String is
+    ("ola" >= "mundo").toString()
+    

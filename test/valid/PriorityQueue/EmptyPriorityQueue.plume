@@ -1,0 +1,26 @@
+/**
+ * Uma fila de prioridades vazia
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: EmptyPriorityQueue.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class EmptyPriorityQueue extends PriorityQueue is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override size : () -> Integer is
+    0
+    
+  method override next : () -> String is
+    error
+    
+  method override remove : () -> PriorityQueue is
+    error 
+ 
+  method override contains : (elem : String) -> Boolean is
+    false
+ 
+  method override toString : () -> String is
+    "_"
+    

@@ -1,0 +1,51 @@
+
+/**
+ *
+ * Testa os metodos union, filterGTstring e filterLTstring da DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestUnionAndFilters extends Object is
+
+	method main : () -> String is
+		"Conjunto:\n" + union().toString() + "\nFiltro: maiores que 100.0:\n" +
+		union().filterGTstring(new Double(100,0)).toString() +
+		"Conjunto\n" + union().toString() + "\nFiltro; menores que 10000.500:\n" +
+		union().filterLTstring(new Double(100,0)).toString()
+	
+		/*
+		Conjunto:
+		50,5 :: 333,222 :: 1001010,101010 :: 1,0 :: -10,678 :: 896,789 :: -50,5000006 :: 335413,2224522 :: 524,689 :: 852,987 :: []
+		Filtro: maiores que 100.0:
+		333,222; 1001010,101010; 896,789; 335413,2224522; 524,689; 852,987
+		Conjunto:
+		50,5 :: 333,222 :: 1001010,101010 :: 1,0 :: -10,678 :: 896,789 :: -50,5000006 :: 335413,2224522 :: 524,689 :: 852,987 :: []
+		Filtro: menores que 10000.500:
+		50,5; 333,222; 1,0; -10,678; 896,789; -50,5000006; 524,689; 852,987
+		*/
+	
+		
+	method union : () -> DoubleSet is
+		createDoubleSetLeft().union(createDoubleSetRight())
+		// 50,5 :: 333,222 :: 1001010,101010 :: 1,0 :: -10,678 :: 896,789 :: 
+		// -50,5000006 :: 335413,2224522 :: 524,689 :: 852,987
+	
+	method createDoubleSetLeft : () -> DoubleSet is
+		new DoubleSet(
+			new NodeDouble(new Double(50,5), 
+			new NodeDouble(new Double(333,222), 
+			new NodeDouble(new Double(1001010,101010), 
+			new NodeDouble(new Double(1,0), 
+			new NodeDouble(new Double(-10,678), 
+			new NodeDouble(new Double(896,789), new EmptyDouble())))))))
+		// 50,5 :: 333,222 :: 1001010,101010 :: 1,0 :: -10,678 :: 896,789
+	
+	method createDoubleSetRight : () -> DoubleSet is
+		new DoubleSet(
+			new NodeDouble(new Double(-50,5000006),
+			new NodeDouble(new Double(335413,2224522),
+			new NodeDouble(new Double(1001010,101010), 
+			new NodeDouble(new Double(524,689),
+			new NodeDouble(new Double(852,987), new EmptyDouble()))))))
+		// -50,5000006 :: 335413,2224522 :: 1001010,101010 :: 524,689 :: 852,987

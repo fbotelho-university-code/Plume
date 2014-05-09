@@ -1,0 +1,20 @@
+
+/**
+ *
+ * Testa o metodo filterLTstring da DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestFilterLT extends Object is
+
+	method main : () -> String is
+		new DoubleSet(createNodeDouble()).filterLTstring(
+				new Double(100, 0)).toString()
+		
+		// 50,5
+		
+	method createNodeDouble : () -> NodeDouble is
+		new NodeDouble(new Double(50,5),
+			new NodeDouble(new Double(333,222),
+			new NodeDouble(new Double(1001010,101010), new EmptyDouble())))

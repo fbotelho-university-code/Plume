@@ -1,0 +1,37 @@
+/**
+* Node of the Tree
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $Id: Node.plume 501 2012-06-05 01:08:20Z fc41625 $ 
+*/
+
+class Node extends IntegerTree is
+      field value : Integer
+      field left  : IntegerTree
+      field right : IntegerTree  
+      
+	  method override insert : (elem : Integer) ->  IntegerTree is 
+	  	 if elem < value 
+		 then  new Node(value, left.insert(elem), right) 
+		 else new Node(value, left, right.insert(elem)) 
+		 
+     method override isEmpty : () -> Boolean  is 
+	  	 false
+
+	  method override count : () ->  Integer is 
+	  	 1 + left.count() + right.count()
+
+	  method override contains : (elem : Integer)  -> Boolean  is 
+	  	 if value == elem 
+		 then true 
+		 else if  elem < value  
+		 	  then left.contains(elem)  
+		 	  else right.contains(elem)  
+
+	  method override weight : () -> Integer  is 
+	  	 1 + (if left.weight() >= right.weight() 
+		     then left.weight() 
+		     else right.weight())
+	  	 
+	  method override sum : () -> Integer is
+	  	  value + left.sum() + right.sum() 
+	    

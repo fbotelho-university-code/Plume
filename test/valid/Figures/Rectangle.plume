@@ -1,0 +1,15 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Rectangle.plume 390 2012-05-21 15:00:43Z tcomp000 $
+ */
+class Rectangle extends Figure is
+
+  field width : Integer
+  
+  field height : Integer
+  
+  method override area : () -> Integer is
+  	width * height
+  
+  method override toString : () -> String is
+  	"Rectangle: " + width.toString() + "x" + height.toString()

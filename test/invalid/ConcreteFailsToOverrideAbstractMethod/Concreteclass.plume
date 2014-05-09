@@ -1,0 +1,8 @@
+/**
+ * A concrete class that fails to override an abstract method from Superclass
+ *
+ * @author Robin Burgess 36815
+ */
+ class Concreteclass extends Superclass is
+	method goodbye : () -> String is
+		"Fail"

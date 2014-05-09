@@ -1,0 +1,16 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMathLog extends Object is
+
+  method main : () -> String is
+    log(2, 8).toString()
+    
+  method log : (base : Integer, value : Integer) -> Integer is
+  	if base == value
+  	then 1
+  	else 1 + log(base, value/base)
+  	

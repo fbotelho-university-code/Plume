@@ -1,0 +1,16 @@
+/**
+ * Classe que representa uma pessoa
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Person.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Person extends Object is
+	
+	field nome : String
+  	field idade : Integer
+  	
+  	method getNome : () -> String is
+  		nome
+  		
+  	method getIdade : () -> Integer is
+  		idade	

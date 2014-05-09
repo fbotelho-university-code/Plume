@@ -1,0 +1,15 @@
+/**
+ * Classe que calcula o fatorial de um numero
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestFatorial extends Object is
+	
+	method main : () -> String is
+    	fatorial(5).toString()
+	// expected output: "120"
+	
+	method fatorial : (num : Integer) -> Integer is
+    	if num == 0
+    	then 1
+    	else num * fatorial(num - 1)

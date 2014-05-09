@@ -1,0 +1,11 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class MethodIdEqPrimitiveObject extends Object is
+	method Object : () -> String is
+		"Object"
+	
+	method main : () -> String is
+		new MethodIdEqPrimitiveObject().Object()
+		
+	

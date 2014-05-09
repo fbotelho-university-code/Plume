@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo next da fila com prioridades quando esta eh empty
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueNextEmptyError.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestPriorityQueueNextEmptyError extends Object is
+
+  method main : () -> String is
+    new EmptyPriorityQueue().next().toString()
+	// expected output: "<error>"

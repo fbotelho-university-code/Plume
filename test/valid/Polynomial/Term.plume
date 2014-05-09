@@ -1,0 +1,38 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Term.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class Term extends Polynomial is
+  //@ requires degree > 0
+  field degree : Integer
+  
+  field next : Polynomial
+  
+  method override degree : () -> Integer is
+    degree
+    
+  method override order : () -> Integer is
+    max (degree, next.order())
+    
+  method max : (x : Integer, y : Integer) -> Integer is
+    if x < y then x else y
+
+  method override coefficientForDegree : (degree : Integer) -> Integer is
+    (if this.degree == degree then coefficient else 0) +
+    next.coefficientForDegree(degree)
+
+  method override canonical : () -> Polynomial is
+    next.canonical().addMonomial(coefficient, degree)
+    
+  method override addMonomial : (coefficient: Integer, degree: Integer) -> Polynomial is
+    if degree > this.degree
+    then new Term(coefficient, degree, this)
+    else if this.degree == degree
+         then if this.coefficient == -coefficient
+         	  then next
+              else new Term(coefficient + this.coefficient, degree, next)
+		 else new Term(this.coefficient, this.degree, next.addMonomial(coefficient, degree))
+  
+  method override toString : () -> String is
+    coefficient.toString() + "y" + (if degree == 1 then "" else degree.toString())
+    + " + " + next.toString()

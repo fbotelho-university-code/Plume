@@ -1,0 +1,16 @@
+/**
+ * A class to test whether an abstract method can be overriden in
+ * an abstract child and then used in non-abstract further 
+ * descendants.
+ *
+ * Class IntegerCollection has abstract method first(), which is 
+ * overriden in abstract child BinaryTree. Method first() in 
+ * BinaryTreeNode or BinaryTreeEmpty (non-abstract descendants)
+ * should work like the overriden implementation in their parent.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestIntegerCollectionSubclassingOverrideInAbstractClass extends Object is
+	
+	method main : () -> String is
+ 		new BinaryTreeNode(5, new BinaryTreeEmpty(), new BinaryTreeEmpty()).first().toString()

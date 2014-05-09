@@ -1,0 +1,20 @@
+/** 
+ * StringBuilder in Plume
+ * @author namartins 
+ * @version $Id: StringBuilder.plume 446 2012-06-02 09:49:48Z fc37029 $ 
+ *
+ */
+ 
+class StringBuilder extends Object is
+	field str : String
+	method override toString : () -> String is  
+		str
+	method addInBegin : (add : String) -> StringBuilder is
+		 new StringBuilder (add + str)
+	method add : (add : String) -> StringBuilder is
+		new StringBuilder(str + add)
+	
+	method main : () -> String is
+		new StringBuilder("eu vou").add(" ao pao").addInBegin("De manha ")
+		.add(" o saquinho vai na mao").toString()
+		//De manha eu vou ao pao o saquinho vai na mao

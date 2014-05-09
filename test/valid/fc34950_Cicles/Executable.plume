@@ -1,0 +1,11 @@
+/**
+ * Represent a abstract Executable
+ * @author namartins 
+ * @version $Id: Executable.plume 326 2012-05-03 17:10:47Z fc34950 $ 
+ *
+ */
+ 
+abstract class Executable extends Object is
+	abstract method run : (count : Integer) -> Executable
+	abstract method getResult : () -> Object
+	

@@ -1,0 +1,7 @@
+/**
+ * Missing override
+ * @author 36994, César Santos
+ */
+class MissingOverride extends Object is
+  method toString : () -> String is
+    "test"

@@ -1,0 +1,15 @@
+/**
+ * TestFieldAndParamenterWithSameName.plume
+ *
+ * Test: two different variables cannot 
+ * have the same name (field and parameter)
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 399 2012-05-22 13:50:02Z fc36956 $
+ */
+ class Sum extends Object is
+ 	field operandF : Integer
+	method doSum : (operand : Integer) -> Integer is
+		if operandF < 4
+		then operand + 1
+		else operandF + 2

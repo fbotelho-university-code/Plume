@@ -1,0 +1,16 @@
+/**
+  * Test the use of explicit cast
+  * @author fc41625@alunos.fc.ul.pt Fábio Botelho 
+  * @version $Id: TestExplicitCast.plume 437 2012-05-27 18:43:12Z fc41625 $ 
+ */
+ 
+
+class TestExplicitCast extends Object is
+ 	method checkCasts : ( a : MaybeInteger) -> String is 
+ 		 (a as JustInteger).justOnlyMethod()
+
+ 		   
+ 	method main : () -> String is 
+ 		new TestExplicitCast().checkCasts(new JustInteger(10))  //expect : just 
+
+ 

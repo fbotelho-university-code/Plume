@@ -1,0 +1,7 @@
+/**
+ * Missing colon
+ * @author 36994, César Santos
+ */
+class MissingColon extends Object is
+  method test () Boolean is
+    true

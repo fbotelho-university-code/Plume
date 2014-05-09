@@ -1,0 +1,21 @@
+/**
+ * Bicycle.plume
+ *
+ * Test: return type must match
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Bicycle.plume 416 2012-05-22 20:39:05Z fc36956 $
+ */
+class Bicycle extends Object is
+	field name : String
+	method createWheel : (brand : String, nAxes : Integer) -> Wheel is
+		new Wheel(brand, nAxes)
+	
+	method howManyWheels : (bikeName : String) -> Integer is 
+		if bikeName == name //not equal from the test
+		then createWheel("Maxor", 5).getNAxes(bikeName)
+		else createWheel("Zahao", 8).getNAxes(bikeName)
+			
+		
+	method getInfo : (bikeName : String) -> Integer is
+		howManyWheels(bikeName)

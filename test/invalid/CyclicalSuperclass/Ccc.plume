@@ -1,0 +1,9 @@
+/**
+ * Yet another class
+ *
+ * @author Robin Burgess 36815
+ */
+class Ccc extends Aaa is
+	field j : Integer
+	method c : ( f : Integer) -> Integer is
+		f + 1

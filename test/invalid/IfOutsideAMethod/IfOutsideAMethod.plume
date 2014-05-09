@@ -1,0 +1,8 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class IfOutsideAMethod extends Object is
+	field s : String
+	if s == ""
+	then field t : String
+	else error

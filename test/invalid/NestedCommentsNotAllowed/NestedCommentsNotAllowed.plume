@@ -1,0 +1,8 @@
+/**
+ * Comments like Java/C - not nested.
+ *
+ * @author Diogo Marques, 30100
+ */
+ class NestedCommentsNotAllowed extends Object is
+
+  /* comment /* */ nested comment */

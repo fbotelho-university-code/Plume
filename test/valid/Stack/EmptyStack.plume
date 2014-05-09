@@ -1,0 +1,23 @@
+/**
+ * Uma pilha vazia
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: EmptyStack.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class EmptyStack extends Stack is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override size : () -> Integer is
+    0
+    
+  method override top : () -> Integer is
+    error
+    
+  method override pop : () -> Stack is
+    error 
+ 
+  method override toString : () -> String is
+    "_"
+    

@@ -1,0 +1,16 @@
+/**
+ * Valid Class.
+ * Abstract class abstracts toString by overriding. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+
+
+abstract class AbstractMethodGap extends Object is
+	abstract method teste : () -> String 
+	
+	abstract method override toString : () -> String 
+	
+	
+

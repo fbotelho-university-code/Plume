@@ -1,0 +1,13 @@
+/**
+ * Classe que faz a concatenacao de duas strings 
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestConcat extends Object is
+	
+	method main : () -> String is
+    	concat("Roberto Silva,", " n. 37060")
+	// expected output: "Roberto Silva, n. 37060"
+	
+	method concat : (string : String, string2 : String) -> String is
+    	string + string2

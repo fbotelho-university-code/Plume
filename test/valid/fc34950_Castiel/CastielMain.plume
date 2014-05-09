@@ -1,0 +1,12 @@
+/** 
+ * This class will try the Cast's
+ * @author namartins 
+ * @version $Id: CastielMain.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ 
+class CastielMain extends Object is
+
+	method main : () -> String is
+		new Castiel(4).kidingCasts().toString()
+		//expect 3

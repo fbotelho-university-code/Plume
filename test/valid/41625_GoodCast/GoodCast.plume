@@ -1,0 +1,7 @@
+
+
+class GoodCast extends Object is
+	 
+	method t : () -> String is 
+		"blah" as String 
+					

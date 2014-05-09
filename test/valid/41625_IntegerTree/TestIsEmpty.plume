@@ -1,0 +1,16 @@
+/**
+* Integer binary tree. 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class TestIsEmpty extends Object is 
+
+	method main : () -> String is
+		
+		if new Node(10 , new Empty(), new Empty()).insert(5).insert(15).insert(100).insert(1).insert(-1).isEmpty()
+		then if new Empty().isEmpty()
+			 then "pass"
+			 else "fail"
+		else "fail"
+		//expected output : fail

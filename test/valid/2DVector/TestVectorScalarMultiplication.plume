@@ -1,0 +1,11 @@
+/**
+ * A class to test vecto scalar multiplication
+ *
+ * @author Robin Burgess 36815
+ */
+class TestVectorScalarMultiplication extends Object is
+  method main : () -> String is
+    new Vector(2,4).scalarMultiplication(2).toString()
+    
+  method override toString : () -> String is
+	"TestVectorScalarMultiplication"

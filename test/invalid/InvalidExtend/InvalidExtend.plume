@@ -1,0 +1,10 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+class InvalidExtend extends NotAbstract is
+
+  method main : () -> String is
+    5 * 5

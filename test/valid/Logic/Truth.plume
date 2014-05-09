@@ -1,0 +1,8 @@
+/**
+ * Class to calculate the logical Truth operation
+ * @author 35237, Marcos Vasco
+ */
+class Truth extends UnaryLogicalOperation is
+  
+  method override calculate : (val : Boolean) -> Boolean is
+    true

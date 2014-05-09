@@ -1,0 +1,13 @@
+/**
+ * Class to test the Power operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestPower extends Object is 
+
+	method main : () -> String is
+
+		new Power(2,3).getPower().toString()
+		
+		//expected output : 8

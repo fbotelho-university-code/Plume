@@ -1,0 +1,12 @@
+/**
+ * Classes must be named
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: ClassWithNoName.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is
+    radius

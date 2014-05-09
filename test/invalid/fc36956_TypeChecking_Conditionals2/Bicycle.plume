@@ -1,0 +1,14 @@
+/**
+ * Bicycle.plume
+ *
+ * Test: cannot compare between different types
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Bicycle.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Bicycle extends Object is
+		field bikeType : Integer
+		method isMountainBike : (bikeName : String) -> Boolean is
+			if bikeType > bikeName
+			then true
+			else false

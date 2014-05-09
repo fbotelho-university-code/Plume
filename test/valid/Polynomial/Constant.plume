@@ -1,0 +1,29 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Constant.plume 390 2012-05-21 15:00:43Z tcomp000 $
+ */
+class Constant extends Polynomial is
+
+  method override order : () -> Integer is
+    0
+
+  method override degree : () -> Integer is
+    0
+
+  method override coefficientForDegree : (degree : Integer) -> Integer is
+    if degree == 0
+    then coefficient
+    else if degree > 0
+         then 0
+         else error
+	
+  method override canonical : () -> Polynomial is
+    this
+    
+  method override toString : () -> String is
+    coefficient.toString()
+    
+  method override addMonomial : (coefficient : Integer, degree : Integer) -> Polynomial is
+    new Term(coefficient, degree, this)
+    
+    

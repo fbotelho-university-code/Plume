@@ -1,0 +1,14 @@
+/**
+ * Valid Test.
+ * An if condition is based on a method return that has type boolean. 
+ * David Wheeler goes: "All problems in computer science can be solved by another level of indirection" .  
+ * Also tests support for really long names =) 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class IfConditionIsBasedOnMethodReturnTypesWithAnotherLevelOfIndirection extends Object is 
+ 	method test : () -> String is 
+ 		if new IfConditionIsBasedOnMethodReturnTypes().b()
+ 		then "true"
+ 		else "false" 

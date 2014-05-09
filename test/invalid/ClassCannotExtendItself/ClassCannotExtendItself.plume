@@ -1,0 +1,4 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class ClassCannotExtendItself extends ClassCannotExtendItself is

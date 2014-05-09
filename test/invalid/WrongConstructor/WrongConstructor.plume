@@ -1,0 +1,14 @@
+/**
+ * Implicit constructor arguments test. 
+ * Compiles into error.
+ *   
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $Id: WrongConstructor.plume 324 2012-05-03 16:49:53Z fc41625 $ 
+ *
+ */
+ 
+ class WrongConstructor extends Object is 
+ 	
+ 	method main : () -> String is 
+ 	//Constructor does not receives any argument 
+ 		new WrongConstructor(new Object()).toString()    

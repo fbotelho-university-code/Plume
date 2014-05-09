@@ -1,0 +1,5 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class IncompleteField extends Object is
+	field red Float

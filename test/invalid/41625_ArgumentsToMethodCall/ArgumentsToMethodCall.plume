@@ -1,0 +1,16 @@
+/**
+ * Invalid Test. 
+ * Wrong arguments type in method invocation. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ 
+class ArgumentsToMethodCall extends Object is 
+	
+	method t : (x : B) -> String is 
+		"valid" 
+	
+	method t2 : (x : String) -> String is
+		// A can not be passed. Expecting B.  
+		new ArgumentsToMethodCall().t(new A())

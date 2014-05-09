@@ -1,0 +1,9 @@
+/**
+ * A class to test the max() operation in and empty tree.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeMaxEmpty extends Object is
+	
+	method main : () -> String is
+ 		new BinaryTreeEmpty().max().toString()

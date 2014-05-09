@@ -1,0 +1,37 @@
+/**
+ * A class to sort a list
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: ListSorter.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ListSorter extends Object is
+
+  // Version 1 _ A wise choice of tests leads to no casts
+  
+  method sort : (list : List) -> List is
+    if list instanceof Node
+    then insert(list.head, sort(list.tail))
+    else list
+    
+  method insert : (elem: Integer, sorted: List) -> List is
+    if sorted instanceof Node
+    then if elem <= sorted.head
+		 then new Node(elem, sorted)
+		 else new Node(sorted.head, insert(elem, sorted.tail))
+    else new Node(elem, sorted)
+    
+  // Version 2 _ Using dangerous downcasts
+  
+  method sortCast : (list : List) -> List is
+    if list instanceof Empty
+    then list
+    else insertCast((list as Node).head, sort((list as Node).tail))
+    
+  method insertCast : (elem: Integer, sorted: List) -> List is
+    if sorted instanceof Empty
+	then new Node(elem, sorted)
+	else if elem <= (sorted as Node).head
+		 then new Node(elem, sorted)
+		 else new Node((sorted as Node).head, insertCast(elem, (sorted as Node).tail))
+
+  

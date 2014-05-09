@@ -1,0 +1,15 @@
+/** 
+ * Represent Trenitalia (Comboios de Italia) 
+ * @author namartins 
+ * @version $Id: Trenitalia.plume 319 2012-05-03 10:15:47Z fc34950 $ 
+ *
+ */
+ 
+class Trenitalia extends Company is
+
+	method override toString : () -> String is  
+		name
+	method override getNumberOfTrains : () -> Integer is
+		nTrains
+		    		  
+	

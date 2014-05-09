@@ -1,0 +1,53 @@
+
+/**
+ * 
+ * Classe que representa um Double
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Double extends Object is
+
+	field left : Integer
+	field right : Integer
+	
+	method override toString : () -> String is
+		left.toString() + "," + right.toString() 
+		
+	method isDouble : (l : Integer, r : Integer) -> Boolean is
+		if r >= 0
+		then true
+		else false
+		
+	// requires isDouble(d.left, d.right)
+	method floor : () -> Double is
+		if this.right == 0
+		then this
+		else if this.left >= 0
+			then new Double(this.left, 0)
+			else new Double(this.left - 1, 0)
+	
+	// requires isDouble(d.left, d.right)		
+	method equal : (other : Double) -> Boolean is
+		if this.left == other.left && this.right == other.right
+		then true
+		else false
+
+	// requires isDouble(d.left, d.right)
+	method lt : (other : Double) -> Boolean is
+		if this.left < other.left
+		then true
+		else if this.left == other.left && this.right < other.right
+			then true
+			else false
+	
+	// requires isDouble(d.left, d.right)
+	method gt : (other : Double) -> Boolean is
+		if this.left > other.left
+		then true
+		else if this.left == other.left && this.right > other.right
+			then true
+			else false
+	
+	
+	

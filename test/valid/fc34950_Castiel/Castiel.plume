@@ -1,0 +1,14 @@
+/** 
+ * This class will try the Cast's
+ * @author namartins 
+ * @version $Id: Castiel.plume 462 2012-06-03 11:13:16Z fc34950 $ 
+ *
+ */
+ 
+class Castiel extends Object is
+	field power : Integer
+	method triplecast : () -> Integer is  
+		(((power as Integer) as Object) as Integer)
+	
+	method kidingCasts : () -> Integer is  
+		(( (4 as Integer ) + (3 as Integer) - (triplecast() as Integer) ) as Integer)

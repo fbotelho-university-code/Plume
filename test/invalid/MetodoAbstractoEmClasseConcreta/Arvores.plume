@@ -1,0 +1,11 @@
+/**
+ * metodo abstracto numa classe concreta 
+ *
+ * @author 37060, Roberto Silva
+ */
+class Arvores extends Object is
+	
+	field nome : String
+	field altura : Integer
+	
+	abstract method getNome : () -> String

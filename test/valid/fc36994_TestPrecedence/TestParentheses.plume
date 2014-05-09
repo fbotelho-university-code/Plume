@@ -1,0 +1,7 @@
+/**
+ * Tests operator precedence with parentheses
+ * @author 36994, César Santos
+ */
+class TestParentheses extends Object is
+  method main : () -> String is //expected : 11
+    (1 + (2 + 3) * 2).toString()

@@ -1,0 +1,21 @@
+
+/**
+ * 
+ * Classe que representa o primeiro numero natural
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Zero extends Natural is
+
+	method override add : (n : Natural) -> Natural is
+		n 
+		
+	method override sub : (n : Natural) -> Natural is
+		error
+		
+	method override getIntegerValue : () -> Integer is
+		0
+	
+	method override toString : () -> String is
+    	"0"

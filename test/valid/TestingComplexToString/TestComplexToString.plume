@@ -1,0 +1,13 @@
+/**
+ * Tests toString in nested classes
+ *
+ * @author Robin Burgess 36815
+ */
+class TestComplexToString extends Object is
+
+	method main : () -> String is
+		new House(new Room("Living Room",15),new Room("Bedroom",10),
+			new Room("Kitchen",10),new Room("Toilet",5)).toString()
+		
+	method override toString : () -> String is
+		"Testing Complex toString"

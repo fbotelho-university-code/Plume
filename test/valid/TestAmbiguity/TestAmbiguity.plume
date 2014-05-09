@@ -1,0 +1,17 @@
+/**
+ * A class to test ambiguity in grammars
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestAmbiguity.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class TestAmbiguity extends Object is
+
+  method main : () -> String is
+    testAmbiguity().toString()
+				
+  method testAmbiguity : () -> Integer is
+	if 2 < 3
+	then if 3 > 4
+		 then 5
+		 else 10
+	else 15

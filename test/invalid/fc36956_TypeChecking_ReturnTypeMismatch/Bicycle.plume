@@ -1,0 +1,12 @@
+/**
+ * Bicycle.plume
+ *
+ * Test: return type mismatch
+ * Wrong: bikeName return type is not of type Integer or a subtype of it
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Bicycle.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Bicycle extends Object is
+	method howManyWheels : (bikeName : String) -> Integer is 
+		bikeName

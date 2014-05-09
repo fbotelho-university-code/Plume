@@ -1,0 +1,9 @@
+/**
+ * Class to test the Fibonacci class
+ * @author 35237, Marcos Vasco
+ */
+class TestFibonacci extends Object is
+ 
+ method main : () -> String is
+	new Fibonacci(3).getFib().toString()
+  // expected output: "2"

@@ -1,0 +1,7 @@
+/**
+ * For testing inheritance, super and override
+ * @author 36994, César Santos
+ */
+class SuperTest extends Object is
+  method testConcat : (a: String, b: String) -> String is
+    a + b

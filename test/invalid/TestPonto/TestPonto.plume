@@ -1,0 +1,9 @@
+/**
+ * 
+ * Tem um ponto e virgula no fim
+ * @author 37060, Roberto Silva
+ */
+class TestPonto extends Object is
+	
+	method main -> String is
+    	"Ola";

@@ -1,0 +1,7 @@
+/**
+ * Invalid method return
+ * @author 36994, César Santos
+ */
+class InvalidMethodReturn extends Object is
+  method test : () -> String is
+    0

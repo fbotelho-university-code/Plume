@@ -1,0 +1,21 @@
+
+
+class C extends Object is 
+	abstract method C : () -> String 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	method t : () -> String is 
+		error 

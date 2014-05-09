@@ -1,0 +1,8 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: AbstractMethod.plume 615 2012-05-21 14:52:19Z vv $
+ */
+class FalseFalse extends Object is
+
+	method main : () -> String is
+		new TestAnd().m(false, false)

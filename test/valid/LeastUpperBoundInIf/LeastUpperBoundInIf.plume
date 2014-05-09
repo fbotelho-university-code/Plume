@@ -1,0 +1,12 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: LeastUpperBoundInIf.plume 391 2012-05-21 15:15:00Z tcomp000 $
+ */
+class LeastUpperBoundInIf extends Object is
+
+	method m : (b: Boolean) -> A is
+		if b then new C() else new D()
+
+    method main : () -> String is
+    	m(true).toString()
+

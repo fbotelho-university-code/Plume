@@ -1,0 +1,12 @@
+/**
+ * Keyword com letra maiuscula: new
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: KeywordsCapitalLetterNew.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class KeywordsCapitalLetterNew extends Object is
+ 
+  field o : Object
+  
+  method changeO : (other : Object) -> KeywordsCapitalLetterNew is
+		New KeywordsCapitalLetterNew(other)

@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * Classe que testa o metodo de verificacao da ordenacao de uma lista
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestIsSortedTrue extends Object is
+
+	method main : () -> String is
+    	new ListOperations().isSorted(new Empty().
+    							insert(40).insert(30).
+    							insert(20).insert(10)).toString()
+    	
+    	//true

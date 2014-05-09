@@ -1,0 +1,21 @@
+/**
+ * An empty Stack for Strings
+ *
+ * @author Robin Burgess 36815
+ */
+ class EmptyStack extends StringStack is
+
+	method override isEmpty : () -> Boolean is
+		true
+		
+	method override length : () -> Integer is
+		0
+		
+	method override peek : () -> String is
+		error
+		
+	method override pop : () -> StringStack is
+		error
+		
+	method override toString : () -> String is
+		"||"

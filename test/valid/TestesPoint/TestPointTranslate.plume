@@ -1,0 +1,10 @@
+/**
+ * Classe que converte um ponto noutro.
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestPointTranslate extends Object is
+	
+	method main : () -> String is
+    	new Point(5,6).translate(10, 15).toString()
+	// expected output: "(15,20)"

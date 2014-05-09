@@ -1,0 +1,13 @@
+/**
+ * Keyword com letra maiuscula: override
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: KeywordsCapitalLetterOverride.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class KeywordsCapitalLetterOverride extends Object is
+
+  method main : () -> String is
+		toString()
+		
+  method Override toString : () -> String is
+    "Hello"

@@ -1,0 +1,9 @@
+/**
+ * Division operator is not defined for Strings.
+ *
+ * @author Diogo Marques, 30100
+ */
+class DivisionOperatorNotDefinedForString extends Object is
+	
+	method myMethod : () -> String is
+		"" / ""

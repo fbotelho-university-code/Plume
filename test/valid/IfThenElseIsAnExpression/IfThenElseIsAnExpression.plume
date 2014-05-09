@@ -1,0 +1,13 @@
+/**
+  * Test if if then else is an expression like any other 
+  * also uses string concat overloaded operator : +  
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ */
+ 
+ class IfThenElseIsAnExpression extends Object is 
+ 	method main : () -> String is 
+ 		"prefix" + (if 1 == 1 then "suffix" else "nothing") + "0"
+ 		//expected output : "prefixsuffix0" 
+ 		 
+ 

@@ -1,0 +1,11 @@
+/**
+ * 
+ * Falta o extends e o is
+ * @author 37060, Roberto Silva
+ */
+class Estudante
+
+	field area : String
+    	
+    method override toString : () -> String is
+    	"Chama-se " + nome + " e tem: " + idade.toString() + " anos. Estuda "+ area

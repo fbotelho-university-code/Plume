@@ -1,0 +1,6 @@
+/**
+ * A class may only have one name.
+ *
+ * @author Diogo Marques, 30100
+ */
+class MyClass ClassCanOnlyHaveOneName extends Object is

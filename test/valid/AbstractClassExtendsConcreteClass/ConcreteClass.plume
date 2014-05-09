@@ -1,0 +1,10 @@
+/**
+ * Uma classe concreta escreve Prof. antes de um nome dado
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ConcreteClass.plume 434 2012-05-27 15:28:34Z fc37059 $
+ */
+class ConcreteClass extends Object is
+
+  method profName : (name : String) -> String is 
+  		"Prof. " + name

@@ -1,0 +1,11 @@
+/**
+ * 
+ * Falta o is expression depois do metodo ou abstract antes
+ * @author 37060, Roberto Silva
+ */
+abstract class FaltaIsDepoisMetodo extends Object is
+	
+	method calcIdade : (idade : Integer) -> Integer
+	
+	method idadeTerra : (idade : Integer) -> Integer is
+    	idade * 365

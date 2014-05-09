@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Os operadores && e || apenas devem ser usados com Booleans
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestConjuntion extends Object is
+
+  method main : () -> String is
+    (10 > 0 && 5 < 25 && 35 == (10+15) && "error").toString();

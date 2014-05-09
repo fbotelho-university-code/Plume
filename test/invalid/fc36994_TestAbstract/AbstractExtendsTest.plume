@@ -1,0 +1,6 @@
+/**
+ * For testing abstract extends
+ * @author 36994, César Santos
+ */
+abstract class AbstractExtendsTest extends AbstractClass is
+  abstract method nothing2 : () -> Boolean is

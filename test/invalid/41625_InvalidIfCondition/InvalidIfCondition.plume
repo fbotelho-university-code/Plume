@@ -1,0 +1,20 @@
+/**
+ * Invalid Test. 
+ * Cannot have non boolean in condition of a if.
+ * 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ 
+ class InvalidIfCondition extends Object is 
+ 
+ 	method b : () -> String is 
+ 		"true"
+ 		 
+ 	method test : () -> String is 
+ 		if  new InvalidIfCondition().b()  
+ 		then "invalid"
+ 		else "still invalid"
+ 		
+ 	

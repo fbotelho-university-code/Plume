@@ -1,0 +1,10 @@
+/**
+ * Tests for class Sum.plume
+ *
+ * @author $Id: TestPotenciaRec.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestPotenciaRec extends Object is
+	
+	method main : () -> String is
+    	new PotenciaRec().calculaPot(2, 10).toString()
+	// expected output: "1024"

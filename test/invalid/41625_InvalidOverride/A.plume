@@ -1,0 +1,10 @@
+/**
+ * Correct class. 
+ * 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class A extends Object is 
+	method test : () -> String is 
+		"invalid" 

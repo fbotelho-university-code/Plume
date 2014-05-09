@@ -1,0 +1,7 @@
+/**
+ * Abstract method with a body
+ * @author 36994, César Santos
+ */
+abstract class AbstractBody extends Object is
+  abstract method test : () -> Integer is
+    0

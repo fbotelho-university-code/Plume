@@ -1,0 +1,11 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class InvalidReturn extends Object is
+
+  method getAge : () -> Integer is
+    new Person("alguem", 15).getName()
+    	// getName() devolve uma String e nao um Integer

@@ -1,0 +1,21 @@
+
+/**
+ *
+ * Testa o metodo add da DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestAdd extends Object is
+
+	method main : () -> String is
+		new DoubleSet(createNodeDouble()).add(new Double(111, 222)).toString()
+		
+		// 1,1 :: 2,2 :: 3,3 :: 111,222
+		
+		// 111,222 :: 1,1 :: 2,2 :: 3,3 :: []
+		
+	method createNodeDouble : () -> NodeDouble is
+		new NodeDouble(new Double(1,1),
+			new NodeDouble(new Double(2,2),
+			new NodeDouble(new Double(3,3), new EmptyDouble())))

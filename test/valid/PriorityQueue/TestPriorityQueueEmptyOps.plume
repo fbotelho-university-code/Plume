@@ -1,0 +1,15 @@
+/**
+ * Uma classe para testar varios metodos da fila com prioridades vazia
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueEmptyOps.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestPriorityQueueEmptyOps extends Object is
+
+  method main : () -> String is
+    testOps(new EmptyPriorityQueue()).toString()
+	// expected output: true
+			
+  method testOps : (pq: PriorityQueue) -> Boolean is
+  	pq.isEmpty() && pq.size() == 0 && pq.insert(2, "Teste").next() == "Teste" && !pq.contains("Mundo")
+	

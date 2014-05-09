@@ -1,0 +1,23 @@
+/**
+ * Redefinicao de fields
+ *
+ * @author 37060, Roberto Silva
+ */
+class Point extends Object is
+	
+	field x : Integer
+	field y : Integer
+	field y : String
+	
+	method equals : (p : Point) -> Boolean is
+    	if this.x==p.x 
+    	then if this.y==p.y
+    		then true
+    		else false
+    	else false
+	
+	method translate : (dx : Integer, dy : Integer) -> Point is
+    	new Point(x + dx, x + dy)
+	
+	method override toString : () -> String is
+    	"(" + x + "," + y + ")"

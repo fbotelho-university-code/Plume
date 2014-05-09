@@ -1,0 +1,10 @@
+/**
+ * Tests abstract as a parameter
+ * @author 36994, César Santos
+ */
+class TestAbstract extends Object is
+  method main : () -> String is //expected : 12
+    abstractTest(new Concrete(3,4,5)).toString()
+  
+  method abstractTest : (a : Abstract) -> Integer is
+    a.sumFields()

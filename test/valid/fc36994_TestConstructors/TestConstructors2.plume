@@ -1,0 +1,7 @@
+/**
+ * Tests constructors, inheritance and override
+ * @author 36994, César Santos
+ */
+class TestConstructors2 extends Object is
+  method main : () -> String is //expected : 6
+    (new Constructor2(1,2,3)).addFields().toString() 

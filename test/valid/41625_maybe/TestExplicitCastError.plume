@@ -1,0 +1,14 @@
+/**
+  * Test the misuse of explicit cast
+  * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+  * @version $Id: TestExplicitCastError.plume 437 2012-05-27 18:43:12Z fc41625 $ 
+ */
+ 
+ class TestExplicitCastError extends Object is
+ 	method checkCasts : ( a : MaybeInteger) -> String is 
+ 		(a as JustInteger).justOnlyMethod() 
+ 		
+ 		   
+ 	method main : () -> String is 
+ 		new TestExplicitCastError().checkCasts(new Nothing())     // expect : error since Nothing does not has justOnlyMethod
+ 

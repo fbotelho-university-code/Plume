@@ -1,0 +1,13 @@
+/**
+ * Uma classe que tem um field name igual ao field que existe na superclass
+ * ou seja ha um override do field que nao eh possivel na linguagem plume
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ConcreteExtendsAbstract.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+abstract class ConcreteExtendsAbstract extends AbstractSuper is
+	
+  field name : String
+  
+  method getName : () -> String is
+  		name

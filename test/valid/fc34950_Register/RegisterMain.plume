@@ -1,0 +1,14 @@
+/**
+ * Represent a RegisterMain
+ * @author namartins 
+ * @version $Id: RegisterMain.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ class RegisterMain extends Object is
+	  
+
+	method main : () -> String is
+		new Register(10,0,0).addProduto(new Produto("Galaxy SII",600),10).addProduto(
+		new Produto("Htc X",500),20).addProduto(
+		new Produto("Ipad II",700),20).toString()
+	//total = 30000; Number of Itens sell 50

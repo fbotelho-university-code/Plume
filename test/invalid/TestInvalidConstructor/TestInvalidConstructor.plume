@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Quando eh feito new Person(...) deve-se passar uma String e um Integer
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidConstructor extends Object is
+
+  method main : () -> String is
+    new Person("Maria") // age

@@ -1,0 +1,12 @@
+/**
+ * Circle.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Circle.plume 232 2012-04-29 19:04:17Z fc36956 $
+ */
+class Circle extends GraphicObject is
+     method override draw : () -> Boolean is
+     	true
+    
+    method override resize : () -> Boolean is
+    	true

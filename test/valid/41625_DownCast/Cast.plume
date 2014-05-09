@@ -1,0 +1,16 @@
+/**
+ * Valid Test.
+ * Do an down/up cast of an object.
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+  
+ class Cast extends Object is 
+ 	
+ 	method down : (a : A ) -> String is 
+         (a as B).fb()   
+ 		
+ 	method up : (b: B) -> String  is 
+ 		(b as A).fa() 
+ 		

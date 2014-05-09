@@ -1,0 +1,25 @@
+/**
+ * Uma equipa vazia
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Empty.plume 304 2012-05-01 23:57:08Z fc37017 $
+ */
+class Empty extends Team is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override length : () -> Integer is
+    0
+    
+  method override getPrice : (index: Integer) -> Integer is
+    error
+    
+  method override getScore : (index: Integer) -> Integer is
+    error
+    
+  method override containsPrice : (elem: Integer) -> Boolean is
+    false
+    
+  method override containsScore : (elem: Integer) -> Boolean is
+    false

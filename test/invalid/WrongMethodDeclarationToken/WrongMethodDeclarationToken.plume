@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+abstract class WrongMethodDeclarationToken extends Object is
+
+	abstract method getSalary : () : Integer
+	
+	abstract method raise : (Integer raiseVal) -> Empregado

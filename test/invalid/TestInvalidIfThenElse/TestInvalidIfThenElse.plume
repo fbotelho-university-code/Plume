@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Deve existir o else para que o metodo retorne sempre algo
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidIfThenElse extends Object is
+
+	method main : () -> String is
+    	if true then "abc"

@@ -1,0 +1,19 @@
+
+/**
+ *
+ * Testa o metodo contains da DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestContains extends Object is
+
+	method main : () -> String is
+		new DoubleSet(createNodeDouble()).contains(new Double(111, 222)).toString()
+		
+		// false
+		
+	method createNodeDouble : () -> NodeDouble is
+		new NodeDouble(new Double(1,1),
+			new NodeDouble(new Double(2,2),
+			new NodeDouble(new Double(3,3), new EmptyDouble())))

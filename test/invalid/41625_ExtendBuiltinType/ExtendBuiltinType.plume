@@ -1,0 +1,9 @@
+/**
+ * Invalid Test.
+ * Extending a bultin type is not allowed. 
+ * @author FábioBotelho - 41625@alunos.fc.l.pt
+ * @version $id 
+ */
+ 
+ abstract class ExtendBuiltinType extends Boolean is
+   

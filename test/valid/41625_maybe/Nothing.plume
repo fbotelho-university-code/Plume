@@ -1,0 +1,24 @@
+/**
+* Nothing...  Type One defines no element in Maybe type. 
+* @see MaybeInteger.plume
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class Nothing extends MaybeInteger is     
+	   // Returns true iff  is Just _ where _ stands form some Integer value.  (instance of ... Useless)
+	  method override isJust : () -> Boolean  is 
+                  false
+
+	 // Returns true iff  is Nothing. (instance of ... Useless) 
+	 method override isNothing : () -> Boolean is 
+                true
+
+	//  Extract the element out of its argument. It produces an error if the argument is from other type. 
+	 method override fromJust  : () -> Integer is 
+               error 
+        
+        // Extract the element from Maybe. If no element, returns the argument a 
+        method override fromMaybe : ( a : Integer) -> Integer  is 
+             a 
+	method override toString : () -> String is "Nothing"

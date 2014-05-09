@@ -1,0 +1,10 @@
+/**
+ * Classe que testa a criacao de um novo Estudante
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestEstudante extends Object is
+	
+	method main : () -> String is
+    	new Estudante(23, "Roberto", "Engenharia Informatica").toString()
+	// expected output: "Chama-se Roberto e tem: 23 anos. Estuda Engenharia Informatica"

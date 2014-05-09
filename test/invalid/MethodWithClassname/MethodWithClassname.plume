@@ -1,0 +1,10 @@
+/**
+ * A class with a method of the same name
+ *
+ * @author Robin Burgess 36815
+ */
+class MethodWithClassname extends Object is
+	method MethodWithClassname : () -> Integer is
+		6
+	method override toString : () -> String is
+		value.toString()

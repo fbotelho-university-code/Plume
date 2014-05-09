@@ -1,0 +1,9 @@
+/**
+ * For testing constructors
+ * @author 36994, César Santos
+ */
+class Constructor1 extends Object is
+  field a : Integer
+  field b : Integer
+  method addFields : () -> Integer is
+    a + b

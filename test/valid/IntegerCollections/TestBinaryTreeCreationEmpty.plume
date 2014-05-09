@@ -1,0 +1,9 @@
+/**
+ * A class to test the empty tree creation.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeCreationEmpty extends Object is
+
+	method main : () -> String is
+		new BinaryTreeEmpty().toString()

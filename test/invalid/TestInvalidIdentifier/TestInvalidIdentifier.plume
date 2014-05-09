@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Um identificador comeca com uma letra que eh seguida de mais letras
+ * ou de digitos
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidIdentifier extends Object is
+
+	field 2345 : String

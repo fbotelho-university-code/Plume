@@ -1,0 +1,7 @@
+/**
+ * Tests instanceOf
+ * @author 36994, César Santos
+ */
+class TestInstanceOf extends Object is
+  method main : () -> String is //expected : true
+    (new InstanceOfTest()).test(true).toString()

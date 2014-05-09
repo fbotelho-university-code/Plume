@@ -1,0 +1,8 @@
+/**
+ * Semantically incorrect class, containing a cycle in the subtyping relationship
+ * @author 35237, Marcos Vasco
+ */
+class SubTypingCycleB extends SubTypingCycleA is
+  
+  method calculate : (val : Boolean) -> Boolean is
+    true

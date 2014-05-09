@@ -1,0 +1,9 @@
+/**
+ * Semantically incorrect class, which has a different name than 
+ * that of the file.
+ * @author 35237, Marcos Vasco
+ */
+class Fibonacci extends Object is
+  
+  method getFib : () -> Integer is
+    10

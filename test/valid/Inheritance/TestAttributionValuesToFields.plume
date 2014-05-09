@@ -1,0 +1,10 @@
+/**
+ * A class to test the attribution of values to fields when using the new operation
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestAttributionValuesToFields.plume 504 2012-06-05 01:22:07Z fc36815 $
+ */
+class TestAttributionValuesToFields extends Object is
+
+  method main : () -> String is
+    new Animal(182).getAge().toString()

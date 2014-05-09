@@ -1,0 +1,14 @@
+/**
+ * Uma classe que tenta fazer overloading dos metodos
+ * nao eh possivel na linguagem plume
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: Overloading.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Overloading extends Object is
+  
+  method setName : ( name : String ) -> String is
+  		"Nome: " + name
+  		
+  method setName : ( name : String , surname : String ) -> String is
+  		"Nome: " + name + " Apelido: " + surname		

@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: OverridenInSuperSuper.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class OverridenInSuperSuper extends Super is
+
+	method override m: () -> String is
+		"OverridenInSuperSuper"
+  
+	method main : () -> String is
+		m()

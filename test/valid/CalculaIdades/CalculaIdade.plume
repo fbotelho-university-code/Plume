@@ -1,0 +1,8 @@
+/**
+ * Classe abstracta para o calculo da idade.
+ *
+ * @author 37060, Roberto Silva
+ */
+abstract class CalculaIdade extends Object is
+	
+	abstract method calcIdade : (idade : Integer) -> Integer

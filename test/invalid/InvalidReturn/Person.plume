@@ -1,0 +1,19 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Person extends Object is
+	
+	
+	field name : String
+  
+  	field age : Integer
+  	
+  	
+  	method getName : () -> String is
+  		name
+  		
+  	method getAge : () -> Integer is
+  		age	

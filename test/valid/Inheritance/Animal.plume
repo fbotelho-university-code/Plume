@@ -1,0 +1,15 @@
+ /**
+ * A class that represents an animal
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Animal.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class Animal extends Object is
+
+  field age : Integer
+
+  method squareAge: () -> Integer is
+    age * age
+    
+  method getAge: () -> Integer is
+    age

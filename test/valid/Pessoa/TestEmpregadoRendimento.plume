@@ -1,0 +1,10 @@
+/**
+ * Classe que testa o calculo do rendimento anual de um empregado
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestEmpregadoRendimento extends Object is
+	
+	method main : () -> String is
+    	new Empregado(30, "Antonio", 20, 8, 5, "Medico").redimentoAnual().toString()
+	// expected output: "9600"

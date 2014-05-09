@@ -1,0 +1,12 @@
+/**
+ * 
+ * Testa o metodo lt da classe Double
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestLt extends Object is
+
+	method main : () -> String is
+		new Double(111,222).lt(new Double(111,223)).toString() + ";" + 
+		new Double(111,222).gt(new Double(110,222)).toString()

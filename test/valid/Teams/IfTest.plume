@@ -1,0 +1,15 @@
+/**
+ * Classe que cria pessoas
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: IfTest.plume 304 2012-05-01 23:57:08Z fc37017 $
+ */
+class IfTest extends Object is
+	  	
+  	method createPerson : (idade: Integer, nome: String) -> Person is
+    	new Person(nome, idade)
+    	
+    method main : () -> String is
+   		if createPerson(50, "maria").getIdade() <= 50
+   		then createPerson(50, "maria").getNome() + " <= 50"
+   		else error

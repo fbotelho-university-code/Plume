@@ -1,0 +1,10 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: TestCanonical.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestCanonical extends Object is
+
+  method main : () -> String is
+    new Term(5, 2, new Term(55, 22, new Term(55, 22,
+	  new Term(5, 1, new Term(-5, 2, new Constant(5)))))).canonical().toString()
+	// expected output: "110y22 + 10"

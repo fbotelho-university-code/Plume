@@ -1,0 +1,7 @@
+/**
+ * Tests inheritance and super
+ * @author 36994, César Santos
+ */
+class TestInheritance extends Object is
+  method main : () -> String is //expected : ab ab
+    (new SuperTestEx()).testConcat("a", "b")

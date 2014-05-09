@@ -1,0 +1,13 @@
+/**
+ * Redeclaracao de um field com tipo diferente
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: FieldRedefinitionDifferentType.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class FieldRedefinitionDifferentType extends Object is
+  
+  field tipo : String
+  field tipo : Integer
+  
+  method getTipo : () -> Object is
+		tipo

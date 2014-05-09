@@ -1,0 +1,36 @@
+ /**
+ * Uma equipa nao vazia.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Player.plume 495 2012-06-05 00:17:02Z fc36815 $
+ */
+class Player extends Team is
+
+  field price : Integer
+  
+  field score : Integer
+  
+  field tail : Team
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override length : () -> Integer is
+    1 + tail.length()
+    
+  /******** Getters ********/
+  /******** Requires 0 <= index && index < length() ********/
+  method override getPrice : (index: Integer) -> Integer is
+    if index == 0 then price
+    else tail.getPrice(index - 1)
+    
+  method override getScore : (index: Integer) -> Integer is
+    if index == 0 then score
+    else tail.getScore(index - 1)
+    
+  /******** Scanners ********/
+  method override containsPrice : (elem: Integer) -> Boolean is
+    elem == price || tail.containsPrice(elem)
+    
+  method override containsScore : (elem: Integer) -> Boolean is
+    elem == score || tail.containsScore(elem)

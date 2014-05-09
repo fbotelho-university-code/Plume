@@ -1,0 +1,13 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class InvalidArgument extends Object is
+
+  method main : () -> String is
+    m(new SubTypeA())
+    
+  method m : (b : SubTypeB) -> Boolean is
+  	true

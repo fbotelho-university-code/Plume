@@ -1,0 +1,5 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: C.plume 390 2012-05-21 15:00:43Z tcomp000 $
+ */
+class C extends B is

@@ -1,0 +1,14 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestPredicate extends Object is
+
+  method main : () -> String is
+  	((5 + 10 >= 7 && 5 == 5) || ((-10 == 10 && true) == (false || true)) && 
+  	!(false && false)).toString()
+  	
+
+    

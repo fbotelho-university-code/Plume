@@ -1,0 +1,7 @@
+/**
+ * Semicolon at the end of the line
+ * @author 36994, César Santos
+ */
+class Semicolon extends Object is
+  method test : () -> Boolean is
+    true;

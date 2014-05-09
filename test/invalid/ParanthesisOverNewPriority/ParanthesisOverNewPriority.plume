@@ -1,0 +1,15 @@
+/**
+ * Invalid Reference to object. 
+ * Compiles into error.
+ *   
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+class ParanthesisOverNewPriority  extends Object is 
+ 	
+ 	method foo : () -> String is
+ 		//Paranthesis takes over priority of the new operator. Invalid reference. 
+ 		new (Object().toString())  
+ 		 

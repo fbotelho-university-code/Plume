@@ -1,0 +1,10 @@
+/**
+ * Classe testa a criacao de uma nova mota
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestMota extends Object is
+	
+	method main : () -> String is
+    	new Mota("Honda", "Touring", "Honda", new Motor("4.6L V12")).toString()
+	// expected output: "Honda Touring Honda motor: 4.6L V12 com 2 lugares e 2 rodas."

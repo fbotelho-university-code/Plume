@@ -1,0 +1,12 @@
+/**
+ * Uma classe para testar uma pilha vazia.
+ * A class to test an empty stack.
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackEmpty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestStackEmpty extends Object is
+
+  method main : () -> String is
+    new EmptyStack().toString()
+	// expected output: "_"

@@ -1,0 +1,7 @@
+/**
+ * Inherits from a child class
+ * @author 36994, César Santos
+ */
+class CircularReference1 extends CircularReference2 is
+  method test1 : () -> Boolean is
+    true

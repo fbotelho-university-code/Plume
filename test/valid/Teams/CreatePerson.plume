@@ -1,0 +1,13 @@
+/**
+ * Classe que cria pessoas
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: CreatePerson.plume 304 2012-05-01 23:57:08Z fc37017 $
+ */
+class CreatePerson extends Object is
+	  	
+  	method createPerson : (idade: Integer, nome: String) -> Person is
+    	new Person(nome, idade)
+    	
+    method main : () -> String is
+    	createPerson(50, "maria").getIdade().toString()

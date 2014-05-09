@@ -1,0 +1,13 @@
+/**
+ * Division operator is not defined for Object.
+ *
+ * @author Diogo Marques, 30100
+ */
+class DivisionOperatorNotDefinedForObject extends Object is
+	
+	method myMethod : () -> Object is
+		getObject() / getObject()
+	
+	method getObject : () -> Object is
+		this
+	

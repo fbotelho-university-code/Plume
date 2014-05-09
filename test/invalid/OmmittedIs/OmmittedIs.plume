@@ -1,0 +1,12 @@
+/**
+ * The "is" in the method declaration is missing.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: OmmittedIs.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class OmmittedIs extends Object is
+
+  field radius : String
+  
+  method radius : () -> String
+    radius

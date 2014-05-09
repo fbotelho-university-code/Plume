@@ -1,0 +1,18 @@
+/**
+ * A class to test the subtraction of two 3x2 matrixes
+ *
+ * @author Robin Burgess 36815
+ */
+ class TestMatrixSubtraction extends Object is
+  method main : () -> String is
+    new Matrix(1,new Matrix(2,new EmptyMatrix(),new EmptyMatrix()),
+    	new Matrix(3,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    		new Matrix(0,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    			new EmptyMatrix()))).subtract(
+    				new Matrix(0,new Matrix(0,new EmptyMatrix(),new EmptyMatrix()),
+    					new Matrix(2,new Matrix(-1,new EmptyMatrix(),new EmptyMatrix()),
+    						new Matrix(1,new Matrix(2,new EmptyMatrix(),new EmptyMatrix()),
+    							new EmptyMatrix())))).toString()
+    							
+   method override toString : () -> String is
+	"TestMatrixSubtraction"

@@ -1,0 +1,11 @@
+/**
+ * Valid Class.
+ * Nothing to see here...
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ 
+class B extends A is 
+ 	method  fb : () -> String is 
+ 		"b" 

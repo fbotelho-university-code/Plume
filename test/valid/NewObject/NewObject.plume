@@ -1,0 +1,9 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class NewObject extends Object is
+	method override toString : () -> String is
+		new Object().toString()
+		
+	method main : () -> String is
+		"nope."

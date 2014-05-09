@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo top da pilha quando esta eh empty
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackTopEmptyStackError.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestStackTopEmptyStackError extends Object is
+
+  method main : () -> String is
+    new EmptyStack().top().toString()
+	// expected output: "<error>"

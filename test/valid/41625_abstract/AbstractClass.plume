@@ -1,0 +1,11 @@
+/**
+* Perfectly normal abstract class. 
+* Used to test abstract classes that extend abstract classes 
+* @see AbstractClassExtension
+* @see TestAbstractClassExtensionImplementation
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+abstract class AbstractClass extends Object is 
+    abstract method foo : () -> Integer 

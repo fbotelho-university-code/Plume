@@ -1,0 +1,13 @@
+/**
+ * Valid Class.
+ * Overrides abstractMethodGap methods defined as abstracts because AbstractSecondLevel extends that class.  
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+class Concrete extends AbstractSecondLevel is 
+
+	method override teste : () -> String is 
+		"here"  
+		
+	method override toString : () -> String is 
+		"i am" 

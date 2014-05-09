@@ -1,0 +1,12 @@
+/**
+ * Uma classe que tem um field com keyword override
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: FieldOverride.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+abstract class FieldOverride extends Object is
+	
+  field override name : String
+  
+  method getName : () -> String is
+  	name

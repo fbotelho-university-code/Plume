@@ -1,0 +1,7 @@
+/**
+ * For testing wrong return type
+ * @author 36994, César Santos
+ */
+class WrongReturnTest extends Object is
+  method test : () -> Boolean is
+    5

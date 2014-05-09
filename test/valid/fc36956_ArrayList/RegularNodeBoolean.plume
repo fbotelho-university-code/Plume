@@ -1,0 +1,8 @@
+
+
+class RegularNodeBoolean extends RegularNode is
+	field myValue : Boolean
+	
+	method getValue : () -> Boolean is
+		myValue
+		

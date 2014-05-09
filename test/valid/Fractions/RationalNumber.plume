@@ -1,0 +1,73 @@
+/**
+ * Represents a rational number
+ *
+ * @author Robin Burgess 36815
+ */
+class RationalNumber extends AbstractNumber is
+
+	field upper : Integer
+	field lower : Integer
+
+	method override add : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof RationalNumber
+		then 
+			 if lower*a.lower != 0
+			 then new RationalNumber(upper*a.lower + a.upper*lower,lower*a.lower)
+			 else new InvalidNumber()
+		else
+			 if a instanceof IntegerNumber
+			 then
+			 	  if lower != 0
+			 	  then new RationalNumber(upper + a.num*lower,lower)
+			 	  else new InvalidNumber()
+			 else
+			 	  if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+	
+	method override subtract : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof RationalNumber
+		then
+			 if lower*a.lower != 0
+			 then new RationalNumber(upper*a.lower - a.upper*lower,lower*a.lower)
+			 else new InvalidNumber()
+		else
+			 if a instanceof IntegerNumber
+			 then
+			 	  if lower != 0
+			 	  then new RationalNumber(upper - a.num*lower,lower)
+			 	  else new InvalidNumber()
+			 else
+			 	  if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+		
+	method override multiply : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof RationalNumber
+		then
+			 if lower*a.lower != 0
+			 then new RationalNumber(upper*a.upper,lower*a.lower)
+			 else new InvalidNumber()
+		else
+			 if a instanceof IntegerNumber
+			 then
+			 	  if lower != 0
+			 	  then new RationalNumber(upper * a.num,lower)
+			 	  else new InvalidNumber()
+			 else
+			 	  if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+	
+	method override divideBy : (a : AbstractNumber) -> AbstractNumber is
+		this.multiply(a.invert())
+	
+	method override invert : () -> AbstractNumber is
+		if upper != 0 && lower != 0
+		then new RationalNumber(lower,upper)
+		else if upper == 0 && lower != 0
+			 then this
+			 else new InvalidNumber()
+		
+	method override toString : () -> String is
+		"(" + upper.toString() + "/" + lower.toString() + ")"

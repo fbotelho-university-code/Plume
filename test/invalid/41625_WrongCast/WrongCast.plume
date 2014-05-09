@@ -1,0 +1,6 @@
+
+class WrongCast extends Object is
+	 
+	method t : () -> String is 
+		1 as String 
+					

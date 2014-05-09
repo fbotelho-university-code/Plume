@@ -1,0 +1,14 @@
+/**
+ * Uma classe com parametro e metodo com o mesmo nome
+ * valido no plume pois sao name spaces diferentes
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: NamespaceMethodAndParameter.plume 433 2012-05-27 15:01:20Z fc37059 $
+ */
+class NamespaceMethodAndParameter extends Object is
+  
+  method local : (local : String) -> String is
+  		"Localizacao: " + local
+  
+  method main : () -> String is
+  		local("Lisboa")

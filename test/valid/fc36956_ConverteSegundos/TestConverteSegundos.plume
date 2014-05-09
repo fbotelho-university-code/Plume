@@ -1,0 +1,10 @@
+/**
+ * Tests for class TestMaxDivComRec.plume
+ *
+ * @author $Id: TestConverteSegundos.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestConverteSegundos extends Object is
+	
+	method main : () -> String is
+    	"9999 segundos correspondem a " + new ConverteSegundos(9999).formataSegundos()
+	// expected output: "10"

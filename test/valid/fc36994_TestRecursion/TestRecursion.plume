@@ -1,0 +1,10 @@
+/**
+ * Tests recursion and multiple methods
+ * @author 36994, César Santos
+ */
+class TestRecursion extends Object is
+  method main : () -> String is //expected : 15
+    sum(5).toString()
+  
+  method sum : (i: Integer) -> Integer is
+    if i == 0 then 0 else i + sum(i-1)

@@ -1,0 +1,16 @@
+/**
+ * A.plume
+ *
+ * Test: This class represent a class A 
+ * that have a fiel of B
+ *
+ * @author namartins
+ * @version $Id: A.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ class A extends Object is	
+ 	field  id : Integer
+ 	field  objectB : B
+ 	method  getState: () -> String is
+ 		B  + " - " +  id.toString() 
+ 		

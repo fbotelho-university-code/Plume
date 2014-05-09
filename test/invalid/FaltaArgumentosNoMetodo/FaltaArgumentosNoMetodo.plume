@@ -1,0 +1,9 @@
+/**
+ * 
+ * Argumentos do metodo
+ * @author 37060, Roberto Silva
+ */
+class FaltaArgumentosNoMetodo extends Object is
+	
+	method get : (index Integer) -> Integer is 
+		index * 5

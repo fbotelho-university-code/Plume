@@ -1,0 +1,7 @@
+/**
+ * For testing new
+ * @author 36994, César Santos
+ */
+class NewTest extends Object is
+  method override toString : () -> String is
+    "ola!"

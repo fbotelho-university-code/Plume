@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class IfWithoutThen extends Object is
+  
+  method calculate : (num1 : Integer, num2 : Integer) -> Integer is
+  	if num2 == 0 num1
+  	else calculate(num2, a % b)

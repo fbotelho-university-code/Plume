@@ -1,0 +1,4 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ method classlessMethod : () -> String is "This will never be printed..."

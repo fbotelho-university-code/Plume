@@ -1,0 +1,13 @@
+/**
+ * Calculo de n^m dados dois inteiros positivos n e m.
+ * pre: n,m > 0
+ * Versao basica
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: PotenciaRec.plume 488 2012-06-04 22:09:22Z tcomp000 $
+ */
+ class PotenciaRec extends Object is
+	method calculaPot : (base : Integer, expoente : Integer) -> Integer is
+		if expoente == 0
+		then 1
+		else base * calculaPot(base, expoente - 1)

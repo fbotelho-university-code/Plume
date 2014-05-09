@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo pop da pilha quando esta tem 1 elemento
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackPopWith1Element.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestStackPopWith1Element extends Object is
+
+  method main : () -> String is
+    new EmptyStack().push(23).pop().toString()
+	// expected output: "_"

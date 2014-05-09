@@ -1,0 +1,9 @@
+
+/**
+ * @author 37029, Juliana Franco
+ *
+ */
+class Main extends Object is 
+
+  method main : () -> String is
+    new TestNameMethodAndField("tudo com o mesmo id").NameMethodAndField()

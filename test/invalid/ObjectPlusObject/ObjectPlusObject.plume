@@ -1,0 +1,10 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class ObjectPlusObject extends Object is
+
+  method main : () -> String is
+    new Number() + new Number()

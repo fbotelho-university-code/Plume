@@ -1,0 +1,13 @@
+/**
+ * A class to test if Object is on top of the hierarchy
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestObject.plume 322 2012-05-03 14:19:22Z fc37017 $
+ */
+class TestObject extends Object is
+
+  method main : () -> String is
+    testObject(new Animal(5)).toString()
+				
+  method testObject : (a: Animal) -> Boolean is
+	a instanceof Object

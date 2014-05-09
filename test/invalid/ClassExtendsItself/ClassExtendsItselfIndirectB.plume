@@ -1,0 +1,10 @@
+/**
+ * Conjuntamente com a classe ClassExtendsItselfIndirectA, esta classe cria um ciclo, visto que cada uma extende a outra.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: ClassExtendsItselfIndirectB.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ClassExtendsItselfIndirectB extends ClassExtendsItselfIndirectA is
+
+  method main : () -> String is
+    "hello"

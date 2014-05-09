@@ -1,0 +1,14 @@
+/**
+ * Name.plume
+ *
+ * Test: if the compiler is sensitive case
+ *
+ * @author namartins
+ * @version $Id: Name.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class name extends Object is
+ 	field name : Integer
+ 	
+ 	method getName : () -> String is
+		name

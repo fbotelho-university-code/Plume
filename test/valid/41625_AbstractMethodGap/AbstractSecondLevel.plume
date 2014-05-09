@@ -1,0 +1,13 @@
+/**
+ * Valid Class.
+ * Normal class, nothing special. Move along...
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+
+
+abstract class AbstractSecondLevel extends AbstractMethodGap is 
+	
+	
+	//Nothing to see here. 
+	

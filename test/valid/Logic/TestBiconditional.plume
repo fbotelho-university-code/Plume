@@ -1,0 +1,13 @@
+/**
+* logical Bicondition operation
+* @author 35237, Marcos Vasco
+* @version $id$ 
+*/
+
+class TestBiconditional extends Object is 
+
+	method main : () -> String is
+
+		new Biconditional().calculate(true, false).toString()
+		
+		//expected output : false 

@@ -1,0 +1,23 @@
+/**
+ * With fields declaration spread over class body.
+ * Still the implicit constructor takes that into account. 	
+ * 
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+
+ class SpreadFieldsDeclarations extends Object is 
+ 	// First field declared
+ 	field fst : Integer 
+ 	
+ 	//Constant 1 (Just filling the parse with something different from fields) 
+ 	method returnOne : () -> Integer is 
+ 		1 
+ 		
+ 	//Second field declared 
+ 	field snd : Integer 
+ 	
+ 	// Returns the sum of the  fields fst and snd 
+ 	method sum  : () -> Integer is 
+ 		fst + snd 

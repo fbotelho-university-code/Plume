@@ -1,0 +1,8 @@
+/**
+ * For testing overriding
+ * @author 36994, César Santos
+ */
+ abstract class AbstractClass extends Object is
+  abstract method test : (b : Boolean) -> Integer
+  method print : () -> String is
+    "AbstractClass"

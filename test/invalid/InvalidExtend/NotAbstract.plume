@@ -1,0 +1,18 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class NotAbstract extends Object is
+	
+	field x : Integer
+  
+  	field y : Integer
+  	
+  	
+  	method getX : () -> Integer is
+  		this.x
+  		
+  	method getY : () -> Integer is
+  		this.y	

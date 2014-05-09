@@ -1,0 +1,13 @@
+/**
+ * Tests for class Sum.plume
+ *
+ * @author $Id: TestBike.plume 511 2012-06-05 13:42:41Z fc36815 $
+ */
+class TestBike extends Object is
+	
+	method main : () -> String is
+    	getNWheels(new Bicycle("Scott"))
+	// expected output: "8"
+	
+	method getNWheels : (myBike : Bicycle) -> String is
+		myBike.getInfo("Canondale").toString()

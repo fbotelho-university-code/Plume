@@ -1,0 +1,25 @@
+/**
+ * 
+ * Testa o metodo union da classe DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestUnion extends Object is
+
+	method main : () -> String is
+		createDoubleSetLeft().union(createDoubleSetRight()).toString()
+	
+	//  1001010,1010101 :: 335413,2224522 :: -50,5000006 :: 50,5 :: 333,222 :: 1001010,101010 
+	
+	method createDoubleSetLeft : () -> DoubleSet is
+		new DoubleSet(
+			new NodeDouble(new Double(50,5),
+			new NodeDouble(new Double(333,222),
+			new NodeDouble(new Double(1001010,101010), new EmptyDouble()))))
+	
+	method createDoubleSetRight : () -> DoubleSet is
+		new DoubleSet(
+			new NodeDouble(new Double(-50,5000006),
+			new NodeDouble(new Double(335413,2224522),
+			new NodeDouble(new Double(1001010,1010101), new EmptyDouble()))))

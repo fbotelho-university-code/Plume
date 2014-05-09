@@ -1,0 +1,8 @@
+/**
+ * Wrong field
+ * @author 36994, César Santos
+ */
+class WrongField extends Object is
+  field rav : Integer
+  method test : () -> Integer is
+    var + 3;

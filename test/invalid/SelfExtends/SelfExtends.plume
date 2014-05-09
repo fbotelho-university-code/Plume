@@ -1,0 +1,7 @@
+/**
+ * Self extending class
+ * @author 36994, César Santos
+ */
+class SelfExtends extends SelfExtends is
+  method test : () -> Boolean is
+    true

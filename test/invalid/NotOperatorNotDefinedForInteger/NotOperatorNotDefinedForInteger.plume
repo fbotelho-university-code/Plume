@@ -1,0 +1,9 @@
+/**
+ * Not operator is not defined for Integers.
+ *
+ * @author Diogo Marques, 30100
+ */
+class NotOperatorNotDefinedForInteger extends Object is
+	
+	method myMethod : () -> Boolean is
+		!5

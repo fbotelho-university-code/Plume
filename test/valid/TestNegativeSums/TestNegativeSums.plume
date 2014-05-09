@@ -1,0 +1,14 @@
+/**
+ * A class to test negative sums 
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestNegativeSums.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class TestNegativeSums extends Object is
+
+  method main : () -> String is
+    testNegativeSums().toString()
+				
+  method testNegativeSums : () -> Integer is
+    -100 - 50 + 140 - -1
+    	

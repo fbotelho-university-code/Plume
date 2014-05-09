@@ -1,0 +1,22 @@
+/**
+ * Represent a Train
+ * @author namartins 
+ * @version $Id: Train.plume 319 2012-05-03 10:15:47Z fc34950 $ 
+ *
+ */
+ 
+class Train extends Object is
+	field maxPPL : Integer
+	field id : Integer
+	field owner : Company
+	
+	method getOwner : () -> Company is  
+		owner
+	  
+	method changeOwner : ( newOwner : Company ) -> Train is  
+		new Train(maxPPL,id,newOwner)		    	
+	
+	method getId : () -> Integer is
+		id
+	method getMax : () -> Integer is 
+		maxPPL

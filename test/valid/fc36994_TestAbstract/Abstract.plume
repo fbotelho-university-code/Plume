@@ -1,0 +1,6 @@
+/**
+ * For testing abstract
+ * @author 36994, César Santos
+ */
+abstract class Abstract extends Object is
+  abstract method sumFields : () -> Integer

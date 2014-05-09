@@ -1,0 +1,17 @@
+/**
+ * Valid Test.
+ * An if condition is based on a method return that has type boolean. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ 
+ class IfConditionIsBasedOnMethodReturnTypes extends Object  is 
+	
+	method b : () -> Boolean is 
+		true 
+	
+	method teste : () -> String  is 
+		if new IfConditionIsBasedOnMethodReturnTypes().b()   
+		then "true" 
+		else "false" 

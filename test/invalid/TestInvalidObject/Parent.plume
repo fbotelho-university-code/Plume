@@ -1,0 +1,15 @@
+
+/**
+ * 
+ * Classe que sera super-class de outras de forma a testar alguns aspetos 
+ * de hierarquia
+ *
+ * Esta classe nao tem problemas, mas existe um teste que a usa de forma 
+ * incorreta
+ * @author 37029, Juliana Franco
+ *
+ */
+abstract class Parent extends Object is
+	
+  	abstract method getHello : () -> String
+  		

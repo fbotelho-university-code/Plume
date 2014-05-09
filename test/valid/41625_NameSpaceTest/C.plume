@@ -1,0 +1,14 @@
+/**
+  * Test to Namespace from text assignment. 
+  * @author 41625 Fábio Botelho
+  * @version $Id 
+  */
+
+class C extends Object is
+field C : C
+method C : (C: C) -> C is
+if true
+then C
+else if false
+then this.C
+else C(C)

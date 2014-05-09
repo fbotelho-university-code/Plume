@@ -1,0 +1,10 @@
+/**
+ * Invalid Test. 
+ * Method override must exist when method with same name exists in some upper class. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class B extends A is 
+ 	method  t : () -> String is 
+ 		"invalid" 

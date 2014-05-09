@@ -1,0 +1,6 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class NewString extends Object is
+	method override toString : () -> String is
+		new String().toString()

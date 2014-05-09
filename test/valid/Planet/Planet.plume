@@ -1,0 +1,23 @@
+/**
+ * Uma classe Planet que declara varios metodos
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: Planet.plume 289 2012-05-01 10:59:13Z fc37059 $
+ */
+class Planet extends Object is
+
+  field id : Integer
+  field name : String
+  field mass : Integer
+  
+  method getId : () -> Integer is 
+  		id
+
+  method getName : () -> String is
+  		name
+  		
+  method getMass : () -> Integer is 
+  		mass
+ 
+  method override toString : () -> String is
+  		"[ " + id.toString() + ", " + name + ", " + mass.toString() + " ]"

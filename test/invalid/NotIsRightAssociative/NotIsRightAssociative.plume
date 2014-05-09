@@ -1,0 +1,9 @@
+/**
+ * Not is associative to the right.
+ *
+ * @author Diogo Marques, 30100
+ */
+class NotIsRightAssociative extends Object is
+	
+	method myMethod : () -> Boolean is
+		true!

@@ -1,0 +1,5 @@
+
+class InvalidSuperToTheRight extends Object is
+ 
+ 	method teste : () -> String is 
+		new InvalidSuperToTheRight().super

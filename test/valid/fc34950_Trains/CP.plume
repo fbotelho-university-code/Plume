@@ -1,0 +1,15 @@
+/** 
+ * Represent CP (Comboios de Portugal) 
+ * @author namartins 
+ * @version $Id: CP.plume 319 2012-05-03 10:15:47Z fc34950 $ 
+ *
+ */
+ 
+class CP extends Company is
+
+	method override toString : () -> String is  
+		name
+	method override getNumberOfTrains : () -> Integer is
+		nTrains
+		    		  
+	

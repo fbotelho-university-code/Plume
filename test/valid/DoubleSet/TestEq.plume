@@ -1,0 +1,11 @@
+/**
+ * 
+ * Testa o equals da class Double
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestEq extends Object is
+
+	method main : () -> String is
+		new Double(111,222).equal(new Double(111,222)).toString()

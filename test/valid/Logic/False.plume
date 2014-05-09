@@ -1,0 +1,8 @@
+/**
+ * Class to calculate the logical False operation
+ * @author 35237, Marcos Vasco
+ */
+class False extends UnaryLogicalOperation is
+  
+  method override calculate : (val : Boolean) -> Boolean is
+    false

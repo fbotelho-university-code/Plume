@@ -1,0 +1,10 @@
+/**
+ * A class to test inheritance
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestInheritance.plume 338 2012-05-05 21:32:29Z fc36815 $
+ */
+class TestInheritance extends Object is
+
+  method main : () -> String is
+    new Animal(2).squareAge().toString()

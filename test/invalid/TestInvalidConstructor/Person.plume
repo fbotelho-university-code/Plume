@@ -1,0 +1,23 @@
+
+/**
+ * 
+ * Classe que representa uma pessoa
+ * Esta classe nao tem problemas, mas existe um teste que a usa de forma 
+ * incorreta
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Person extends Object is
+	
+	
+	field name : String
+  
+  	field age : Integer
+  	
+  	
+  	method getName : () -> String is
+  		name
+  		
+  	method getAge : () -> Integer is
+  		age	

@@ -1,0 +1,9 @@
+/**
+ * Classe abstracta representando um empregado
+ * @author 35237, Marcos Vasco
+ */
+abstract class Empregado extends Object is
+
+	abstract method getSalary : () -> Integer
+	
+	abstract method raise : (raiseVal : Integer) -> Empregado

@@ -1,0 +1,21 @@
+/**
+ * A class to test the scanners
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestScanners.plume 453 2012-06-02 12:02:58Z fc37060 $
+ */
+class TestScanners extends Object is
+
+  method main : () -> String is
+    testScanners(new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+				.insert(250000, 270, 500, "Ford", "Mustang")
+				.insert(300000, 295, 500, "Audi", "R8")
+				.insert(25000, 180, 120, "Opel", "Astra")
+				.insert(1100, 155, 90, "Peugeot", "206")
+				.insert(65000, 225, 200, "Mercedes", "C230")).toString()
+				
+  method testScanners : (l: CarList) -> Boolean is
+    l.containsPrice(500000) && l.containsMaxSpeed(180) && l.containsBhp(200)
+    	&& !l.containsPrice(-500000) && !l.containsMaxSpeed(187) && !l.containsBhp(0)
+    	&& l.length() == 6
+    	

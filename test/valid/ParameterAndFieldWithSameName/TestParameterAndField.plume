@@ -1,0 +1,10 @@
+/**
+ * Teste a uma classe com um field e um parametro de um metodo com o mesmo nome
+ *
+ * @author 37059, Rita Henriques
+ */
+class TestParameterAndField extends Object is
+  
+    method main : () -> String is
+  		new ParameterAndFieldWithSameName("Monstro").printName("Outro Monstro")
+  		//expected: Name: Outro Monstro

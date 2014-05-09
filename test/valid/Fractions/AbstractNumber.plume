@@ -1,0 +1,16 @@
+/**
+ * Represents an abstract numerical unit
+ *
+ * @author Robin Burgess 36815
+ */
+abstract class AbstractNumber extends Object is
+
+	abstract method add : (a : AbstractNumber) -> AbstractNumber
+	
+	abstract method subtract : (a : AbstractNumber) -> AbstractNumber
+		
+	abstract method multiply : (a : AbstractNumber) -> AbstractNumber
+	
+	abstract method divideBy : (a : AbstractNumber) -> AbstractNumber
+	
+	abstract method invert : () -> AbstractNumber

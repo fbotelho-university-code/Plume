@@ -1,0 +1,12 @@
+/**
+ * SheepTypeB.plume
+ *
+ * Test: This class represent a Sheep of third generation
+ *
+ * @author namartins
+ * @version $Id: SheeTypeB.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class SheepTypeB extends Sheep is	
+ 		method  override generation : () -> Integer is
+		 gen + 2

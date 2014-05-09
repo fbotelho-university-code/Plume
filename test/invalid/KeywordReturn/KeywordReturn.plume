@@ -1,0 +1,12 @@
+/**
+ * The return type is a keyword, which must not happen
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: KeywordReturn.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class KeywordReturn extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> this is
+    radius

@@ -1,0 +1,17 @@
+/**
+ * Tests conditional bounding
+ *
+ * @author Robin Burgess 36815
+ */
+class TestConditionalBounds extends Object is
+
+	method main : () -> String is
+		t (3).toString()
+		
+	method t : (i : Integer) -> Parent is
+		if i > 5
+		then new Mother()
+		else new Father()
+		
+	method override toString : () -> String is
+		"Testing Conditional Bounds"

@@ -1,0 +1,11 @@
+/**
+ * O nome da classe e diferente do nome do ficheiro.
+ *
+ * @author 37060, Roberto Silva
+ */
+class Estudant extends Object is
+
+	field area : String
+    	
+    method override toString : () -> String is
+    	"Estuda"

@@ -1,0 +1,15 @@
+/**
+ * Keyword com letra maiuscula: instanceof
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: KeywordsCapitalLetterInstanceof.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class KeywordsCapitalLetterInstanceof extends Object is
+ 
+  method main : () -> String is
+		getTempo(1).toString()
+
+  method getTempo : (tempo : Object) -> String is
+		if tempo Instanceof String
+		then "Sol"
+		else error

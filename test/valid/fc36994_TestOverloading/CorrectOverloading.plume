@@ -1,0 +1,10 @@
+/**
+ * For testing overloading
+ * @author 36994, César Santos
+ */
+class CorrectOverloading extends Object is
+  method testInteger : (x : Integer, y : Integer) -> Integer is
+    x + y
+  
+  method testString : (x : String, y : String) -> String is
+    x + y

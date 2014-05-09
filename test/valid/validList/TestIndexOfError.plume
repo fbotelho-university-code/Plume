@@ -1,0 +1,17 @@
+
+/**
+ * 
+ * Classe que verifica se a procura de um index de um elemento nao inexistente
+ * na lista da erro
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestIndexOfError extends Object is
+
+	method main : () -> String is
+    	new ListOperations().indexOf(new Empty().
+    							insert(10).insert(5).
+    							insert(15).insert(20), 33).toString()
+    	
+    	//error

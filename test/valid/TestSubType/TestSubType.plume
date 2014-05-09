@@ -1,0 +1,13 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ */
+class TestSubType extends Object is
+	
+  method main : () -> String is
+  	returnSubType().m().toString() // 10
+  	
+  method returnSubType : () -> SuperType is
+  	new SubType(5, 5)
+  	

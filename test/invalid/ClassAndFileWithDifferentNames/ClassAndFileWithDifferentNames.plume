@@ -1,0 +1,8 @@
+/**
+ * A class with a name that is different from the filename
+ *
+ * @author Robin Burgess 36815
+ */
+class ADifferentClassName extends Object is
+	method override toString : () -> String is
+		"String"

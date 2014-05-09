@@ -1,0 +1,17 @@
+/**
+ * Abstract class to represent a list
+ * @author 36994, César Santos
+ */
+abstract class List extends Object is
+  abstract method add : (o: Object) -> List
+  abstract method append : (l: List) -> List
+  abstract method empty : () -> Boolean
+  abstract method size : () -> Integer
+  abstract method head : () -> Object
+  abstract method tail : () -> List
+  abstract method get : (i: Integer) -> Object
+  abstract method contains : (o: Object) -> Boolean
+  abstract method count : (o: Object) -> Integer
+  abstract method sort : (c: Comparator) -> List
+  abstract method lesser : (o: Object, c: Comparator) -> List
+  abstract method greater : (o: Object, c: Comparator) -> List

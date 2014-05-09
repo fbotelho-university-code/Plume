@@ -1,0 +1,10 @@
+/**
+ * Tests cast
+ * @author 36994, César Santos
+ */
+class TestCast extends Object is
+  method main : () -> String is //expected : cast
+    castTest("cast")
+  
+  method castTest : (a : Object) -> String is
+    (a as String)

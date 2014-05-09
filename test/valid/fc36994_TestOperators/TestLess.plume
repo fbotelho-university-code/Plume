@@ -1,0 +1,7 @@
+/**
+ * Tests a basic comparison
+ * @author 36994, César Santos
+ */
+class TestLess extends Object is
+  method main : () -> String is //expected : less
+    if 3 < 9 then "less" else "more"

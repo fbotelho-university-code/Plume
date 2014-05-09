@@ -1,0 +1,7 @@
+/**
+ * For testing Class self inheritance
+ * @author 36994, César Santos
+ */
+class SelfExtendingTest extends SelfExtendingTest is
+  method nothing : () -> Boolean is
+    true

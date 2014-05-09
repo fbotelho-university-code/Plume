@@ -1,0 +1,14 @@
+/**
+ * Booleans can't be added
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: AddBooleans.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class AddBooleans extends Object is
+
+  field b1 : Boolean
+  
+  field b2 : Boolean
+  
+  method sum : () -> Integer is
+    b1 + b2

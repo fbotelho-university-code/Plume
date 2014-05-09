@@ -1,0 +1,10 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class FieldIdEqPrimitiveBoolean extends Object is
+	field Boolean : Boolean
+	
+	method override toString : () -> String is
+		Boolean.toString()
+	
+	

@@ -1,0 +1,13 @@
+/**
+ * Class to test the greatest common divisor operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestGreatestCommonDivisor extends Object is 
+
+	method main : () -> String is
+
+		new GreatestCommonDivisor().calculate(100, 80).toString()
+		
+		//expected output : 20

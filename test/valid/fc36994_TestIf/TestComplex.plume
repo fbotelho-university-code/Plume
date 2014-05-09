@@ -1,0 +1,13 @@
+/**
+ * Tests a more complex comparison
+ * @author 36994, César Santos
+ */
+class TestComplex extends Object is
+  method main : () -> String is
+  			// tinha ... 8) != 9 
+  			// mas assim estava mal e corrigi. Juliana Franco
+    if (3 < 9 && 5 < 10 || 7 == 7 && 8 != 9) 
+    then 
+    	"ok" 
+    else 
+    	"not ok"

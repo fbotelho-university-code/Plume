@@ -1,0 +1,13 @@
+/**
+ * logical Nand operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestNand extends Object is 
+
+	method main : () -> String is
+
+		new Nand().calculate(true, false).toString()
+		
+		//expected output : true 

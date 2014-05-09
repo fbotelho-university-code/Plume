@@ -1,0 +1,16 @@
+/**
+ * Empregado.plume
+ *
+ * Test: the number of arguments must match 
+ * the number of parameters
+ * Wrong: informacaoMesa (tipo, cor, material) should be informacaoMesa (tipo, cor, material, estado)
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Empregado.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Empregado extends Object is
+	method informacaoMesa : (tipo : Integer, cor : String, material : String, estado : Boolean) -> Integer is 
+		tipo
+	
+	method setInfo : (tipo : Integer, cor : String, material : String, estado : Boolean) -> Integer is 
+		informacaoToalha (tipo, cor, material)

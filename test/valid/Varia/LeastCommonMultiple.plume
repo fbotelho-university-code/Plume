@@ -1,0 +1,12 @@
+/**
+ * Class to calculate the Least Common Multiple of two integers operation
+ * @author 35237, Marcos Vasco
+ *
+ * Se nao tem nome de metodo deveria estar nos testes invalidos, nao? (vv)
+ */
+class LeastCommonMultiple extends Object is
+  
+  method lcm : (num1 : Integer, num2 : Integer) -> Integer is
+    if num1 == 0 || num2 == 0
+    then 0
+    else (num1/new GreatestCommonDivisor().calculate(num1, num2))*num2

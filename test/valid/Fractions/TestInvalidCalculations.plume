@@ -1,0 +1,12 @@
+/**
+ * Tests an invalid calculation with numbers
+ *
+ * @author Robin Burgess 36815
+ */
+class TestInvalidCalculations extends Object is
+
+	method main : () -> String is
+		(new IntegerNumber(5)).add(new RationalNumber(3,0)).divideBy(new IntegerNumber(2)).toString()
+		
+	method override toString : () -> String is
+		"Testing Numbers"

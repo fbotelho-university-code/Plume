@@ -1,0 +1,14 @@
+/**
+ * Sum.plume
+ *
+ * A valid test for namespaces 1
+ *
+ * Test: class and field can have the same name
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 398 2012-05-22 13:39:59Z fc36956 $
+ */
+ class Sum extends Object is
+ 	field a : Integer
+	method doSum : (b : Integer) -> Integer is
+		a + b

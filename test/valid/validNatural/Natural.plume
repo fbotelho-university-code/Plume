@@ -1,0 +1,15 @@
+
+/**
+ * 
+ * Classe que representa um numero natural
+ *
+ * @author 37029, Juliana Franco
+ * 
+ */
+abstract class Natural extends Object is
+
+	abstract method add : (n : Natural) -> Natural
+	
+	abstract method sub : (n : Natural) -> Natural
+	
+	abstract method getIntegerValue : () -> Integer

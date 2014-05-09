@@ -1,0 +1,10 @@
+/**
+ * Classe que testa o IMC de um estudante
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestImcPessoa extends Object is
+	
+	method main : () -> String is
+    	new Estudante(23, "Roberto", "Engenharia Informatica").calcularIMC(85, 2).toString()
+	// expected output: "21"

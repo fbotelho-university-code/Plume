@@ -1,0 +1,21 @@
+/**
+ * Classe que testa qual o maior valor entre 3
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestMax extends Object is
+	
+	method main : () -> String is
+		max(9, 4, 6).toString()
+	// expected output: "9"
+			
+	method max : (x : Integer, y : Integer, z : Integer) -> Integer is
+		if x > y
+		then if x > z
+			then x
+			else if y > z
+				then y
+				else z
+		else if y > z
+			then y
+			else z

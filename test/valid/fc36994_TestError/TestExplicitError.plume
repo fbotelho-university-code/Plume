@@ -1,0 +1,7 @@
+/**
+ * Tests explicit error
+ * @author 36994, César Santos
+ */
+class TestExplicitError extends Object is
+  method main : () -> String is //expected : error
+    error

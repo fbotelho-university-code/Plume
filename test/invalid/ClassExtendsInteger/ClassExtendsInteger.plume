@@ -1,0 +1,8 @@
+/**
+ * Class can't extend primitive type except Object - Integer.
+ *
+ * @author Diogo Marques, 30100
+ */
+class ClassExtendsInteger extends Integer is
+	method override toString : () -> String is
+		""

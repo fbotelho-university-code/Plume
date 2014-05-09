@@ -1,0 +1,29 @@
+/**
+ * Fibonacci with Mem, O(n)
+ * @author namartins 
+ * @version $Id: FibonacciWithMem.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ 
+class FibonacciWithMem extends Object is
+	  
+	method fib : (n : Integer) -> Integer is  
+		if n < 0 then
+			n
+		else
+			if n<2 then
+				n
+			else
+			  fibMen(n,0,1,1)
+	  
+	  
+	method fibMen : (n : Integer , b1 : Integer ,b2 : Integer , i: Integer) -> Integer is  
+		if n ==i then
+			(b1 + b2 )%50
+		else   	 
+		   	fibMen(n,b2,(b1 + b2 )%50,i+1)
+		   	
+	method main : () -> String is
+		fib(5000).toString() //987
+		
+		    	

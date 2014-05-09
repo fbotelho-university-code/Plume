@@ -1,0 +1,11 @@
+/**
+ * A class that represents a ladybug.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Ladybug.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+abstract class Ladybug extends Animal is
+
+  //Labybug's life goes faster
+  method override squareAge: () -> Integer is
+    this.age * this.age * this.age * this.age

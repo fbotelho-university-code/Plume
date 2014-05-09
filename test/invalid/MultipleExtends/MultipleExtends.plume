@@ -1,0 +1,7 @@
+/**
+ * Multiple inheritance
+ * @author 36994, César Santos
+ */
+class MultipleExtends extends Object extends Extender is
+  method test : () -> Boolean is
+    true

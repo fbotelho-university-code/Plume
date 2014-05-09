@@ -1,0 +1,9 @@
+/**
+ * Another class
+ *
+ * @author Robin Burgess 36815
+ */
+class Bbb extends Ccc is
+	field t : Integer
+	method b : () -> Boolean is
+		false

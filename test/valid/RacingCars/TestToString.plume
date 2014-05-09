@@ -1,0 +1,10 @@
+/**
+ * A class to test if the toString method
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestToString.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestToString extends Object is
+
+  method main : () -> String is
+    new Empty().insert(500000, 310, 750, "Ferrari", "Enzo").toString()

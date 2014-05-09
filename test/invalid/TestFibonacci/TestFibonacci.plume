@@ -1,0 +1,10 @@
+/**
+ * Class to test the Fibonacci class
+ * @author 35237, Marcos Vasco
+ *
+ * De certeza que esta classe pertence a bateria de validos? (vv)
+ */
+class TestFibonacci extends Object is
+
+	new Fibonacci(3).calculate()
+	// expected output: "2"

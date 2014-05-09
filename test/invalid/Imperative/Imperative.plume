@@ -1,0 +1,11 @@
+/**
+ * Wrong imperative style code
+ * @author 36994, César Santos
+ */
+class Imperative extends Object is
+  field a : Integer
+  method test : (b : Integer) -> Integer is
+    a + b
+    a * b
+    a / b
+    a - b

@@ -1,0 +1,7 @@
+/**
+ * Invalid if condition
+ * @author 36994, César Santos
+ */
+class InvalidIf extends Object is
+  method test : () -> Boolean is
+    if 3 then true else false

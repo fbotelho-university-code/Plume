@@ -1,0 +1,11 @@
+/**
+ * Uma classe com um metodo que cria um novo objecto de um tipo 
+ * que nao existe nesta pasta/conjunto de ficheiros
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: NewClassDoesNotExist.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class NewClassDoesNotExist extends Object is
+  
+  method newClass : () -> Object is
+  		new NewClass()

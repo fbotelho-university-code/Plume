@@ -1,0 +1,7 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class FieldInAMethod extends Object is
+	method fieldIt : () -> String is
+		field s : String
+		s

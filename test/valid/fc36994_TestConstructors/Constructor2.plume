@@ -1,0 +1,8 @@
+/**
+ * For testing constructors with override
+ * @author 36994, César Santos
+ */
+class Constructor2 extends Constructor1 is
+  field c : Integer
+  method override addFields : () -> Integer is
+    super.addFields() + c

@@ -1,0 +1,9 @@
+/**
+ * Class to calculate the modulo operation
+ * @author 35237, Marcos Vasco
+ */
+class Modulo extends Object is
+  
+  method calculate : (num : Integer) -> Integer is
+    if num < 0 then -num
+    else num

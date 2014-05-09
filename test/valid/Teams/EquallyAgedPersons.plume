@@ -1,0 +1,18 @@
+/**
+ * Classe que compara a idade de duas pessoas
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: EquallyAgedPersons.plume 304 2012-05-01 23:57:08Z fc37017 $
+ */
+class EquallyAgedPersons extends Object is
+  	
+  	method equalPersons : (p1: Person, p2: Person) -> Boolean is
+  		p1.getIdade() == p2.getIdade()
+  	
+  	method createPerson : (idade: Integer, nome: String) -> Person is
+    	new Person(nome, idade)
+  	
+  	method main : () -> String is
+   		if equalPersons(createPerson(50, "maria"), createPerson(50, "ana"))
+   		then "success"
+   		else error

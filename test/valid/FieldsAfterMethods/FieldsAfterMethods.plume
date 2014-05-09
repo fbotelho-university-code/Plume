@@ -1,0 +1,13 @@
+/**
+ * A program is a set of declarations followed by a set of statements
+ * No problem here (vv)
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: FieldsAfterMethods.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class FieldsAfterMethods extends Object is
+
+  method radius : () -> String is
+    radius
+
+  field radius : String

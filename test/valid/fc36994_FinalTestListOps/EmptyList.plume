@@ -1,0 +1,44 @@
+/**
+ * Class to represent an Emptylist
+ * @author 36994, César Santos
+ */
+class EmptyList extends List is
+  method override add : (o : Object) -> List is
+  	new LinkedList(o, this)
+  
+  method override append : (l : List) -> List is
+  	l
+  
+  method override empty : () -> Boolean is
+  	true
+  
+  method override size : () -> Integer is
+  	0
+  
+  method override head : () -> Object is
+  	error
+  
+  method override tail : () -> List is 
+  	error
+  
+  method override get : (i : Integer) -> Object is
+  	error
+  
+  method override contains : (o : Object) -> Boolean is
+  	false
+  
+  method override count : (o : Object) -> Integer is
+  	0
+  	
+  method override sort : (c: Comparator) -> List is
+  	this
+  	
+  method override lesser : (e : Object, c : Comparator) -> List is
+  	this
+  	
+  method override greater : (e : Object, c : Comparator) -> List is
+  	this
+  	
+  method override toString : () -> String is
+  	"[]"
+  	

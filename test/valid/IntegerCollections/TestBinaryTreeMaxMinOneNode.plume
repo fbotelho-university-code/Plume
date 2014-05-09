@@ -1,0 +1,15 @@
+/**
+ *A class to test the max() and min() operations in a one node tree.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeMaxMinOneNode extends Object is
+
+	method main : () -> String is
+		equal(getTestTree().max(), getTestTree().min()).toString()
+		
+	method equal: (max: Integer, min: Integer) -> Boolean is
+		max == min
+		
+	method getTestTree: () -> BinaryTree is
+		new BinaryTreeNode(5, new BinaryTreeEmpty(), new BinaryTreeEmpty())

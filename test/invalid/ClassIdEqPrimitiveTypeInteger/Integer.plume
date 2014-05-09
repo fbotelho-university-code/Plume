@@ -1,0 +1,9 @@
+/**
+ * Class identifier can't match a primitive type - Integer.
+ *
+ * @author Diogo Marques, 30100
+ */
+class Integer extends Object is
+	method override toString : () -> String is
+		""
+	

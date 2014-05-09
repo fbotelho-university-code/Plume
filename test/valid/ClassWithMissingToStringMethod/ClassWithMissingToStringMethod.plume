@@ -1,0 +1,9 @@
+/**
+ * A concrete class that fails to override toString
+ *
+ * @author Robin Burgess 36815
+ */
+class ClassWithMissingToStringMethod extends Object is
+	field h : Integer
+	method g : () -> String is
+		"GGG"

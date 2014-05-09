@@ -1,0 +1,8 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+abstract class SuperType extends Object is
+

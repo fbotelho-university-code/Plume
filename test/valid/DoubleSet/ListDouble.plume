@@ -1,0 +1,25 @@
+/**
+ * An abstract list. Subclasses shall describe empty and non-empty lists
+ *
+ * @author Vasco T. Vasconcelos
+ * @author 37029, Juliana Franco
+ * @version $Id: ListDouble.plume 517 2012-06-05 19:55:58Z fc37029 $
+ */
+abstract class ListDouble extends Object is
+
+  method insert : (i: Double) -> NodeDouble is
+    new NodeDouble(i, this)
+    
+  abstract method isEmpty : () -> Boolean
+  
+  abstract method length : () -> Integer
+
+  // requires 0 <= index && index < length()
+  abstract method get : (index: Integer) -> Double
+  
+  abstract method contains : (elem: Double) -> Boolean
+    
+  abstract method filterGTstring : (d : Double) -> String
+  
+  abstract method filterLTstring : (d : Double) -> String
+  

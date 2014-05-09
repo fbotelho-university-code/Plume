@@ -1,0 +1,11 @@
+/**
+ * Semantically incorrect class, having a method with keyword override
+ * whithout any method with the same signature in some super class.
+ * @author 35237, Marcos Vasco
+ */
+class ChildOverride extends SuperOverride is
+  
+  method override calc : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    if val1 == false || val2 == false then true
+    else if val1 == true || val2 == true then true
+    else false

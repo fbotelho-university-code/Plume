@@ -1,0 +1,46 @@
+/**
+ * Represents an integer
+ *
+ * @author Robin Burgess 36815
+ */
+class IntegerNumber extends AbstractNumber is
+
+	field num : Integer
+
+method override add : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof IntegerNumber
+		then new IntegerNumber(num+a.num)
+		else if a instanceof RationalNumber
+			 then a.add(this)
+			 else if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+	
+	method override subtract : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof IntegerNumber
+		then new IntegerNumber(num-a.num)
+		else if a instanceof RationalNumber
+			 then (new RationalNumber(num,1)).subtract(a)
+			 else if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+		
+	method override multiply : (a : AbstractNumber) -> AbstractNumber is
+		if a instanceof IntegerNumber
+		then new IntegerNumber(num*a.num)
+		else if a instanceof RationalNumber
+			 then a.multiply(this)
+			 else if a instanceof InvalidNumber
+			 	  then a
+			 	  else error
+	
+	method override divideBy : (a : AbstractNumber) -> AbstractNumber is
+		this.multiply(a.invert())
+	
+	method override invert : () -> AbstractNumber is
+		if num != 0
+		then new RationalNumber(1,num)
+		else new RationalNumber(0,1)
+		
+	method override toString : () -> String is
+		num.toString()

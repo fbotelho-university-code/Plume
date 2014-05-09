@@ -1,0 +1,12 @@
+/**
+ * The commentaries are Nested
+ /**
+  * @author Robin Burgess 36815
+  */
+ * 
+ */
+ class NestedCommentaries extends Object is
+ 	field h : Integer
+ 	field t : Integer
+ 	method totalValue : () -> Integer is
+ 		t + h

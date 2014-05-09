@@ -1,0 +1,12 @@
+/**
+ * Uma classe para testar o metodo remove da fila com prioridades quando esta tem 4 elementos
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueRemoveWith4Elements.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestPriorityQueueRemoveWith4Elements extends Object is
+
+  method main : () -> String is
+   new EmptyPriorityQueue().insert(1, "Hello")
+		.insert(5, "World").insert(2, "Thank").insert(7, "You").remove().toString()
+	// expected output: "(2:Thank) | (5:World) | (7:You) | _"

@@ -1,0 +1,1 @@
+class ConcreteObject extends AbstractObject is

@@ -1,0 +1,21 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class SpecialString extends Object is
+
+	field s : String
+	field length : Integer
+	
+	method length : () -> Integer is
+		this.length
+	
+	method override toString : () -> String is
+		this.s
+		
+	method concat : (other : SpecialString) -> SpecialString is
+		new SpecialString(this.s + other.toString(), this.length + other.length())
+	
+	

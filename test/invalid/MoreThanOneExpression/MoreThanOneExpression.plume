@@ -1,0 +1,13 @@
+/**
+ * As the assignment states, the body of a method is an expression (only one)
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MoreThanOneExpression.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class MoreThanOneExpression extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is
+    radius * 2
+    radius.toString()

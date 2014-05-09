@@ -1,0 +1,8 @@
+
+
+class RegularNodeString extends RegularNode is
+	field myValue : String
+	
+	method getValue : () -> String is
+		myValue
+		

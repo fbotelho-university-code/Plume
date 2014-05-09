@@ -1,0 +1,29 @@
+/**
+ * Uma pilha nao vazia
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: NodeStack.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class NodeStack extends Stack is
+
+  field top : Integer
+  
+  field tail : Stack
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override size : () -> Integer is
+    1 + tail.size()
+    
+  method override top : () -> Integer is
+    top
+    
+  method override pop : () -> Stack is
+    if tail instanceof NodeStack
+    then new NodeStack(tail.top, tail.tail)
+    else new EmptyStack()
+
+  method override toString : () -> String is
+    tail.toString() + " | " + top.toString()
+    

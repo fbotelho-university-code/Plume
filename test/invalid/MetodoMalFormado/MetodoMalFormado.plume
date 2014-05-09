@@ -1,0 +1,15 @@
+/**
+ * 
+ * Metodo nao tem ->
+ * @author 37060, Roberto Silva
+ */
+class MetodoMalFormado extends Object is
+	
+	field nome : String
+	field altura : Integer
+	
+	method getNome : ()  String is
+   		nome
+   		
+   	method getAltura : () -> Integer is
+   		altura

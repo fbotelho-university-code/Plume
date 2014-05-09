@@ -1,0 +1,10 @@
+/**
+ * Nao e possivel uma classe extender-se a si propria
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: ClassExtendsItself.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ClassExtendsItself extends ClassExtendsItself is
+
+  method main : () -> String is
+    "hello"

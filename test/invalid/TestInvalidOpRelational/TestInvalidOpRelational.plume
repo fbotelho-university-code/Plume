@@ -1,0 +1,14 @@
+
+/**
+ * 
+ * Deve haver sempre um Integer a direita e outro a esquerda de >=
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidOpRelational extends Object is
+
+  method main : () -> String is
+    if >= 0
+    then "a"
+    else "b"

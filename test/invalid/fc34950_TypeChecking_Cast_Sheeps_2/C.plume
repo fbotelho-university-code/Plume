@@ -1,0 +1,12 @@
+/**
+ * C.plume
+ *
+ * Test: extends itself indirectly 
+ * A->B->C->D->A   ('->' means extends)
+ *
+ * @author namartins
+ * @version $Id: C.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class C extends D is	
+ 	

@@ -1,0 +1,9 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class FieldIdEqMethodId extends Object is
+	field FieldIdEqMethodId : Integer
+	
+	method override toString : () -> String is
+		FieldIdEqMethodId.toString()
+	

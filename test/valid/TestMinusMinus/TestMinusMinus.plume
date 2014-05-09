@@ -1,0 +1,21 @@
+
+/**
+ * 
+ * Classe que verifica se a subtracao de dois numeros e bem feita quando o 
+ * segundo eh negativo
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMinusMinus extends Object is
+
+  method main : () -> String is
+    minus(100, -50).toString()
+    
+    // 150
+    
+  method minus : (o1 : Integer, o2 : Integer) -> Integer is
+  	o1 - o2 
+  	
+  
+

@@ -1,0 +1,17 @@
+
+/**
+ * 
+ * Metodo que devolve um Boolean em vez de um Integer tal como indicado
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestReturn extends Object is
+
+  method main : () -> String is
+    xpto()
+    
+    
+  method xpto : () -> Integer is
+  	true
+    

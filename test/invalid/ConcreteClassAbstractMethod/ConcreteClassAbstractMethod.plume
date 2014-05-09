@@ -1,0 +1,15 @@
+/**
+ * Apenas classes abstratas podem ter metodos abstratos.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: ConcreteClassAbstractMethod.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ConcreteClassAbstractMethod extends Object is
+  
+  abstract method aux : () -> String
+  
+  method aux2 : (price: Integer) -> String is
+    "hello"
+
+  method main : () -> String is
+    aux2(aux())

@@ -1,0 +1,9 @@
+/**
+ * 
+ * Field dentro de um metodo
+ * @author 37060, Roberto Silva
+ */
+class FieldDentroMetodo extends Object is
+		
+	method getNome : () -> String is
+   		field altura : String

@@ -1,0 +1,13 @@
+/**
+ * Invalid Test. 
+ * Although class and methods have different namespace a 
+ * method named after the constructor in some class is not allowed for obvious reasons. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class MethodHasConstructorName extends Object is 
+ 	field f : MethodHasConstructorName 
+ 	method MethodHasConstructorName : () -> MethodHasConstructorName is 
+ 		 f 
+ 		 

@@ -1,0 +1,12 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class WrongFieldDeclarationToken extends Empregado is
+
+	field sal -> Integer
+	
+	method getSalary : () -> Integer is
+		sal
+		
+	method raise : (raiseVal : Integer) -> Empregado is
+		new ChefeDepartamento(sal+raiseVal)

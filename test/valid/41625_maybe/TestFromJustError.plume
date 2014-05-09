@@ -1,0 +1,13 @@
+
+/**
+* Test FromJust method from MaybeInteger when called on Nothing. 
+* 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class TestFromJustError extends Object is 
+	method main : () -> String is 
+	  (new Nothing() as MaybeInteger).fromJust().toString() 
+		//expect error
+	

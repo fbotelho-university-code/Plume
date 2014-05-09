@@ -1,0 +1,14 @@
+/**
+  * Invalid syntax of ifthenelse expression
+  * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class IfWithoutElse  extends Object is 
+ 	method m : () -> String is
+ 		if  2!= 3 && 4 >= 4
+		then "error" 
+		//misses else. error  

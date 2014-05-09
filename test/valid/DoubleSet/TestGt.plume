@@ -1,0 +1,12 @@
+/**
+ * 
+ * Testa o metodo gt da classe Double
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestGt extends Object is
+
+	method main : () -> String is
+		new Double(111,222).gt(new Double(111,221)).toString() + ";" + 
+		new Double(111,222).gt(new Double(112,222)).toString()

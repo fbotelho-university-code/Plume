@@ -1,0 +1,13 @@
+/** 
+ * StringBuilder in Plume
+ * @author namartins 
+ * @version $Id: StringBuilderMain.plume 482 2012-06-04 19:07:29Z tcomp000 $ 
+ *
+ */
+ 
+class StringBuilderMain extends Object is
+
+	method main : () -> String is
+		new StringBuilder("eu vou").add(" ao pao").addInBegin("De manha ")
+		.add(" o saquinho vai na mao").toString()
+		//De manha eu vou ao pao o saquinho vai na mao

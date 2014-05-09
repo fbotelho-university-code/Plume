@@ -1,0 +1,21 @@
+/**
+ * Classe abstracta que representa uma Pessoa
+ *
+ * @author 37060, Roberto Silva
+ */
+abstract class Pessoa extends Object is
+	
+	field idade : Integer
+	field nome : String
+	
+	method getIdade : () -> Integer is
+		idade
+		
+	method getNome : () -> String is
+		nome
+	
+	method calculaAlturaAoquadrado : (altura : Integer) -> Integer is
+    	altura * altura
+    	
+    method calcularIMC : (peso : Integer, altura : Integer) -> Integer is
+    	peso / calculaAlturaAoquadrado(altura)

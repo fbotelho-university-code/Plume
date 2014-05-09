@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidIfThenElse extends Object is
+
+	// xpto() nao devolve Boolean
+  method main : () -> String is
+    if xpto()
+    then "o resultado eh 10"
+    else "o resultado nao eh 10"
+    
+  method xpto : () -> Integer is
+  	5 + 5

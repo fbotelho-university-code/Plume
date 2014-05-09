@@ -1,0 +1,8 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: ShortCircuit.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class ShortCircuit extends Object is
+
+	method m : (n: Integer) -> Boolean is
+		n != 0 && 5 / n >= 1

@@ -1,0 +1,60 @@
+/**
+ * A class to represent a matrix
+ * //jslf
+ * @author Robin Burgess 36815
+ */
+class Matrix extends AbstractMatrix is
+	field value : Integer
+	field row : AbstractMatrix
+	field rest : AbstractMatrix
+	
+	method override getHeight : () -> Integer is
+		1 + rest.getHeight()
+		
+	method override getLength : () -> Integer is
+		1 + row.getLength()
+		
+	method override getValue : (x : Integer,y : Integer) -> Integer is
+		if x < 0 || y < 0
+		then error
+		else if x == 0 && y == 0
+			 then value
+			 else if y == 0
+				  then row.getValue(x-1,y)
+			      else rest.getValue(x,y-1)
+	
+	method override add : (m : AbstractMatrix) -> AbstractMatrix is
+		if m instanceof Matrix
+		then new Matrix(value + m.value,row.add(m.row),rest.add(m.rest))
+		else error
+		
+	method override subtract : (m : AbstractMatrix) -> AbstractMatrix is
+		if m instanceof Matrix
+		then new Matrix(value - m.value,row.subtract(m.row),rest.subtract(m.rest))
+		else error
+		
+	method override multiply : (m : AbstractMatrix) -> AbstractMatrix is
+		new Matrix(multiplyAuxGetValue(this,m),this.multiply(m.removeFirstColumn()),rest.multiply(m))
+		
+	method multiplyAuxGetValue : (m1 : AbstractMatrix,m2 : AbstractMatrix) -> Integer is
+		if m1 instanceof Matrix
+		then if m2 instanceof Matrix
+			 then if m1.getLength() > 0 && m2.getHeight() > 0
+				  then m1.value*m2.value + multiplyAuxGetValue(m1.row,m2.rest)
+				  else if m1.getLength() == 0 && m2.getHeight() == 0
+				  	   then 0
+			 		   else error
+			 else if m1.getLength() == 0 && m2.getHeight() == 0
+			 	  then 0
+			      else error
+		else if m1.getLength() == 0 && m2.getHeight() == 0
+			 then 0
+			 else error
+		
+	method override removeFirstColumn : () -> AbstractMatrix is
+		if row instanceof Matrix
+		then new Matrix (row.value,row.row,rest.removeFirstColumn())
+		else new EmptyMatrix()
+		
+	method override toString : () -> String is
+		"|" + value.toString() + "," + row.toString() + "|\n" + rest.toString()

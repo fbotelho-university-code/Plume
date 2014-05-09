@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * Chamada de um metodo com parametros errados
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMethodParam extends Object is
+
+  method main : () -> String is
+    foo("string", true)
+    
+    
+  method foo : (x : Integer, y : Integer) -> String is
+  	(x + y).toString()

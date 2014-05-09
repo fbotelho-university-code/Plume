@@ -1,0 +1,12 @@
+/**
+ * Classe que representa um carro extendendo a classe Veiculo
+ * 
+ * @author 37060, Roberto Silva
+ */
+class Carro extends Veiculo is
+	
+	method override getNumLugares : () -> Integer is
+		5
+		
+	method override getNumRodas : () -> Integer is
+		4

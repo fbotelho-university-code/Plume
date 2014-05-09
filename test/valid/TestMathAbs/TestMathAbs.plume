@@ -1,0 +1,17 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMathAbs extends Object is
+
+  method main : () -> String is
+    abs(-5).toString() + "; " + abs(5).toString()
+    
+    // expect 5; 5 
+    
+  method abs : (i : Integer) -> Integer is
+  	if i >= 0
+  	then i
+  	else i * (-1)

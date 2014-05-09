@@ -1,0 +1,16 @@
+/**
+ * Uma classe abstracta com um field com a keyword abstract
+ * nao eh possivel nesta linguagem
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: FieldsWithKeywordAbstract.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+abstract class FieldsWithKeywordAbstract extends Object is
+	
+  abstract field name : String
+  
+  abstract method getName : () -> String
+
+
+
+

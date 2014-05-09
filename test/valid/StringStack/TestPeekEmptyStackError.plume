@@ -1,0 +1,11 @@
+/**
+ * A class to test that the String Stack gives error when peeking an empty stack
+ *
+ * @author Robin Burgess 36815
+ */
+class TestPeekEmptyStackError extends Object is
+  method main : () -> String is
+    new EmptyStack().push("Hello").pop().peek()
+    
+  method override toString : () -> String is
+	"TestPeekEmptyStackError"

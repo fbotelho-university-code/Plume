@@ -1,0 +1,15 @@
+/**
+ * A.plume
+ *
+ * Test: This class represent a class A 
+ * return two types
+ *
+ * @author namartins
+ * @version $Id: A.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ class A extends Object is	
+ 	field  id : Integer
+ 	method  getState: () -> String is
+ 		if true then 4 else "4" 
+ 		

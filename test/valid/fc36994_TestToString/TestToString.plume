@@ -1,0 +1,7 @@
+/**
+ * Tests toString()
+ * @author 36994, César Santos
+ */
+class TestToString extends Object is
+  method main : () -> String is //expected : true
+    true.toString()

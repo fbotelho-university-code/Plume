@@ -1,0 +1,282 @@
+//F�bio Botelho 41625. The lexer, bnf, and ast definitions for the plume compiler
+ 
+Package plume; 
+
+Helpers 
+letter = [[0x0041 .. 0x005A] + [0x0061 .. 0x007A]];  
+digit = ['0'..'9'];
+
+//Not used: 
+//connectives_bin_op = '&&' | '||'; 
+//arithmetic_bin_op = '+' | '-' | '/' | '*' | '%'  ;
+//comparison_bin_op = '<=' | '<' | '==' | '!=' | '>' | '>=' ;      
+
+input = [0..0xffff];
+newline = 10; 
+sp = ' ' ; 
+tab = 9; 
+escape_sequence = '\b' | '\t' | '\n' | '\f' | '\r' | '\"' | '\' ''' | '\\' ;
+string_character = [input - ['"' + '\']] | escape_sequence;
+nonl = [[input + newline] - newline];
+nostar = [input - '*']; 
+noaspas = [input - '"'];
+not_star_slash = [nostar  - '/'];
+
+Tokens
+
+string = '"' string_character* '"';
+white_space = sp | tab | newline; 
+
+//operators :
+//Not used: 
+//bin_op = connectives_bin_op | comparison_bin_op | arithmetic_bin_op ;
+
+//Arithemtic operations
+plus = '+';
+div = '/';
+mul = '*'; 
+mod = '%';
+minus = '-';
+
+//Logical operations
+le =  '<='; 
+l =  '<'; 
+eq = '==';
+neq = '!=';
+b = '>'; 
+be = '>='; 
+and = '&&'; 
+or = '||';  
+
+//Others : 
+not = '!'; 
+colon = ':'; 
+seta = '->'; 
+comma = ','; 
+l_par = '('; 
+r_par = ')'; 
+dot = '.';  
+
+//keywords 
+kclass = 'class'; 
+kmethod = 'method'; 
+koverride = 'override'; 
+kextends = 'extends'; 
+kfield = 'field'; 
+kif = 'if'; 
+kthen = 'then'; 
+kelse = 'else'; 
+knew = 'new';
+kthis = 'this'; 
+ksuper = 'super'; 
+kis = 'is'; 
+kerror = 'error';
+kabstract = 'abstract';  
+kinstanceof = 'instanceof' ; 
+true = 'true';  
+false = 'false';
+kas = 'as'; 
+//end of keywords 
+ 
+line_comment = '//' nonl* ;
+comment = '/*' nostar* '*'+ (not_star_slash nostar* '*'+)* '/';
+
+
+number = digit+; 
+id = letter (letter |digit) * ;
+
+
+Ignored Tokens
+     line_comment, comment, white_space;     
+
+Productions 
+
+class {-> class}   = 
+   {abstract} kabstract? kclass [id]:id  kextends [extends]:id kis members* 
+    	{ -> New class( kabstract, id, New type(extends), [members.member]) } ;
+
+members { -> member } = 
+	  {method} method  
+	  	{ -> method.member } |  
+	 {field} field   
+	 	{ -> field.member } ;  
+
+//Method declaration 
+method { -> member } =
+		   {method} kmethod  koverride? id colon l_par paramlist? r_par seta [type]:id kis methodbody  
+		 		{ -> New member.methoddcl(id, New type(type),[paramlist.arg],  methodbody.expr, koverride) } |  
+		   {abstract}  kabstract kmethod  koverride? id colon  	l_par paramlist? r_par seta [type]:id  
+		 	 { -> New member.methoddcl(id, New type(type), [paramlist.arg],Null, koverride) }  ;
+		 	 
+// List of atributes in method declaration
+paramlist {-> arg* } = 
+	{single} param { -> [param.arg] }|
+	{tail} param comma paramlist { -> [param.arg , paramlist.arg] };
+
+// Same as field declaration without keywork. TODO : clean up  
+param { -> arg } = {param} id colon [type]:id  { -> New arg(id, New type(type)) };
+
+// A Field declaration 
+field { -> member } = {decl} kfield   id colon [type]:id { -> New member.fielddcl(id, New type(type)) } ; 
+
+//The methodbody is an expression result: 
+methodbody { -> expr } = {body} expression {-> expression.expr } ; 
+
+//Expression. listed here according their precedence ( smaller to bigger ): 
+//See : http://lists.sablecc.org/pipermail/sablecc-discussion/msg00434.html
+
+//If: 
+expression { -> expr }= 
+	{dijuncao} dijuncao  
+			{ -> dijuncao.expr } | 
+	{if} kif [cond]:expression kthen [then]:expression kelse [else]:expression 
+			{-> New expr.conditional(cond.expr, then.expr , else.expr )} ;  
+
+// Or 
+dijuncao { -> expr } = 
+	{conjuncao} conjuncao 
+		{-> conjuncao.expr}  |
+	{dijuncao} dijuncao or conjuncao   
+		{-> New expr.op( dijuncao.expr, New op.or(), conjuncao.expr) } ; 
+
+// And 	
+conjuncao {-> expr }=
+	{equality} equality 
+		{ -> equality.expr }|
+	{conjuncao} conjuncao and equality 
+		{ -> New expr.op( conjuncao.expr, New op.and(),equality.expr) }; 
+
+// != , == 
+equality { -> expr } = 
+	{relational} relational 
+		{ -> relational.expr } |
+	{equal} equality eq relational  
+		{ -> New  expr.op( equality.expr, New op.eq(),relational.expr)} |
+	{notequal} equality neq relational 
+		{ -> New expr.op( equality.expr, New op.neq(),relational.expr) } ; 
+	
+// <, <= , >= , > , instanceof 
+relational {-> expr }=
+	{additive} additive  
+		{ -> additive.expr } |
+	{lowereq} relational le additive 
+		{-> New expr.op( relational.expr,New op.lowereq(), additive.expr)} |
+	{lower} relational l additive 	
+		{-> New expr.op( relational.expr,New op.lower(), additive.expr) }  |
+	{bigger} relational b additive 
+		{-> New expr.op( relational.expr, New op.bigger(),additive.expr)}  | 
+	{instanceof} relational kinstanceof id   
+		{-> New expr.instanceof(relational.expr, New type(id)) } |
+	{biggereq} relational be additive
+		{-> New expr.op( relational.expr,New op.biggereq(), additive.expr)} ; 
+
+// +, - 
+additive {-> expr} = 
+	{multiplication} multiplication  
+		{ -> multiplication.expr } |
+	{plus} additive plus multiplication 
+		{-> New expr.op( additive.expr, New op.add(), multiplication.expr) } |
+	{minus} additive minus multiplication 
+		{-> New expr.op( additive.expr, New op.minus(), multiplication.expr) } ; 
+
+// *, /, % 		
+multiplication {-> expr }=
+	 {cast} cast 
+	 	{-> cast.expr } |
+	 {div} multiplication div cast 
+	 	{-> New expr.op(multiplication.expr,New op.div(),  cast.expr) } |
+	 {mod} multiplication mod cast 
+	 	{-> New expr.op( multiplication.expr,New op.mod(), cast.expr) } |
+	 {mul} multiplication mul cast 
+	 	{-> New expr.op( multiplication.expr, New op.mul(), cast.expr) } ;
+
+
+// - expression 
+cast { -> expr } =
+	{unary} unary 
+		{-> unary.expr } |  
+	{cast} cast kas id     
+		{-> New expr.cast(New type(id), cast.expr) } ;   
+	 
+unary { -> expr } = 
+	{cast } postfix 
+		{ -> postfix.expr } |
+	{minus} minus unary 
+		{ -> New expr.op(unary.expr, New op.ainverse(), Null) } |
+	{not} not unary
+		{ -> New expr.op( unary.expr, New op.not(), Null) } ; 
+		
+// . , new 	
+postfix  {-> expr } =
+		 {method_call} postfix dot id l_par arguments? r_par           { -> New expr.method_call(postfix.expr, id, [arguments.expr]) } |
+		 {self_call} id l_par arguments? r_par                         { -> New expr.method_call(New expr.this() , id , [arguments.expr]) } |
+		 {field} postfix dot id                                        { -> New expr.field_access(postfix.expr, id) } |
+		 {new} knew  id l_par arguments? r_par                         { -> New expr.new_obj(knew, New type(id) ,[arguments.expr]) }  | 
+		 {identifier} id                                               { -> New expr.identifier(id) } |  
+		 {other_expression} l_par expression r_par                     { -> expression.expr }  |
+		 {number} number                                               { -> New expr.integer(number) } | 
+	     {string} string                                               { -> New expr.string(string) } |
+		 {super} ksuper                                                { -> New expr.super(ksuper) }  |   
+		 {this} kthis                                                  { -> New expr.this() }  |
+		 {false} false                                                 { -> New expr.false(false) }  |
+		 {true}  true                                                  { -> New expr.true(true) }  |
+		 {error} kerror                                                { -> New expr.error(kerror) } ;
+			 
+	 
+// Arguments passed to a method 
+arguments { -> expr* } 	= 
+		{head} expression 
+			{-> [expression.expr] } |
+		{tail} expression comma arguments 
+			{-> [expression.expr, arguments.expr] } ;
+			
+Abstract Syntax Tree
+class = 
+	 kabstract? [type]:id [extends]:type member*;
+
+type = 
+	 id; 
+	
+member = 
+	{fielddcl}  [id]:id [type]:type |
+    {methoddcl} id [type]:type  [args]:arg* [body]:expr?  koverride?;
+	 
+arg = [id]:id [type]:type;
+
+expr = 
+	{conditional} [cond]:expr [then]:expr [else]:expr |
+	{op}  [left]:expr op [right]:expr? |
+	{method_call} [target]:expr? id expr* |
+	{new_obj} knew type expr* | 
+	{field_access} [target]:expr id |
+	{instanceof} expr type|
+	{cast} type expr | 
+	{identifier} id | 
+	{string} string |
+	{integer} number |
+	// Can be handy to find pos/column info. 
+	{true}  true|
+	{false} false|
+	{error} kerror|
+	{super} ksuper|
+	{this} ;
+	
+//TODO - not sure if this or collecting all op's in one token would be better. Probably this way would ease work later.
+op = 
+	{add} |
+	{div} |
+	{eq} |
+	{and} |
+	{not} | 
+	{or} |
+	{neq} |
+	{lowereq} |
+	{lower} |
+	{biggereq}|
+	{bigger} |
+	{minus} |
+	{mod} |
+	{mul} |
+	{ainverse} ; 
+
+	 

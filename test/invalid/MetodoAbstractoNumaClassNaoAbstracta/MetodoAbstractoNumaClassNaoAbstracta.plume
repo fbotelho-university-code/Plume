@@ -1,0 +1,8 @@
+/**
+ * 
+ * Metodo abstracto numa classe que nao e abstracta 
+ * @author 37060, Roberto Silva
+ */
+class MetodoAbstractoNumaClassNaoAbstracta extends Object is
+	
+	abstract method calculaMdc : (n1 : Integer, n2 : Integer) -> Integer

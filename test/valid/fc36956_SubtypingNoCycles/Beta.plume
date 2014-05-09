@@ -1,0 +1,8 @@
+/**
+ * Beta.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Beta.plume 299 2012-05-01 14:45:42Z fc36956 $
+ */
+class Beta extends Alfa is
+	field y : Integer

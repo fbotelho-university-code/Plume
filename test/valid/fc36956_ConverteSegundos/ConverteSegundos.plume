@@ -1,0 +1,23 @@
+/*
+ * dado um nœmero representando uma durac‹o em segundos, imprime o seu 
+ * equivalente em horas, minutos e segundos. Por exemplo, 9999 segundos 
+ *  equivalente a 2 horas, 46 minutos e 39 segundos.
+ */
+
+class ConverteSegundos extends Object is
+
+	field segundos : Integer
+	
+	method formataSegundos : () -> String is
+		getHoras().toString() + " horas, " +  getMinutos().toString() + " minutos e " + getSegundos().toString() + " segundos."
+	
+	method getHoras : () -> Integer is
+		segundos / 3600
+		
+	method getMinutos : () -> Integer is
+		(segundos % 3600) / 60
+		
+	method getSegundos : () -> Integer is
+		(segundos % 3600) % 60
+	
+

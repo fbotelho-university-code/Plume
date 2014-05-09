@@ -1,0 +1,16 @@
+/**
+ * Bicycle.plume
+ *
+ * Test: return type mismatch
+ * Wrong: getInfo should return String type but it returns
+ * type Integer because it calls howManyWheels
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Bicycle.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Bicycle extends Object is
+	method howManyWheels : (bikeName : String) -> Integer is 
+		2
+		
+	method getInfo : (bikeName : String) -> String is
+		howManyWheels(bikeName)

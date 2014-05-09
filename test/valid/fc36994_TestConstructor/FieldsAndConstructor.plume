@@ -1,0 +1,10 @@
+/**
+ * For testing a constructor
+ * @author 36994, César Santos
+ */
+class FieldsAndConstructor extends Object is
+  field a : Integer
+  field b : Integer
+  field c : Integer
+  method test : (d : Integer) -> Integer is
+    a + b + c + d

@@ -1,0 +1,10 @@
+/**
+ * For testing casting
+ * @author 36994, César Santos
+ */
+class CorrectCasting extends Object is
+  method asString : (s : Object) -> String is
+    (s as String)
+    
+  method isString : (s : Object) -> Boolean is
+    if (s instanceof String) then true else error

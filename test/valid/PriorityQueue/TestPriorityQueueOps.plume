@@ -1,0 +1,17 @@
+/**
+ * Uma classe para testar varios metodos da fila com prioridades
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueOps.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestPriorityQueueOps extends Object is
+
+  method main : () -> String is
+    testOps(new EmptyPriorityQueue().insert(1, "Hello")
+				.insert(5, "World").insert(2, "Thank").insert(7, "You")).toString()
+	// expected output: true
+			
+  method testOps : (pq: PriorityQueue) -> Boolean is
+  	!pq.isEmpty() && pq.size() == 4 && pq.next() == "Hello"
+				&& pq.remove().next() == "Thank" && pq.contains("World") && !pq.contains("Mundo")
+	

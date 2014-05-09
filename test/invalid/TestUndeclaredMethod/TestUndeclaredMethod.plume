@@ -1,0 +1,10 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestUndeclaredMethod extends Object is
+	
+  method main : () -> String is
+    metodoQueNaoExiste()

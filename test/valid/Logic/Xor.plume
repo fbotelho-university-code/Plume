@@ -1,0 +1,12 @@
+/**
+ * Class to calculate the logical XOR operation
+ * @author 35237, Marcos Vasco
+ */
+class Xor extends BinaryLogicalOperation is
+  
+  method override calculate : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    if val1 == true && val2 == true
+    then false
+    else !(val1 == false && val2 == false)
+         // que tal "else !(val1 == false && val2 == false)" ? (vv)
+         // eh uma otima sugestao professor (mv)

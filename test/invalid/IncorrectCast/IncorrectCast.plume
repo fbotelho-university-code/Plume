@@ -1,0 +1,8 @@
+/**
+ * Incorrect Cast
+ * @author 36994, César Santos
+ */
+class InvalidCast extends Object is
+  field a : Boolean
+  method test : () -> Integer is
+    (Integer)(a)

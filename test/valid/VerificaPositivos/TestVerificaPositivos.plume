@@ -1,0 +1,15 @@
+/**
+ * Classe que verifica se um numero e positivo.
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestVerificaPositivos extends Object is
+	
+	method main : () -> String is
+    	verifica(-50).toString()
+	// expected output: false
+	
+	method verifica : (num : Integer) -> Boolean is
+   		if num >= 0
+   		then true
+   		else false

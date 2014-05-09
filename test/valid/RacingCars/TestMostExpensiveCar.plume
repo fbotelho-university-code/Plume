@@ -1,0 +1,23 @@
+/**
+ * A class to find the most expensive car in a list of cars
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestMostExpensiveCar.plume 282 2012-05-01 00:26:02Z fc37017 $
+ */
+class TestMostExpensiveCar extends Object is
+
+  method main : () -> String is
+    findMostExpensiveCar(new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+				.insert(250000, 270, 500, "Ford", "Mustang")
+				.insert(300000, 295, 500, "Audi", "R8")
+				.insert(25000, 180, 120, "Opel", "Astra")
+				.insert(1100, 155, 90, "Peugeot", "206")
+				.insert(65000, 225, 200, "Mercedes", "C230"), 0).toString()
+
+  method findMostExpensiveCar : (cars: CarList, max: Integer) -> Integer is
+    if cars instanceof Car
+    then findMostExpensiveCar(cars.tail, max(max, cars.price))
+    else max
+    
+  method max : (x : Integer, y : Integer) -> Integer is
+    if x > y then x else y

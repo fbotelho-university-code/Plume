@@ -1,0 +1,22 @@
+
+/**
+ * 
+ * Classe que testa os operadores de / e % atraves da conversao de segundos
+ * para o formato H:M:S
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestSeconds extends Object is
+
+  method main : () -> String is
+    seg2HMS(4567)
+    
+  //1:16:7
+  
+    
+  method seg2HMS : (segundos : Integer) -> String is
+  	(segundos/3600).toString() + ":" + 
+  	((segundos/60)%60).toString() + ":" +
+  	(segundos%60).toString()
+  	

@@ -1,0 +1,26 @@
+/**
+ * Will test the if then elses
+ * @author namartins 
+ * @version $Id: Conditional.plume 462 2012-06-03 11:13:16Z fc34950 $ 
+ *
+ */
+ 
+class Conditional extends Object is
+	  
+	field ret : Integer
+	
+	method run : () -> Integer is
+	 	if 0 == 0 + 1 then 
+	 		ret
+	 	else
+	 		if true then 
+	 			if !false then	
+	 				3 
+	 			else
+	 				ret
+	 		else
+	 			if !(!(!(!(!false)))) then
+	 				ret + 1
+	 			else
+					0
+	

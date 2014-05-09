@@ -1,0 +1,8 @@
+/**
+ * 
+ * field comeca com um numero
+ * @author 37060, Roberto Silva
+ */
+class TestNumber extends Object is
+	
+	field 2motor : String

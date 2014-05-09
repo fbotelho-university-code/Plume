@@ -1,0 +1,8 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: HelloWorld.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class HelloWorld extends Object is
+
+	method main : () -> String is
+		"Hello World"

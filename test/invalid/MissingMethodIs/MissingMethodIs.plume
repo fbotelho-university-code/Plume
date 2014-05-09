@@ -1,0 +1,7 @@
+/**
+ * Missing method is
+ * @author 36994, César Santos
+ */
+class MissingMethodIs extends Object is
+  method test : () -> Boolean
+    true

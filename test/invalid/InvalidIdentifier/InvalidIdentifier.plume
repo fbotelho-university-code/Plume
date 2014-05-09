@@ -1,0 +1,12 @@
+/**
+ * Invalid identifiers declaration 
+ * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class InvalidIdentifier extends Object is
+	 field _invalid : Object //Not a valid id.  
+	   

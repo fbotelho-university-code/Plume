@@ -1,0 +1,9 @@
+/**
+ * A class to test the missing to string class
+ *
+ * @author Robin Burgess 36815
+ */
+class TestClassWithMissingToStringMethod extends Object is
+
+  method main : () -> String is
+    new ClassWithMissingToStringMethod(5).g()

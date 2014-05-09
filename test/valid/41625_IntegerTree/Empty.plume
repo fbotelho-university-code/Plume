@@ -1,0 +1,28 @@
+/**
+* Empty leaf 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class Empty extends IntegerTree is 
+      	  
+	  method override insert : (elem : Integer ) -> IntegerTree is 
+	  	 new Node(elem, new Empty(), new Empty()) 
+
+	  method override isEmpty : () -> Boolean  is 
+	  	 true
+
+	  method override count : () ->  Integer is 
+	  	 0 
+
+	  method override contains : (elem : Integer)  -> Boolean  is 
+	  	 false 
+
+	  method override  weight : () -> Integer  is 
+	  	 0 	  	 
+	  	 
+	  method override sum : () -> Integer is
+	  	 0 
+	  	 
+	  method override toString : () -> String is 
+	  	""

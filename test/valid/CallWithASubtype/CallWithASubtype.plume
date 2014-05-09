@@ -1,0 +1,14 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: CallWithASubtype.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class CallWithASubtype extends Object is
+
+	method m : (x: Object) -> Object is
+		x
+		
+	method n : () -> Object is
+		m ("hi there")
+		
+	method main : () -> String is
+		n().toString()

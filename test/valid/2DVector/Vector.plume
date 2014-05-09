@@ -1,0 +1,19 @@
+/**
+ * A simple 2D vector with scalar multiplication, dot product and addition
+ *
+ * @author Robin Burgess 36815
+ */
+ class Vector extends Object is
+	field x : Integer
+	field y : Integer
+	method override toString : () -> String is
+		"(" + x.toString() + "," + y.toString()+")"
+		
+	method scalarMultiplication : (i : Integer) -> Vector is
+		new Vector (x*i,y*i)
+		
+	method dotProduct : (v : Vector) -> Integer is
+		x*v.x + y*v.y
+		
+	method add : (v : Vector) -> Vector is
+		new Vector (x+v.x,y+v.y)

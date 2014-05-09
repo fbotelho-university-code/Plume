@@ -1,0 +1,10 @@
+/**
+ * For testing overriding
+ * @author 36994, César Santos
+ */
+class ExtendsAbstract extends AbstractClass is
+  method override test : (x : Boolean) -> Integer is
+    if x then 1 else 0
+    
+  method override print : () -> String is
+    "ExtendsAbstract"

@@ -1,0 +1,13 @@
+
+/**
+ * 
+ * Falta a keyword method
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidMethod extends Object is
+
+	// method
+  sum : (x : Integer, y : Integer) -> Integer is
+  	5 + 5

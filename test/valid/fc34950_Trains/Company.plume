@@ -1,0 +1,14 @@
+/**
+ * Is a company of trains
+ * @author namartins 
+ * @version $Id: Company.plume 286 2012-05-01 10:24:19Z tcomp000 $ 
+ *
+ */
+ 
+abstract class Company extends Object is
+	  
+	field name : String
+	field nTrains : Integer
+	
+	abstract method getNumberOfTrains : () -> Integer
+		    	

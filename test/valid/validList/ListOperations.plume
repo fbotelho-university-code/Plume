@@ -1,0 +1,98 @@
+
+/**
+ * 
+ * Classe que permite realizar algumas operacoes sobre listas
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class ListOperations extends Object is
+
+	/**
+	 * Metodo que procura o indice de um elemento numa lista
+	 */
+	method indexOf : (list : List, i : Integer) -> Integer is
+		if list instanceof Node
+		then
+			if list.head == i
+  	 	 	then 0
+  	  		else 1 + indexOf(list.tail, i)
+  	  	else
+  	  		error
+  	  	
+  	/**
+  	 * Metodo que devolve o maior Integer de uma lista
+  	 */   		
+	method maxInteger : (list : List) -> Integer is
+		if (list instanceof Node)
+      		then if list.head > maxInteger(list.tail)
+      		     then list.head
+      		     else maxInteger(list.tail)
+    	else error
+    	
+    /**
+     * Metodo que devolve a soma de todos os elementos da lista
+     */
+	method sum : (l: List) -> Integer is
+    	if l instanceof Node
+    	then l.head + sum(l.tail) 
+    	else 
+      		if l instanceof Empty
+      		then 0 
+    		else error
+    		
+    /**
+     * Metodo que faz a uniao de duas listas e devolve esta uniao como lista 
+     * resultante
+     */ 
+	method union : (list1 : List, list2 : List) -> List is
+  		if list1 instanceof Node
+  		then if list2 instanceof Node
+	   		 then union(list1.insert(list2.head), list2.tail)
+	   		 else if list2 instanceof Empty
+  			 	  then list1
+  			 	  else error
+  		else if list1 instanceof Empty
+  			 then if list2 instanceof Node
+  			 	  then list2
+  			 	  else if list2 instanceof Empty
+  			 	  	   then list2
+  			 	  	   else error
+  			 else error
+
+    
+    /**
+     * Metodo que conta o numero de vezes que um Integer ocorre na lista
+     */
+    method countElem : (list : List, i : Integer) -> Integer is
+    	if list instanceof Node
+    	then 
+    		if list.head == i
+    		then 1 + countElem(list.tail, i)
+    		else countElem(list.tail, i)
+    	else if list instanceof Empty
+    		 then 0
+    		 else error
+    	
+    /**
+     * Metodo que verifica se uma lista esta ordenada de forma ascendente
+     */
+    method isSorted : (list : List) -> Boolean is
+    	if list instanceof Node
+    	then 
+    		if list.tail instanceof Node
+    		then list.head < getHead(list.tail) && isSorted(list.tail)
+    		else if list.tail instanceof Empty
+    			 then true
+    			 else error
+    	else if list instanceof Empty
+    		 then true
+    		 else error
+    	
+    /**
+     * Metodo que devolve o primeiro elemento de uma lista
+     */ 
+    method getHead : (list : List) -> Integer is
+    	if list instanceof Node
+    	then list.head
+    	else error

@@ -1,0 +1,34 @@
+/**
+ * An abstract list. Subclasses shall describe empty and non-empty lists
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: CarList.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+abstract class CarList extends Object is
+
+  method insert : (price: Integer, maxSpeed: Integer, bhp: Integer, brand: String, model: String) -> Car is
+    new Car(price, maxSpeed, bhp, brand, model, this)
+    
+  abstract method isEmpty : () -> Boolean
+  
+  abstract method length : () -> Integer
+
+  /******** Getters ********/
+  /******** Requires 0 <= index && index < length() ********/
+  abstract method getPrice : (index: Integer) -> Integer
+  
+  abstract method getMaxSpeed : (index: Integer) -> Integer
+  
+  abstract method getBhp : (index: Integer) -> Integer
+    
+  abstract method getBrand : (index: Integer) -> String
+  
+  abstract method getModel : (index: Integer) -> String
+  
+  /******** Scanners ********/
+  abstract method containsPrice : (elem: Integer) -> Boolean
+  
+  abstract method containsMaxSpeed : (elem: Integer) -> Boolean
+  
+  abstract method containsBhp : (elem: Integer) -> Boolean
+    

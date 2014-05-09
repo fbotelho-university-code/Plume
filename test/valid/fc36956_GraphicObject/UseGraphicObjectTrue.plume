@@ -1,0 +1,18 @@
+/**
+ * UseGraphicObject.plume
+ *
+ * Test: The type of a conditional expression is the least upper 
+ * bound (in the subtyping relation) of the types of the two branches 
+ * (the then and the else)
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: UseGraphicObjectTrue.plume 412 2012-05-22 20:33:38Z fc36956 $
+ */
+class UseGraphicObjectTrue extends Object is
+		method createGraphicObject : (graphic : GraphicObject) -> Boolean is
+			if graphic instanceof Circle
+			then graphic.draw() //expects true
+			else new Rectangle(6, 1).draw() //expects false
+		
+		method main : () -> String is
+			createGraphicObject(new Circle(4, 2)).toString()

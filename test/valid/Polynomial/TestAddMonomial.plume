@@ -1,0 +1,10 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: TestAddMonomial.plume 390 2012-05-21 15:00:43Z tcomp000 $
+ */
+class TestAddMonomial extends Object is
+
+  method main : () -> String is
+    new Constant(5).addMonomial(5, 2).addMonomial(55, 22)
+		.addMonomial(55, 22).addMonomial(5, 0).addMonomial(-5, 2).toString()
+	// expected output: "110y22 + 10"

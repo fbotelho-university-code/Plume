@@ -1,0 +1,14 @@
+/**
+ * Uma classe que testa o novo cast
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestNewCast.plume 440 2012-05-27 21:23:25Z fc37059 $
+ */
+class TestNewCast extends Object is
+
+  method main : () -> String is
+  		getId(new Planet(1, "Mercury", 30000)).toString()
+  		//expected: 1  
+  
+  method getId : (obj : Object) -> Integer is
+  		(obj as Planet).getId()

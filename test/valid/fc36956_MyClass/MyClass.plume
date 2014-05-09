@@ -1,0 +1,12 @@
+/**
+ * MyClass.plume
+ *
+ * Test: classes must be declared in their own files
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: MyClass.plume 413 2012-05-22 20:35:23Z fc36956 $
+ */
+ class MyClass extends Object is
+ 
+	method myNameIs : () -> String is
+		"MyClass"

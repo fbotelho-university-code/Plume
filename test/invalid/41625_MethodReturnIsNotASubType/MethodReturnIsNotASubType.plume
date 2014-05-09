@@ -1,0 +1,11 @@
+/**
+ * Invalid Test. 
+ * The return body of a method results in a type that is not a subtype of the declared return type.
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+class MethodReturnIsNotASubType extends Object is 
+      method test : () -> Fibonnacci is  
+          new Pessoa(1,1,1,"cenas") 
+

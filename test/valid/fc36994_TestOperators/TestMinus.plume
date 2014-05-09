@@ -1,0 +1,7 @@
+/**
+ * Tests the - operator
+ * @author 36994, César Santos
+ */
+class TestMinus extends Object is
+  method main : () -> String is //expected : -1
+    (6 - 7).toString()

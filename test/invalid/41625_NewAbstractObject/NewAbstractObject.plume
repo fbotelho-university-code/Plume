@@ -1,0 +1,12 @@
+/**
+ * Invalid Test. 
+ * Cannot have a direct instance of abstract classe. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ abstract class NewAbstractObject extends Object is 
+ 
+ 	method test : () -> NewAbstractObject is 
+ 		new NewAbstractObject() 
+ 

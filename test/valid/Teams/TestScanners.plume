@@ -1,0 +1,21 @@
+/**
+ * A class to test the scanners from a team
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestScanners.plume 453 2012-06-02 12:02:58Z fc37060 $
+ */
+class TestScanners extends Object is
+
+  method main : () -> String is
+    testScanners(new Empty().insert(500000, 310)
+				.insert(250000, 270)
+				.insert(300000, 295)
+				.insert(25000, 180)
+				.insert(1100, 155)
+				.insert(65000, 225)).toString()
+				
+  method testScanners : (l: Team) -> Boolean is
+    l.containsPrice(500000) && l.containsScore(180)
+    && !l.containsPrice(-500000) && !l.containsScore(187)
+    && l.length() == 6
+    	

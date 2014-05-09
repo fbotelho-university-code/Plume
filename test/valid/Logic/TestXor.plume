@@ -1,0 +1,13 @@
+/**
+ * logical Xor operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestXor extends Object is 
+
+	method main : () -> String is
+
+		new Xor().calculate(true, false).toString()
+		
+		//expected output : true

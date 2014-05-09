@@ -1,0 +1,13 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class MethodIdEqClassId extends Object is
+	
+	method override toString : () -> String is
+		""
+	
+	method MethodIdEqClassId : () -> Boolean is
+		true
+		
+	method main : () -> String is
+		new MethodIdEqClassId().MethodIdEqClassId().toString()

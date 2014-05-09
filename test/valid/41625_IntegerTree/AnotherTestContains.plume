@@ -1,0 +1,4 @@
+
+class AnotherTestContains extends Object is 
+	method main : () -> String is 
+		new Node(5, new Empty(), new Empty()).contains(5).toString()

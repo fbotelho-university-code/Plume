@@ -1,0 +1,12 @@
+/**
+ * Creates Mothers and calls their methods, testing to see if their inheritance works
+ *
+ * @author Robin Burgess 36815
+ */
+class TestSuperclassing extends Parent is
+
+	method main : () -> String is
+		(new Mother().getName()) + new Mother().askQuestion("Hello?")+ new Mother().toString()
+		
+	method override toString : () -> String is
+		"Testing Superclasses"

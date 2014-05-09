@@ -1,0 +1,6 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class NewInteger extends Object is
+	method override toString : () -> String is
+		new Integer().toString()

@@ -1,0 +1,10 @@
+/**
+ * Uma classe concreta e declara um metodo abstracto
+ * invalido
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ConcreteClass.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ConcreteClass extends Object is
+
+  abstract method getName : () -> String

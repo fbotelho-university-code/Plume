@@ -1,0 +1,10 @@
+/**
+ * Keyword com letra maiuscula: method
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: KeywordsCapitalLetterMethod.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class KeywordsCapitalLetterMethod extends Object is
+
+  Method main : () -> String is
+		"Hello".toString()

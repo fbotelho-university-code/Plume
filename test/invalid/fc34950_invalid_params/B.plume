@@ -1,0 +1,13 @@
+/**
+ * B.plume
+ *
+ * Test: Call method isValid of object A , with wrong param
+ *
+ * @author namartins
+ * @version $Id: B.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+  class B extends Object is	
+   	 method  isValid: (x : String) -> Boolean
+   	 	(new A()).isValid(x)
+  

@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: ClassToString.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class ClassToString extends Object is
+
+	field aString : String
+	
+	method aString : () -> String is
+		"What a string!"
+		

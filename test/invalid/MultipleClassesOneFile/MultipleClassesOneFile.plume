@@ -1,0 +1,19 @@
+/**
+ * There must not be more than one class in each file
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MultipleClassesOneFile.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Multiple1 extends Object is
+
+  field radius : String
+  
+  method radius : () -> String is
+    radius
+    
+class Multiple2 extends Object is
+
+  field radius2 : String
+  
+  method radius2 : () -> String is
+    radius2

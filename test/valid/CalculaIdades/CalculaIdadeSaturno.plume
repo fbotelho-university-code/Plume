@@ -1,0 +1,9 @@
+/**
+ * Classe que calcula a idade em saturno.
+ *
+ * @author 37060, Roberto Silva
+ */
+class CalculaIdadeSaturno extends CalculaIdade is
+	
+	method override calcIdade : (idade : Integer) -> Integer is
+		(idade*365)/10767

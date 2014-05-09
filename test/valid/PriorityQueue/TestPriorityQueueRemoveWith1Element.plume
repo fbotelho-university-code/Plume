@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo remove da fila com prioridades quando esta tem 1 elemento
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueRemoveWith1Element.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestPriorityQueueRemoveWith1Element extends Object is
+
+  method main : () -> String is
+   new EmptyPriorityQueue().insert(1, "Hello").remove().toString()
+	// expected output: "_"

@@ -1,0 +1,7 @@
+/**
+ * For testing method calls
+ * @author 36994, César Santos
+ */
+class WrongParameterTypeTest extends Object is
+  method test : (a : String) -> Integer is
+    (new MethodHolder()).test(a)

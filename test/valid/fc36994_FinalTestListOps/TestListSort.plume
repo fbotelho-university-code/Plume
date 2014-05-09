@@ -1,0 +1,8 @@
+/**
+ * Tests sorting a list
+ * @author 36994, César Santos
+ */
+class TestListSort extends Object is
+  method main : () -> String is
+  	new EmptyList().add(3).add(2).add(5).add(1).add(4).add(10).sort(new IntegerComparator()).toString()
+  	

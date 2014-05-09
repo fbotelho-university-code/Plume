@@ -1,0 +1,12 @@
+/**
+* Integer binary tree. 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class TestInsert extends Object is 
+
+	method main : () -> String is
+		//TODO - toString to check insert is working properly. 
+		new Node(10 , new Empty(), new Empty()).insert(5).insert(15).insert(100).insert(1).insert(-1).sum().toString()
+		//expected output : 130 

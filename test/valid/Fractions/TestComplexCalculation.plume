@@ -1,0 +1,13 @@
+/**
+ * Tests a complex calculation with numbers
+ *
+ * @author Robin Burgess 36815
+ */
+class TestComplexCalculation extends Object is
+
+	method main : () -> String is
+		(new IntegerNumber(5)).add(new RationalNumber(3,2).subtract(new RationalNumber(4,2)))
+			.divideBy(new IntegerNumber(2).multiply(new IntegerNumber(3))).invert().toString()
+		
+	method override toString : () -> String is
+		"Testing Numbers"

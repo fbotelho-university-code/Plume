@@ -1,0 +1,9 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class IfsNeedToThen extends Object is
+	field var : Integer
+	method getVar : (i : Integer) -> Integer is
+		if i > 0
+		var
+		else var + i

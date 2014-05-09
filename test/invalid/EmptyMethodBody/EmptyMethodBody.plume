@@ -1,0 +1,12 @@
+/**
+ * Empty MethodBody 
+ * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class EmptyMethodBody extends Object is
+ 	// Not valid. Needs "return" expression. 
+  	method empty : () -> Integer is  

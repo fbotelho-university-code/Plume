@@ -1,0 +1,13 @@
+
+/**
+ * 
+ * A classe Object nao tem o metodo abcdef : (a : Boolean, b : Boolean)
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidOverride extends Object is
+
+	// abcdef() 
+	method override abcdef : (a : Boolean, b : Boolean) -> Boolean is
+    	a && b

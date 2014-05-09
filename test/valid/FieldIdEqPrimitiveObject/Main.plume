@@ -1,0 +1,7 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class Main extends Object is
+	
+	method main : () -> String is
+		new FieldIdEqPrimitiveObject("abc").toString()

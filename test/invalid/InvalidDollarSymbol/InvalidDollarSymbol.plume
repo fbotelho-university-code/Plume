@@ -1,0 +1,7 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class NoDollarSigns extends Object is
+	field i:Integer
+	method $ : () -> Integer is
+		i+1

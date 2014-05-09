@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * Classe que testa o metodo que faz a soma de todos os elementos da lista
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestSum extends Object is
+
+	method main : () -> String is
+    	new ListOperations().sum(new Empty().
+    							insert(10).insert(5).
+    							insert(15).insert(20)).toString()
+    	
+    	//50

@@ -1,0 +1,16 @@
+/**
+ * Classe que compara duas pessoas e imprime a mais velha
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestComparaPessoas extends Object is
+	
+	method main : () -> String is
+    	compararPessoas(new Estudante(23, "Roberto", "Engenharia Informatica"), 
+    	new Empregado(30, "Antonio", 20, 8, 5, "Medico"))
+	// expected output: "Antonio e mais velho que Roberto"
+	
+	method compararPessoas : (p1: Pessoa, p2: Pessoa) -> String is
+   		if p1.getIdade() > p2.getIdade()
+   		then p1.getNome() + " e mais velho que " + p2.getNome()
+   		else p2.getNome() + " e mais velho que " + p1.getNome()

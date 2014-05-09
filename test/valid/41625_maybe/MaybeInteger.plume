@@ -1,0 +1,21 @@
+/**
+* Implementation (attempt of) the Maybe type for Integer. 
+* Can look pretty useless without parameterized types and function arguments. 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+abstract class MaybeInteger extends Object is 
+	  // Returns true iff  is Just _ where _ stands form some Integer value.  (instance of ... Useless)
+	  abstract method isJust : () -> Boolean 
+
+	 // Returns true iff  is Nothing. (instance of ... Useless) 
+	abstract method isNothing : () -> Boolean
+
+	//  Extract the element out of its argument. It produces an error if the argument is from other type. 
+	abstract method fromJust  : () -> Integer 
+        
+        // Extract the element from Maybe. If no element, returns the argument a 
+    abstract method fromMaybe : (a : Integer ) -> Integer 
+    
+    abstract method override toString : () -> String 

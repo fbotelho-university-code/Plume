@@ -1,0 +1,9 @@
+/**
+ * Class identifier can't match a primitive type - Boolean.
+ *
+ * @author Diogo Marques, 30100
+ */
+class Boolean extends Object is
+	method override toString : () -> String is
+		""
+	

@@ -1,0 +1,8 @@
+/**
+ * Invalid Test. 
+ * Class hierarchy must be acyclic.  A extends B and B extends A
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class B extends A is 

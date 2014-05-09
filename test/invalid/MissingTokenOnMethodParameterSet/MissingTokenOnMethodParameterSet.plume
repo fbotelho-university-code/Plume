@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class MissingTokenOnMethodParameterSet extends Object is
+  
+  method calculate : (num Integer) -> Integer is
+    if num < 0 then -num
+    else num

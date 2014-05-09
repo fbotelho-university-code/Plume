@@ -1,0 +1,20 @@
+/**
+ * classe auxiliar para outra classe, ou seja, esta esta bem. 
+ *
+ * @author 37060, Roberto Silva
+ */
+abstract class Veiculo extends Object is
+	
+	field marca : String
+	field modelo : String
+	field fabricante : String
+	field motor : Motor
+	
+	abstract method getNumLugares : () -> Integer
+	
+	abstract method getNumRodas : () -> Integer
+	
+	method override toString : () -> String is
+    	marca + " " + modelo + " " + fabricante + " motor: " + motor.getTipo() 
+    	+ " com " + this.getNumLugares().toString() + " lugares e " 
+    	+ this.getNumRodas().toString() + " rodas."

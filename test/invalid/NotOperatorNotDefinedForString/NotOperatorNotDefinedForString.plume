@@ -1,0 +1,9 @@
+/**
+ * Not operator is not defined for String.
+ *
+ * @author Diogo Marques, 30100
+ */
+class NotOperatorNotDefinedForString extends Object is
+	
+	method myMethod : () -> Boolean is
+		!"test"

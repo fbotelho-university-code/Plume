@@ -1,0 +1,11 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestNewObjectAndToString extends Object is
+
+  method main : () -> String is
+    new Person("Juliana Franco", 37029).toString()
+    

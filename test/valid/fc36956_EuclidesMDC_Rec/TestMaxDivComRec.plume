@@ -1,0 +1,10 @@
+/**
+ * Tests for class TestMaxDivComRec.plume
+ *
+ * @author $Id: TestMaxDivComRec.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestMaxDivComRec extends Object is
+	
+	method main : () -> String is
+    	new MaxDivComRec().mdcRec(150, 20).toString()
+	// expected output: "10"

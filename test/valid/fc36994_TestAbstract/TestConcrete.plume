@@ -1,0 +1,7 @@
+/**
+ * Tests abstract implementation
+ * @author 36994, César Santos
+ */
+class TestConcrete extends Object is
+  method main : () -> String is //expected : 6
+    new Concrete(1,2,3).sumFields().toString()

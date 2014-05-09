@@ -1,0 +1,14 @@
+/**
+ * B.plume
+ *
+ * Test: This class represent a Abstract class B 
+ * B -> A
+ * @author namartins
+ * @version $Id: B.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+  class B extends Object is	
+ 	field  sas : Integer
+ 	method  getSAS: () -> Integer is
+ 	   sas
+ 	

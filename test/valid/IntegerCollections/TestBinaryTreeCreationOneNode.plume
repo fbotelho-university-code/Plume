@@ -1,0 +1,9 @@
+/**
+ * A class to test a one node tree creation.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeCreationOneNode extends Object is
+
+	method main : () -> String is
+		new BinaryTreeNode(5, new BinaryTreeEmpty(), new BinaryTreeEmpty()).toString()

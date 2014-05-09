@@ -1,0 +1,17 @@
+/**
+ * is a example of Executable.
+ * @author namartins 
+ * @version $Id: ExampleOne.plume 462 2012-06-03 11:13:16Z fc34950 $ 
+ *
+ */
+ 
+class ExampleOne extends Executable is
+	field total : Integer  //could be any Object
+	method override run : (count : Integer) -> Executable is 
+		if count > 0 then
+			new ExampleOne(total + 1 ).run(count-1)
+		else
+			this
+	method override getResult : () -> Object is
+		total.toString()	
+		

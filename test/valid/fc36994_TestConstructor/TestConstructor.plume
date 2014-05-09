@@ -1,0 +1,7 @@
+/**
+ * For testing a constructor
+ * @author 36994, César Santos
+ */
+class TestConstructor extends Object is
+  method main : () -> String is
+    (new FieldsAndConstructor(1,2,3)).test(4).toString() // expect 10

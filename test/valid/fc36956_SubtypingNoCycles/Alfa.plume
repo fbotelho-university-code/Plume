@@ -1,0 +1,8 @@
+/**
+ * Alfa.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Alfa.plume 232 2012-04-29 19:04:17Z fc36956 $
+ */
+class Alfa extends Object is
+	field x : Integer

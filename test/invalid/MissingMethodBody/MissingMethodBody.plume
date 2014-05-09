@@ -1,0 +1,6 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class MissingMethodBody extends UnaryLogicalOperation is
+  
+  method calculate : (val : Boolean) -> Boolean is

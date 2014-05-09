@@ -1,0 +1,13 @@
+/**
+ * Sum.plume
+ *
+ * Test: two different fields cannot have the same name
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class Sum extends Object is
+ 	field Sum : Integer
+ 	field Sum : Integer
+	method DoSum : (i : Integer) -> Integer is
+		4 + 2

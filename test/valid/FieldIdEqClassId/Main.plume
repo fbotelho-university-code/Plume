@@ -1,0 +1,7 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class Main extends Object is
+
+	method main : () -> String is
+		new FieldIdEqClassId(0).toString()	

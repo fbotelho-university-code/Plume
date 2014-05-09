@@ -1,0 +1,9 @@
+/**
+ * A class
+ *
+ * @author Robin Burgess 36815
+ */
+class Aaa extends Bbb is
+	field h : Integer
+	method a : () -> Boolean is
+		true

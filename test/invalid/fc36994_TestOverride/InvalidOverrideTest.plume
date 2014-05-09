@@ -1,0 +1,7 @@
+/**
+ * For testing override
+ * @author 36994, César Santos
+ */
+class InvalidOverrideTest extends DefinesMethod is
+  override method wrongTest : () -> Boolean is
+    true

@@ -1,0 +1,13 @@
+/**
+ * Class to test the Modulo operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestModulo extends Object is 
+
+	method main : () -> String is
+
+		new Modulo().calculate(5).toString()
+		
+		//expected output : 5

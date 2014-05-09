@@ -1,0 +1,25 @@
+/**
+ * Uma definicao abstracta de uma equipa. As subclasses irao definir equipas vazias e nao vazias.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Team.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+abstract class Team extends Object is
+
+  method insert : (price: Integer, score: Integer) -> Player is
+    new Player(price, score, this)
+    
+  abstract method isEmpty : () -> Boolean
+  
+  abstract method length : () -> Integer
+  
+  /******** Getters ********/
+  /******** Requires 0 <= index && index < length() ********/
+  abstract method getPrice : (index: Integer) -> Integer
+  
+  abstract method getScore : (index: Integer) -> Integer
+  
+  /******** Scanners ********/
+  abstract method containsPrice : (elem: Integer) -> Boolean
+  
+  abstract method containsScore : (elem: Integer) -> Boolean

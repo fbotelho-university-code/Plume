@@ -1,0 +1,9 @@
+/**
+ * Semantically incorrect class, in which a method which doesn't have the keyword 
+ * override exists but not a method with the same signature in some super class.
+ * @author 35237, Marcos Vasco
+ */
+class ChildNotOverride extends SuperNotOverride is
+  
+  method calculate : (val : Boolean) -> Boolean is
+    true

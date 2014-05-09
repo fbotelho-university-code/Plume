@@ -1,0 +1,22 @@
+/**
+ * Classe que representa um empregado, sendo este uma pessoa
+ *
+ * @author 37060, Roberto Silva
+ */
+class Empregado extends Pessoa is
+
+	field diasTrabalho : Integer
+	field horasTrabalho : Integer
+	field precoHora : Integer
+	field emprego : String
+	
+	method salario : () -> Integer is
+    	horasTrabalho * precoHora * diasTrabalho
+    	
+    method redimentoAnual : () -> Integer is
+    	salario() * 12
+    	
+    method override toString : () -> String is
+    	"Chama-se " + nome + " e tem: " + idade.toString() + " anos. Trabalha " 
+    	+ horasTrabalho.toString()  + " horas por dia e " + "recebe " + precoHora.toString() 
+    	+ " por hora."

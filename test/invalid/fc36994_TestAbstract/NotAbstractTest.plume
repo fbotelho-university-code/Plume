@@ -1,0 +1,6 @@
+/**
+ * For testing missing abstract
+ * @author 36994, César Santos
+ */
+class NotAbstractTest extends Object is
+  abstract method nothing : () -> Boolean is

@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar uma fila de prioridades vazia.
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueEmpty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestPriorityQueueEmpty extends Object is
+
+  method main : () -> String is
+    new EmptyPriorityQueue().toString()
+	// expected output: "_"

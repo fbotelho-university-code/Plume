@@ -1,0 +1,7 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class NoParentClassName extends is
+  
+  method calculate : (val : Boolean) -> Boolean is
+    false

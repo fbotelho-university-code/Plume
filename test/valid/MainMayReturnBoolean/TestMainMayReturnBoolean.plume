@@ -1,0 +1,7 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class TestMainMayReturnBoolean extends Object is
+
+	method main : () -> String is
+		new MainMayReturnBoolean().main().toString()

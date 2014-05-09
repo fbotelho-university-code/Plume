@@ -1,0 +1,8 @@
+/**
+ * Invalid operator
+ * @author 36994, César Santos
+ */
+class InvalidPlusPlus extends Object is
+  field a
+  method test : () -> Integer is
+    a++

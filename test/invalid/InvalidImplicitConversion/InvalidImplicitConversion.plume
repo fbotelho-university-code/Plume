@@ -1,0 +1,7 @@
+/**
+ * Invalid implicit conversion
+ * @author 36994, César Santos
+ */
+class InvalidImplicitConversion extends Object is
+  method test : () -> String is
+    0 + "0"

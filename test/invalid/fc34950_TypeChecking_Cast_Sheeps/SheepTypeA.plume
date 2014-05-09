@@ -1,0 +1,13 @@
+/**
+ * SheepTypeA.plume
+ *
+ * Test: This class represent a Sheep on second generation
+ *
+ * @author namartins
+ * @version $Id: SheepTypeA.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ class SheepTypeA extends Sheep is	
+ 	
+ 	method  override generation : () -> Integer is
+		 gen

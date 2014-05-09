@@ -1,0 +1,13 @@
+/**
+ *  Test super constructor and access to super fields.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ */
+ 
+ class TestPonto2D extends Object is
+ 	method main : () -> String is 
+ 		(new Ponto2D(1, 2).x + new Ponto2D(1,2).y).toString()   
+	 	//expected output : 3 
+ 
+ 

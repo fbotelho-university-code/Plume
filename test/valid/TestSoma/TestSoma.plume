@@ -1,0 +1,15 @@
+/**
+ * Classe que faz a soma de todos os numeros ate um limite 
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestSoma extends Object is
+	
+	method main : () -> String is
+    	soma(10).toString()
+	// expected output: "55"
+	
+	method soma : (limite : Integer) -> Integer is
+    	if limite == 0
+    	then limite
+    	else limite + soma(limite - 1)

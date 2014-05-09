@@ -1,0 +1,15 @@
+/**
+ * A class to test casts
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestCasts.plume 282 2012-05-01 00:26:02Z fc37017 $
+ */
+class TestCasts extends Object is
+
+  method main : () -> String is
+    testCasts(new Animal(5)).toString()
+				
+  method testCasts : (a: Animal) -> Integer is
+	if a instanceof Ladybug
+	then a.age
+	else (a as Animal).age

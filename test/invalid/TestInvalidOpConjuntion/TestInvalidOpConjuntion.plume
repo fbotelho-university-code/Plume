@@ -1,0 +1,14 @@
+
+/**
+ * 
+ * Deve haver sempre um predicado a direita e outro a esquerda do operador &&
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidOpConjuntion extends Object is
+
+  method main : () -> String is
+    if true &&
+    then "a"
+    else "b"

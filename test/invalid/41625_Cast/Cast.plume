@@ -1,0 +1,13 @@
+/**
+ * InValid Test.
+ * Call inexistent methods on objects after casting 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $Id: Cast.plume 341 2012-05-06 12:16:55Z fc41625 $
+ */
+ 
+  
+ class Cast extends Object is 
+
+ 	method up : (b: B) -> String  is
+ 		(b as A).fb() //fb is valid without the cast. After the cast it is not a valid method invocation    
+ 		

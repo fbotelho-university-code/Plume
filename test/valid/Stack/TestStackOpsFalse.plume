@@ -1,0 +1,14 @@
+/**
+ * Uma classe para testar varios metodos da pilha
+ *
+ * @author 37059, Rita Henriques
+ */
+class TestStackOpsFalse extends Object is
+
+  method main : () -> String is
+    testOps(new EmptyStack().push(23).push(3).push(22)
+				.push(0).push(-4).push(5)).toString()
+	// expected output: false
+			
+  method testOps : (s: Stack) -> Boolean is
+    (!s.isEmpty() && s.size() == 6 && s.top() == 4) || s.pop().pop().top() == -4

@@ -1,0 +1,33 @@
+/**
+ * Um no de uma fila com prioridades de Strings.
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: NodePriorityQueue.plume 89 2012-04-08 00:52:12Z fc36815 $
+ */
+class NodePriorityQueue extends PriorityQueue is
+
+  field priority : Integer
+  
+  field element : String
+  
+  field tail : PriorityQueue
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override size : () -> Integer is
+    1 + tail.size()
+    
+  method override next : () -> String is
+    element
+    
+  method override remove : () -> PriorityQueue is
+    if tail instanceof NodePriorityQueue
+    then new NodePriorityQueue(tail.priority, tail.element, tail.tail)
+    else new EmptyPriorityQueue()
+
+  method override toString : () -> String is
+    "(" + priority.toString() + ":" + element.toString() + ") | " + tail.toString()
+      
+  method override contains : (elem : String) -> Boolean is
+  	element == elem || tail.contains(elem)

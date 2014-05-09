@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class WithoutClassIs extends UnaryLogicalOperation
+  
+  method calculate : (val : Boolean) -> Boolean is
+    if val == true false
+    else true

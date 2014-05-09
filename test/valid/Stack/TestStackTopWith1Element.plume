@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo top da pilha quando esta tem 1 elemento
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackTopWith1Element.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestStackTopWith1Element extends Object is
+
+  method main : () -> String is
+    new EmptyStack().push(23).top().toString()
+	// expected output: "23"

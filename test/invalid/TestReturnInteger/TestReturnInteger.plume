@@ -1,0 +1,17 @@
+
+/**
+ * 
+ * 2.5 nao eh um Integer
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestReturnInteger extends Object is
+
+  method main : () -> String is
+    double().toString()
+    
+    
+  method double : () -> Integer is
+  	2.5
+    

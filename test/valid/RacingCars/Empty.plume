@@ -1,0 +1,41 @@
+/**
+ * An empty list
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: Empty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class Empty extends CarList is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override length : () -> Integer is
+    0
+    
+  method override getPrice : (index: Integer) -> Integer is
+    error 
+  
+  method override getMaxSpeed : (index: Integer) -> Integer is
+    error
+    
+  method override getBhp : (index: Integer) -> Integer is
+    error
+
+  method override getBrand : (index: Integer) -> String is
+    error
+    
+  method override getModel : (index: Integer) -> String is
+    error
+
+  method override containsPrice : (elem: Integer) -> Boolean is
+	false
+	    
+  method override containsMaxSpeed : (elem: Integer) -> Boolean is
+    false
+    
+  method override containsBhp : (elem: Integer) -> Boolean is
+    false
+    
+  method override toString : () -> String is
+    "[]"
+    

@@ -1,0 +1,21 @@
+
+class TestList extends Object is
+
+	method main : () -> String is
+		printEvenNumbers(getLinkedList().firstNode)
+		
+	method getLinkedList : () -> LinkedList is
+		new LinkedList(addNode(0))
+		
+	method addNode : (count : Integer) -> Node is
+		if count <= 12
+		then new RegularNodeInteger(addNode(count+1), count)
+		else new NodeEmpty()
+		
+	method printEvenNumbers : (node : Node) -> String is
+		if node instanceof RegularNode
+		then 
+			if ((node as RegularNodeInteger).getValue() % 2) == 0
+			then (node as RegularNodeInteger).getValue().toString() + " -> " + printEvenNumbers(node.getNextNode())
+			else printEvenNumbers(node.getNextNode())
+		else "end"		

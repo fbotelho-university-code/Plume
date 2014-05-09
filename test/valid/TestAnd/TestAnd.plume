@@ -1,0 +1,10 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: AbstractMethod.plume 615 2012-05-21 14:52:19Z vv $
+ */
+class TestAnd extends Object is
+
+	method m : (b1: Boolean, b2: Boolean) -> String is
+		if b1 && b2
+		then "yes"
+		else "no"

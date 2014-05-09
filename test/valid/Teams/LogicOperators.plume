@@ -1,0 +1,29 @@
+/**
+ * Classe que manipula operadores logicos
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: LogicOperators.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class LogicOperators extends Object is
+	  	
+  	method and : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    	if val1 == true && val2 == true then true
+    	else false
+    
+    method or : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    	if val1 == true || val2 == true then true
+    	else false
+    	
+    method negacao : (val : Boolean) -> Boolean is
+	    if val == true
+	    then false
+	    else true	
+    	
+    method main : () -> String is
+    	if negacao(true)
+    	then error
+    	else if and(false, false)
+    		 then error
+    		 else if or(false, false)
+    		 	  then error
+    		 	  else "success"

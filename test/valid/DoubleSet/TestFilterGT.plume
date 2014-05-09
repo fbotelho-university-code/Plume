@@ -1,0 +1,20 @@
+
+/**
+ *
+ * Testa o metodo filterGTstring da DoubleSet
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestFilterGT extends Object is
+
+	method main : () -> String is
+		new DoubleSet(createNodeDouble()).filterGTstring(
+				new Double(100,0)).toString()
+		
+		// 333,222; 1001010,101010;
+		
+	method createNodeDouble : () -> NodeDouble is
+		new NodeDouble(new Double(50,5),
+			new NodeDouble(new Double(333,222),
+			new NodeDouble(new Double(1001010,101010), new EmptyDouble())))

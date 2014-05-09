@@ -1,0 +1,7 @@
+/**
+ * Tests the * operator
+ * @author 36994, César Santos
+ */
+class TestMul extends Object is
+  method main : () -> String is //expected : 49
+    (7 * 7).toString()

@@ -1,0 +1,8 @@
+/**
+ * Semantically incorrect class, with a method having the same name as the class
+ * @author 35237, Marcos Vasco
+ */
+class MethodClassSameName extends Object is
+  
+  method MethodClassSameName : (num1 : Integer, num2 : Integer) -> Integer is
+  	15

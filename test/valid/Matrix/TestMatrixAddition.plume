@@ -1,0 +1,16 @@
+/**
+ * A class to test the addition of two 2x2 matrixes
+ *
+ * @author Robin Burgess 36815
+ */
+ class TestMatrixAddition extends Object is
+  method main : () -> String is
+    new Matrix(2,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    		new Matrix(1,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    			new EmptyMatrix())).add(
+    				new Matrix(0,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    					new Matrix(1,new Matrix(2,new EmptyMatrix(),new EmptyMatrix()),
+    						new EmptyMatrix()))).toString()
+    						
+  method override toString : () -> String is
+	"TestMatrixAddition"

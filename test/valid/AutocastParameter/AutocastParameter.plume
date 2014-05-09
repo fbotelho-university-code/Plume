@@ -1,0 +1,17 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: AbstractMethod.plume 615 2012-05-21 14:52:19Z vv $
+ */
+class AutocastParameter extends Object is
+
+	method identity : (s: String) -> String is
+		s
+		
+	method m : (o: Object) -> String is
+		if o instanceof String
+		then identity (o)
+		else "not instance"
+		
+	method main : () -> String is
+		m ("instance")
+		 

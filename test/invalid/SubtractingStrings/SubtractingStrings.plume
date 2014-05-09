@@ -1,0 +1,12 @@
+/**
+ * Strings can't be subtracted
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: SubtractingStrings.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class SubtractingStrings extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> String is
+    "Hello World" - "World"

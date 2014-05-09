@@ -1,0 +1,20 @@
+/**
+ * ToalhaDeMesa.plume
+ *
+ * Test: overriding methods
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: LinkedList.plume 422 2012-05-22 23:04:15Z fc36956 $
+ */
+ class LinkedList extends Object is
+
+	field firstNode : Node
+	
+	method getFirstNode : () -> Node is
+		firstNode
+		
+	method getListSize : () -> Integer is
+		if !firstNode.hasNextNode()
+		then 0
+		else firstNode.countMeOn()	
+	

@@ -1,0 +1,20 @@
+/** 
+ * This represent a Ticket
+ * @author namartins 
+ * @version $Id: Ticket.plume 462 2012-06-03 11:13:16Z fc34950 $ 
+ *
+ */
+ 
+class Ticket extends Object is
+	field begin : String
+	field end : String
+	field train : Train 
+	field seat : Integer
+	
+	method override toString : () -> String is  
+		"departure: " + begin  +" arrive : " + end   +" Train Number : "+
+		train.getId().toString()  +" Seat number : " + seat.toString()  + " Company : "
+		+train.getOwner().toString()
+	
+
+	

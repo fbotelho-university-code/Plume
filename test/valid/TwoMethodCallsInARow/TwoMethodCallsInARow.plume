@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: TwoMethodCallsInARow.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TwoMethodCallsInARow extends Object is
+
+	method m : () -> Integer is
+		12345
+		
+	method main : () -> String is
+		new TwoMethodCallsInARow().m().toString()

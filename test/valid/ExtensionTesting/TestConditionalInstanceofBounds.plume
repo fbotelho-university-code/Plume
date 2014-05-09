@@ -1,0 +1,22 @@
+/**
+ * Tests conditional bounding where instanceof is concerned
+ *
+ * @author Robin Burgess 36815
+ */
+class TestConditionalInstanceofBounds extends Object is
+
+	method main : () -> String is
+		m(4).toString() + " " + n(4).toString() + " " + n("Hi").toString()
+
+	method m : (x : Integer) -> Integer is
+		if x instanceof Object
+		then 3
+		else 5
+		
+	method n : (x : Object) -> Integer is
+		if x instanceof Integer
+		then x //
+		else 5
+		
+	method override toString : () -> String is
+		"Testing Conditional Instanceof Bounds"

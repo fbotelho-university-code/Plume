@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo size da pilha quando esta eh empty
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackSizeEmpty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestStackSizeEmpty extends Object is
+
+  method main : () -> String is
+    new EmptyStack().size().toString()
+	// expected output: "0"

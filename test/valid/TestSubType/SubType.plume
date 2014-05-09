@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * @author 37029, Juliana Franco
+ */
+class SubType extends SuperType is
+
+  field x : Integer
+  
+  field y : Integer
+
+  method override m : () -> Integer is
+  	x + y
+  	
+  method n : () -> Integer is
+  	x * y

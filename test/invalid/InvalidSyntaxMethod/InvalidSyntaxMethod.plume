@@ -1,0 +1,18 @@
+/**
+ * Invalid method declaration.  
+ * A Method Body is composed of an expression (that could be composed of several expressions with something like  if then else)   
+ * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class InvalidSyntaxMethod extends Object is
+ 	
+  	method empty : () -> String is
+  		// Not valid Syntax. Expected expression    
+  		method invalid : () -> String is 
+  			new Object().toString()
+  		"string" 
+  		

@@ -1,0 +1,11 @@
+/**
+ * There is a method in this class which doesn't have body
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MethodWithNoBody.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class MethodWithNoBody extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is

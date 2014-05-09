@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * Utilizacao de um field que nao foi declarado
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestUndeclaredField extends Object is
+
+  method xpto : () -> String is
+  	abc.toString()

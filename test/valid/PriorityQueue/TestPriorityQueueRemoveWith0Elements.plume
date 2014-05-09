@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo remove da fila com prioridades quando esta tem 0 elementos
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestPriorityQueueRemoveWith0Elements.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestPriorityQueueRemoveWith0Elements extends Object is
+
+  method main : () -> String is
+   new EmptyPriorityQueue().remove().toString()
+	// expected output: "<error>"

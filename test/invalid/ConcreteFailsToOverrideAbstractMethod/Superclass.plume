@@ -1,0 +1,7 @@
+/**
+ * An abstract superclass with an abstract method
+ *
+ * @author Robin Burgess 36815
+ */
+ abstract class Superclass extends Object is
+	abstract method hello : () -> Integer

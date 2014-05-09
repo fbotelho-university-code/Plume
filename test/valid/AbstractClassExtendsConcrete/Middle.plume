@@ -1,0 +1,7 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Middle.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+abstract class Middle extends Super is
+
+	abstract method override m : () -> String

@@ -1,0 +1,13 @@
+
+/**
+ * 
+ * Os operadores && e || apenas devem ser usados com Booleans
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestDijuntion extends Object is
+
+  method main : () -> String is
+    (1 || "ola").toString()
+    

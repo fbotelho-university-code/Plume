@@ -1,0 +1,30 @@
+/**
+ * An empty list
+ *
+ * @author Vasco T. Vasconcelos
+ * @author 37029, Juliana Franco
+ * @version $Id: EmptyDouble.plume 517 2012-06-05 19:55:58Z fc37029 $
+ */
+class EmptyDouble extends ListDouble is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override length : () -> Integer is
+    0
+    
+  method override get : (index: Integer) -> Double is
+    error
+    
+  method override contains : (elem: Double) -> Boolean is
+    false
+    
+  method override toString : () -> String is
+    "[]"
+    
+  method override filterGTstring : (d : Double) -> String is
+  	""
+  
+  method override filterLTstring : (d : Double) -> String is
+  	""
+  	

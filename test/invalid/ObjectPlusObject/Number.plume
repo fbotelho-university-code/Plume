@@ -1,0 +1,10 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Number extends Object is
+
+  method getDoubleString : (left:Integer, right:Integer) -> String is
+  	left + "." + right

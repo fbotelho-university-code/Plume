@@ -1,0 +1,21 @@
+
+/**
+ * 
+ * Classe que testa se uma subtracao do tipo n - m da erro 
+ * caso m seja maior que n
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestSubError extends Object is
+
+  method main : () -> String is
+    new Successor(new Successor(new Successor(new Zero()))).sub(
+    	new Successor(new Successor(new Successor(
+    	new Successor (new Successor(new Zero())))))
+    ).toString()
+    
+    // error
+    
+  
+

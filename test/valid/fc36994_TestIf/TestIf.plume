@@ -1,0 +1,10 @@
+/**
+ * Tests if
+ * @author 36994, César Santos
+ */
+class TestIf extends Object is
+  method main : () -> String is //expected : false
+    if (0 != 1) then
+      "false"
+    else
+      "true"

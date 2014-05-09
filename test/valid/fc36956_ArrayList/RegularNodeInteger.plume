@@ -1,0 +1,7 @@
+
+
+class RegularNodeInteger extends RegularNode is
+	field myValue : Integer
+	
+	method getValue : () -> Integer is
+		myValue

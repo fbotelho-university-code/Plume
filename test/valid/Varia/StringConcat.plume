@@ -1,0 +1,8 @@
+/**
+ * Class to concatenate two strings
+ * @author 35237, Marcos Vasco
+ */
+class StringConcat extends Object is
+  
+  method concat : (string1 : String, string2 : String) -> String is
+    string1 + string2

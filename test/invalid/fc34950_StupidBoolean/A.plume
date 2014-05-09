@@ -1,0 +1,22 @@
+/**
+ * A.plume
+ *
+ * Test: This class represent a class A 
+ * this test the if then else
+ *
+ * @author namartins
+ * @version $Id: A.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ class A extends Object is	
+ 	field  id : Integer
+ 	field  condition  : Boolean
+ 	method  getState: () -> String is
+ 		if condition && !condition then 
+ 			if condition && !4 then
+ 				"error"
+ 			else
+ 				"lol
+ 		else
+ 			"error" 
+ 		

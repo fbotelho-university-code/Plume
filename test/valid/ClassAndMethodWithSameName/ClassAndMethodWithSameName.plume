@@ -1,0 +1,14 @@
+/**
+ * Uma classe e um metodo desta com o mesmo nome
+ * eh definido implicitamente que o construtor tem esse nome
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: ClassAndMethodWithSameName.plume 477 2012-06-04 14:34:49Z fc37059 $
+ */
+class ClassAndMethodWithSameName extends Object is
+  
+  method ClassAndMethodWithSameName : ( name : String ) -> String is
+  		"Nome: " + name
+  		
+   method main : () -> String is
+  		ClassAndMethodWithSameName( "monstro das bolachas" )

@@ -1,0 +1,5 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class ThisIsnt extends Object
+	field yellow : String

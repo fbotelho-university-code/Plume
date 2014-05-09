@@ -1,0 +1,23 @@
+/**
+ * An empty list
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Empty.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class Empty extends List is
+
+  method override isEmpty : () -> Boolean is
+    true
+    
+  method override length : () -> Integer is
+    0
+    
+  method override get : (index: Integer) -> Integer is
+    error
+    
+  method override contains : (elem: Integer) -> Boolean is
+    false
+    
+  method override toString : () -> String is
+    "[]"
+    

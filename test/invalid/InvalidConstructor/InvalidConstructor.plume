@@ -1,0 +1,7 @@
+/**
+ * Wrong constructor invocation
+ * @author 36994, César Santos
+ */
+class InvalidConstructor extends Object is
+  method test : () -> Object is
+    new Object(420)

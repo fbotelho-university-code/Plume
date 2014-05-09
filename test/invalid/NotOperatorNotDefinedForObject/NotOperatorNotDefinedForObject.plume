@@ -1,0 +1,12 @@
+/**
+ * Not operator is not defined for Object.
+ *
+ * @author Diogo Marques, 30100
+ */
+class NotOperatorNotDefinedForObject extends Object is
+	
+	method myMethod : () -> Boolean is
+		!getObject()
+	
+	method getObject : () -> Object is
+		true

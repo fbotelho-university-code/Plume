@@ -1,0 +1,18 @@
+/**
+ * Uma classe que testa o instanceof
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestInstanceOfPlanet.plume 440 2012-05-27 21:23:25Z fc37059 $
+ */
+class TestInstanceOfPlanet extends Object is
+
+  method main : () -> String is
+  		isPlanet(new Planet(9, "Pluto", 400)).toString()
+  		//expected: false  
+  
+  method isPlanet : (obj : Object) -> Boolean is
+  		if obj instanceof Planet
+  		then if obj.getId() < 9
+  			 then true
+  			 else false
+  		else false

@@ -1,0 +1,7 @@
+/**
+ * Tests basic operator precedence
+ * @author 36994, César Santos
+ */
+class TestPrecedence extends Object is
+  method main : () -> String is //expected : 4
+    (3 + 4 * 0 + 1).toString()

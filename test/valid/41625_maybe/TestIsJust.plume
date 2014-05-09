@@ -1,0 +1,14 @@
+
+/**
+* Test isJust method from MaybeInteger
+* 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class TestIsJust extends Object is
+
+	method main : () -> String is 
+		if (new JustInteger(1) as MaybeInteger).isJust()  && (new Nothing() as MaybeInteger).isNothing() 
+		then "pass" 
+		else "fail" 

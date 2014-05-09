@@ -1,0 +1,7 @@
+/**
+ * Tests implicit error
+ * @author 36994, César Santos
+ */
+class TestImplicitError extends Object is
+  method main : () -> String is //expected : error
+    (3 / 0).toString()

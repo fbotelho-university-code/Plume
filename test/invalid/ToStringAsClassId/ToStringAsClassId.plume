@@ -1,0 +1,8 @@
+/**
+ * A class identifier can't match "toString" - both reside
+ * in the same namespace.
+ *
+ * @author Diogo Marques, 30100
+ */
+class toString extends Object is
+	

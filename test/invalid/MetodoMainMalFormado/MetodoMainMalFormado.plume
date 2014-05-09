@@ -1,0 +1,9 @@
+/**
+ * 
+ * Falta : e () depois de main
+ * @author 37060, Roberto Silva
+ */
+class MetodoMainMalFormado extends Object is
+	
+	method main -> String is
+    	"Hello World"

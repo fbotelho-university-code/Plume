@@ -1,0 +1,6 @@
+/**
+ * Abstract class to represent a comparator
+ * @author 36994, César Santos
+ */
+abstract class Comparator extends Object is
+  abstract method compare : (o1:Object, o2:Object) -> Integer

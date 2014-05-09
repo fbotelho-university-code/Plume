@@ -1,0 +1,17 @@
+/**
+ * Empty Out of Scope expression. 
+ * A Method Body is composed of an expression (that could be composed of several expressions with something like  if then else)   
+ * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class InvalidSyntaxExpression extends Object is
+ 	
+  	method empty : () -> String is
+  	new Object().toString
+  	
+  	// Not a  valid Syntax. Probably expects method or field keyword    
+  	new Object().toString

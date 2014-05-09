@@ -1,0 +1,23 @@
+/**
+ * A Stack Node for Strings
+ *
+ * @author Robin Burgess 36815
+ */
+ class StringStackNode extends StringStack is
+	field value : String
+	field tail : StringStack
+	
+	method override isEmpty : () -> Boolean is
+		false
+		
+	method override length : () -> Integer is
+		1+ tail.length()
+		
+	method override peek : () -> String is
+		value
+		
+	method override pop : () -> StringStack is
+		tail
+		
+	method override toString : ()-> String is
+		value + " :| " + tail.toString()

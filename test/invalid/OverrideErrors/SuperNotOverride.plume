@@ -1,0 +1,7 @@
+/**
+ * Super class to a semantically incorrect class, ChildNotOverride.plume
+ * @author 35237, Marcos Vasco
+ */
+abstract class SuperNotOverride extends Object is
+  
+  abstract method calculate : (val : Boolean) -> Boolean

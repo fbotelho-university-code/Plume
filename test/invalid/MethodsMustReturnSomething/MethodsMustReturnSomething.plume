@@ -1,0 +1,7 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class MethodsMustReturnSomething extends Object is
+	field i : Integer
+	method standAround : () -> is
+	

@@ -1,0 +1,47 @@
+/**
+ * A non-empty list
+ *
+ * @author Vasco T. Vasconcelos
+ * @author 37029, Juliana Franco
+ * @version $Id: NodeDouble.plume 518 2012-06-05 20:09:36Z fc37029 $
+ */
+class NodeDouble extends ListDouble is
+
+  field head : Double
+  
+  field tail : ListDouble
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override length : () -> Integer is
+    1 + tail.length()
+  
+  method override get : (index: Integer) -> Double is
+    if index == 0 then head else tail.get(index - 1)
+  
+  method override contains : (elem: Double) -> Boolean is
+    elem == head || tail.contains(elem)
+    
+  method override toString : () -> String is
+    head.toString() + " :: " + tail.toString()
+   
+  method getHead : () -> Double is
+  	this.head
+  	
+  method getTail : () -> ListDouble is
+  	this.tail
+  	
+  method override filterGTstring : (d : Double) -> String is
+  	if head.gt(d)
+  	then head.toString() + "; " + tail.filterGTstring(d).toString()
+  	else tail.filterGTstring(d).toString()
+
+  method override filterLTstring : (d : Double) -> String is
+  	if head.lt(d)
+  	then head.toString() + "; " + tail.filterLTstring(d).toString()
+  	else tail.filterLTstring(d).toString()
+  	
+  method union : (nd : NodeDouble) -> NodeDouble is
+  	nd.insert(nd.head).union(nd.tail as NodeDouble)
+  

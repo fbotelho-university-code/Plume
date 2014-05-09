@@ -1,0 +1,27 @@
+/**
+ * A non-empty list
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Node.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class Node extends List is
+
+  field head : Integer
+  
+  field tail : List
+  
+  method override isEmpty : () -> Boolean is
+    false
+    
+  method override length : () -> Integer is
+    1 + tail.length()
+    
+  method override get : (index: Integer) -> Integer is
+    if index == 0 then head else tail.get(index - 1)
+    
+  method override contains : (elem: Integer) -> Boolean is
+    elem == head || tail.contains(elem)
+    
+  method override toString : () -> String is
+    head.toString() + " :: " + tail.toString()
+    

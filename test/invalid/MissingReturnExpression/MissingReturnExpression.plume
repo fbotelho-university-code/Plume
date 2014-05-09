@@ -1,0 +1,9 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class MissingReturnExpression extends Object is
+
+  field n : Integer
+  
+  method getFib : (num : Integer) -> Integer is
+    if num == 0 then 

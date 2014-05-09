@@ -1,0 +1,17 @@
+
+/**
+ * 
+ * Classe que testa se a procura de um indice de um elemento na lista esta
+ * bem feita
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestIndexOf extends Object is
+
+	method main : () -> String is
+    	new ListOperations().indexOf(new Empty().
+    							insert(10).insert(5).
+    							insert(15).insert(20), 5).toString()
+    	
+    	//1

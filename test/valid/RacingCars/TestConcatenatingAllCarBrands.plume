@@ -1,0 +1,15 @@
+/**
+ * A class to test the concatenation operation on strings
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestConcatenatingAllCarBrands.plume 84 2012-04-04 19:42:03Z tcomp000 $
+ */
+class TestConcatenatingAllCarBrands extends Object is
+
+  method main : () -> String is
+    new Empty().insert(500000, 310, 750, "Ferrari", "Enzo")
+    	.getBrand(0).toString() +
+    	new Empty().insert(250000, 270, 500, "Ford", "Mustang")
+    	.getBrand(0).toString() +
+    	new Empty().insert(300000, 295, 500, "Audi", "R8")
+    	.getBrand(0).toString()

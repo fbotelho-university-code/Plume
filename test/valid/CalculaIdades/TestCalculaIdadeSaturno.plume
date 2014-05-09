@@ -1,0 +1,10 @@
+/**
+ * Classe que testa o calculo da idade em saturno.
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestCalculaIdadeSaturno extends Object is
+	
+	method main : () -> String is
+    	new CalculaIdadeSaturno().calcIdade(50).toString()
+	// expected output: "1"

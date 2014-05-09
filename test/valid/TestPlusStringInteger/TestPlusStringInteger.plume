@@ -1,0 +1,14 @@
+
+/**
+ * 
+ * Classe que testa a concatenacao de uma string com dois numeros
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestPlusStringInteger extends Object is
+
+  method main : () -> String is
+ 	"teste" + (1 + 1).toString()
+ 	
+ 	//teste11

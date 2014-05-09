@@ -1,0 +1,10 @@
+/**
+ * Dois metodos iguais numa classe
+ *
+ * @author 37060, Roberto Silva
+ */
+abstract class CalculaIdade extends Object is
+	
+	abstract method calcIdade : (idade : Integer) -> Integer
+	
+	abstract method calcIdade : (idade : Integer) -> Integer

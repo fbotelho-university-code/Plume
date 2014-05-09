@@ -1,0 +1,8 @@
+/**
+ * An overriding method must match his parent's signature.
+ *
+ * @author Diogo Marques, 30100
+ */
+class SignaturesMustMatchOnOverride extends Object is
+	method override toString : (msg: String) -> String is
+		msg

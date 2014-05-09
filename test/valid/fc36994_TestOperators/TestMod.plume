@@ -1,0 +1,7 @@
+/**
+ * Tests the % operator
+ * @author 36994, César Santos
+ */
+class TestMod extends Object is
+  method main : () -> String is //expected : 3
+    (8 % 5).toString()

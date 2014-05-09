@@ -1,0 +1,13 @@
+/**
+ * 
+ * Tipo de dados Float
+ * Soh serah erro se nao houver uma classe com nome Float (vv)
+ * @author 37060, Roberto Silva
+ */
+class TestFloat extends Object is
+	
+	method main : () -> String is
+    	soma(5)
+	
+	method soma : (num : Float) -> String is
+    	num.toString()

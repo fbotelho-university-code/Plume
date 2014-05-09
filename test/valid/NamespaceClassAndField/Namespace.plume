@@ -1,0 +1,14 @@
+/**
+ * Uma classe com field e nome de class com o mesmo nome
+ * valido no plume pois sao name spaces diferentes
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: Namespace.plume 513 2012-06-05 13:46:35Z fc36815 $
+ */
+class Namespace extends Object is
+  
+  method lastName : (last : String) -> String is
+  		"Last name: " + last
+  
+  method main : () -> String is
+  		lastName("Rocha")

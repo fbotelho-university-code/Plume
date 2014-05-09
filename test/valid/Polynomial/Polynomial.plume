@@ -1,0 +1,41 @@
+/**
+ * A class that describes a polynomial of integer coefficients.
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: Polynomial.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+abstract class Polynomial extends Object is
+
+	/**
+	 * The coefficient in this node in the polynomial list representation.
+	 */
+  field coefficient : Integer
+  
+	/**
+	 * The degree of this node in the polynomial list representation.
+	 */
+  abstract method degree : () -> Integer
+
+	/**
+	 * The order of the polynomial, that is the max degree in the list.
+	 */
+  abstract method order : () -> Integer
+
+	/**
+	 * Add a monomial (coefficient, degree) to the the polynomial. The monomial
+	 * is inserted in its position, sorted according to decreasing degrees. If a
+	 * node with the given degree is found, then the coefficient is added to the
+	 * node.
+	 */
+  abstract method addMonomial : (coefficient : Integer, degree : Integer) -> Polynomial
+  
+	/**
+	 * The coefficient of a given degree in this polynomial.
+	 */
+  abstract method coefficientForDegree : (degree : Integer) -> Integer
+  
+	/**
+	 * A list the represents the this polynomial and a) is sorted according to
+	 * the degree and b) contains no two nodes with the same degree.
+	 */
+  abstract method canonical : () -> Polynomial

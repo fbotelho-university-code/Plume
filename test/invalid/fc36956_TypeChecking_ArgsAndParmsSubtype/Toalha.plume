@@ -1,0 +1,9 @@
+/**
+ * ToalhaDeMesa.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Toalha.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ abstract class Toalha extends Object is
+
+	abstract method temNodoas : (estaSuja : Boolean) -> Boolean

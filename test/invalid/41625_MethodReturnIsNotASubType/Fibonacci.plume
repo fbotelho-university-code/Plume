@@ -1,0 +1,13 @@
+/**
+ * Class to calculate the nth number of the Fibonacci succession, 
+ * given number n
+ * @author 35237, Marcos Vasco
+ */
+class Fibonacci extends Object is
+
+  field n : Integer
+  
+  method getFib : () -> Integer is
+    if n == 0 then 0
+    else if n == 1 then 1
+    else getFib(n-1) + getFib(n-2)

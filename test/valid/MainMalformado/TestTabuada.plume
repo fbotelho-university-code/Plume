@@ -1,0 +1,9 @@
+/**
+ * metodo main mal formado
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestTabuada extends Object is
+	
+	method main : (x : Integer) -> String is
+		"ola"

@@ -1,0 +1,15 @@
+/**
+ * A mother. Tests method overriding of abstract and concrete methods
+ *
+ * @author Robin Burgess 36815
+ */
+class Father extends Parent is
+
+	method override askQuestion : (s : String) -> String is
+		"I don't know"
+		
+	method override getName : () -> String is
+		"Your Father"
+		
+	method override toString : () -> String is
+		"ThisisAFather"

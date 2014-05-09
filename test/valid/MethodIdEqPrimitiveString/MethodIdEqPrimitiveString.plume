@@ -1,0 +1,9 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class MethodIdEqPrimitiveString extends Object is
+	method String : () -> Integer is
+		0 
+	
+	method main : () -> String is
+		new MethodIdEqPrimitiveString().String().toString()

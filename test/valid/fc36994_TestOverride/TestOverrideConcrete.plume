@@ -1,0 +1,10 @@
+/**
+ * For testing overriding (a concrete method)
+ * @author 36994, César Santos
+ */
+ class TestOverrideConcrete extends Object is
+  method main : () -> String is
+    test(new ExtendsAbstract()) // expect ExtendsAbstract
+  
+  method test : (a : AbstractClass) -> String is
+    a.print()

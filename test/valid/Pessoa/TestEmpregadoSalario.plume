@@ -1,0 +1,10 @@
+/**
+ * Classe que testa o calculo do salario de um empregado
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestEmpregadoSalario extends Object is
+	
+	method main : () -> String is
+    	new Empregado(30, "Antonio", 20, 8, 5, "Medico").salario().toString()
+	// expected output: "800"

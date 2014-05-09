@@ -1,0 +1,13 @@
+/**
+ * Toalha.plume
+ *
+ * Test: when a method is qualified with keyword override, 
+ * there must be a method with the same signature 
+ * in some super class
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Toalha.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ abstract class Toalha extends Object is
+
+	abstract method temListas : () -> Boolean

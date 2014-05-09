@@ -1,0 +1,14 @@
+/**
+ * Uma classe que testa o novo cast
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestNewCastPlanet.plume 440 2012-05-27 21:23:25Z fc37059 $
+ */
+class TestNewCastPlanet extends Object is
+
+  method main : () -> String is
+  		getPlanet(new Planet(2, "Venus", 40000)).getName()
+  		//expected: Venus  
+  
+  method getPlanet : (obj : Object) -> Planet is
+  		obj as Planet

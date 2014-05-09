@@ -1,0 +1,18 @@
+/**
+ * Empregado.plume
+ *
+ * Test: an argument to a method call or object constructor 
+ * must be a subtype of the parameter (declared) type
+ * Wrong: Toalha is not a subtype of ToalhaDeMesa
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Empregado.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Empregado extends Object is
+	method isToalha : (toalhames : ToalhaDeMesa, verify : Boolean) -> Integer is 
+		if verify
+		then 1
+		else 0
+	
+	method queEstado : (toalhagen: Toalha, estado : Boolean) -> Integer is 
+		isToalha(toalhagen, estado)

@@ -1,0 +1,16 @@
+
+
+abstract class RegularNode extends Node is
+	field nextNode : Node	
+	
+	method getNextNode : () -> Node is
+		nextNode
+	
+	method override hasNextNode : () -> Boolean is
+		if !(nextNode instanceof NodeEmpty)
+		then true
+		else false
+	
+	method override countMeOn : () -> Integer is
+		1 + nextNode.countMeOn()
+		

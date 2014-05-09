@@ -1,0 +1,30 @@
+/**
+* Just an Integer value. 
+* @see MaybeInteger.plume
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*/
+
+class JustInteger extends MaybeInteger is 
+      field value : Integer 
+
+    // Returns true iff its argument is Just _ where _ stands form some Integer value. 
+     method override isJust : () -> Boolean is  
+     	    true
+     
+      // Returns true iff its argument is Nothing. 
+     method override isNothing : () -> Boolean  is 
+     	    false
+    
+    //  Extract the element out of its argument. It produces an error if the argument is from other type. 
+    method override fromJust  : () -> Integer is
+    	   value
+
+    method override fromMaybe : (a : Integer ) -> Integer  is 
+    	   value
+    	   
+    method justOnlyMethod : () -> String is
+    	"just"		  
+    	
+    method override toString : () -> String is 
+    	value.toString() 

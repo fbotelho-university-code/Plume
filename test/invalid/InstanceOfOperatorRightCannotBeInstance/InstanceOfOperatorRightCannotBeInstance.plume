@@ -1,0 +1,9 @@
+/**
+ * Right cannot be an instance in the instanceof operator.
+ *
+ * @author Diogo Marques, 30100
+ */
+class InstanceOfOperatorRightCannotBeInstance extends Object is
+	
+	method myMethod : () -> Boolean is
+		true instanceof true

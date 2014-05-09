@@ -1,0 +1,22 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class Person extends Object is
+	
+	
+	field name : String
+  
+  	field number : Integer
+  	
+  	
+  	method getName : () -> String is
+  		name
+  		
+  	method getNumber : () -> Integer is
+  		number	
+  		
+  	method override toString : () -> String is
+		"[" + name + ", " + number.toString() + "]"	

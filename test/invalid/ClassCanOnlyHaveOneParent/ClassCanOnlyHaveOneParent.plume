@@ -1,0 +1,6 @@
+/**
+ * A class may only have one parent class.
+ *
+ * @author Diogo Marques, 30100
+ */
+class ClassCanOnlyHaveOneParent extends MyParent, Object is

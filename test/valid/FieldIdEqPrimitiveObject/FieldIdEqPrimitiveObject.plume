@@ -1,0 +1,8 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class FieldIdEqPrimitiveObject extends Object is
+	field Object : String
+	
+	method override toString : () -> String is
+		Object

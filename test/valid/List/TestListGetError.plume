@@ -1,0 +1,12 @@
+/**
+ * A class to test the error case of the get method
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: TestListGetError.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class TestListGetError extends Object is
+
+  method main : () -> String is
+    new Empty().insert(23).insert(3).insert(7).insert(73).insert(9)
+		.insert(0).insert(-8).insert(323).insert(-23).get(32).toString()
+	// expected output: error

@@ -1,0 +1,8 @@
+/**
+ * An abstract mother. Testing abstract classes extending concrete classes
+ *
+ * @author Robin Burgess 36815
+ */
+abstract class AbstractMother extends Parent is
+
+	abstract method override getName : () -> String

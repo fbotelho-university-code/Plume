@@ -1,0 +1,8 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: MainNo.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class MainNo extends Object is
+
+	method main : () -> String is
+		new IfInstanceOfDownwards().m(new Object())

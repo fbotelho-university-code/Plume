@@ -1,0 +1,9 @@
+/**
+ * Left cannot be a class in the instanceof operator.
+ *
+ * @author Diogo Marques, 30100
+ */
+class InstanceOfOperatorLeftCannotBeClass extends Object is
+	
+	method myMethod : () -> Boolean is
+		MyClass instanceof Object

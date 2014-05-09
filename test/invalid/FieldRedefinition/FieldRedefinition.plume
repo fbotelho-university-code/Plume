@@ -1,0 +1,10 @@
+/**
+ * Two fields with the same name
+ *
+ * @author Robin Burgess 36815
+ */
+class FieldRedefinition extends Object is
+	field value : Integer
+	field value : Boolean
+	method override toString : () -> String is
+		value.toString()

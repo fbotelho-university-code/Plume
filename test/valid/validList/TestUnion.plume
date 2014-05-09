@@ -1,0 +1,19 @@
+
+/**
+ * 
+ * Classe que testa a uniao de duas listas atraves da representacao textual
+ * da lista resultante
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestUnion extends Object is
+
+	method main : () -> String is
+    	new ListOperations().union(
+    		new Empty().insert(10).insert(5).insert(15).insert(20),
+    		new Empty().insert(1).insert(2).insert(3).insert(4)).toString()
+   
+   	// 20 15 5 10 + 4 3 2 1 = 1 2 3 4 20 15 5 10
+    	
+    

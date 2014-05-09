@@ -1,0 +1,15 @@
+/**
+ * Bicycle.plume
+ *
+ * Test: In conditionals, the test must be of type Boolean
+ * Wrong: variable bikeType is not of type Boolean
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Bicycle.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Bicycle extends Object is
+		field bikeType : Integer
+		method isMountainBike : () -> Boolean is
+			if bikeType
+			then true
+			else false

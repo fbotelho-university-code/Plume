@@ -1,0 +1,13 @@
+/**
+ * Classe que soma strings
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: StringAdd.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class StringAdd extends Object is
+
+	method str : () -> String is
+    	"!!!!"
+
+    method main : () -> String is
+    	"Hello " + "world " + ". . . " + str()

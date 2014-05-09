@@ -1,0 +1,11 @@
+/**
+ * Classe que representa um motor de um veiculo
+ *
+ * @author 37060, Roberto Silva
+ */
+class Motor extends Object is
+
+	field tipo : String
+	
+	method getTipo : () -> String is
+		tipo

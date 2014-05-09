@@ -1,0 +1,15 @@
+/**
+ * Valid Test. 
+ * Call a method with error as argument. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+ class ErrorPassedAsArgument extends Object is 
+ 	
+ 	method foo : ( o : Object ) -> Object is 
+ 		"blah" 
+ 	method bar : () -> Object is
+ 		new ErrorPassedAsArgument().foo(error) 
+ 		//TODO expected ? 
+  

@@ -1,0 +1,11 @@
+/**
+ * A class that overrides a method in object that does not exist
+ *
+ * @author Robin Burgess 36815
+ */
+class FalseOverrider extends Object is
+	field value : Integer
+	method override add : (b:Integer) -> Integer is
+		value + b
+	method override toString : () -> String is
+		value.toString()

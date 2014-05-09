@@ -1,0 +1,7 @@
+/**
+ * For testing cast
+ * @author 36994, César Santos
+ */
+class WrongCastTest extends Object is
+  method test : () -> Boolean is
+    ((Boolean)5)

@@ -1,0 +1,7 @@
+/**
+ * For testing if (needs a boolean)
+ * @author 36994, César Santos
+ */
+class IfTest extends Object is
+  method test : () -> Integer is
+    if 5 then 5 else 6

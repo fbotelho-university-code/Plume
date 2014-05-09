@@ -1,0 +1,8 @@
+/**
+ * Class can't extend primitive type except Object - String.
+ *
+ * @author Diogo Marques, 30100
+ */
+class ClassExtendsString extends String is
+	method override toString : () -> String is
+		""

@@ -1,0 +1,9 @@
+/**
+ * Class identifier can't match a primitive type - String.
+ *
+ * @author Diogo Marques, 30100
+ */
+class String extends Object is
+	method override toString : () -> String is
+		""
+	

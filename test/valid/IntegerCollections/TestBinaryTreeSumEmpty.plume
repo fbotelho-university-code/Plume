@@ -1,0 +1,9 @@
+/**
+ * A class to test the sum() operation in and empty tree.
+ *
+ * @author Diogo Marques, 30100
+ */
+class TestBinaryTreeSumEmpty extends Object is
+	
+	method main : () -> String is
+ 		new BinaryTreeEmpty().sum().toString()

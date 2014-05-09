@@ -1,0 +1,9 @@
+/**
+ * Division operator is not defined for Boolean.
+ *
+ * @author Diogo Marques, 30100
+ */
+class DivisionOperatorNotDefinedForBoolean extends Object is
+	
+	method myMethod : () -> Boolean is
+		true / true

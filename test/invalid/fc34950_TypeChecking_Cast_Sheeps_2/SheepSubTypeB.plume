@@ -1,0 +1,11 @@
+ * SheepTypeB.plume
+ *
+ * Test: This class represent a Sheep of 4º generation
+ *
+ * @author namartins
+ * @version $Id: SheepSubTypeB.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ 
+ abstract class SheepSubTypeB extends SheepTypeB is	
+ 		method  convertToTypeA : () -> Integer is
+		 (new SheepTypeA())this   //not possible

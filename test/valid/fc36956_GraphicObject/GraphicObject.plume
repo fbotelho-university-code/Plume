@@ -1,0 +1,18 @@
+/**
+ * GraphicObject.plume
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: GraphicObject.plume 232 2012-04-29 19:04:17Z fc36956 $
+ */
+abstract class GraphicObject extends Object is
+    field x : Integer
+    field y : Integer
+
+    method moveTo : (newX : Integer, newY : Integer) -> Boolean is
+        true
+    
+    abstract method draw : () -> Boolean
+    
+    abstract method resize : () -> Boolean
+
+		

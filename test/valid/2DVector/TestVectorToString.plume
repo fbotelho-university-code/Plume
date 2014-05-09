@@ -1,0 +1,12 @@
+/**
+ * A class to test a simple vector
+ *
+ * @author Robin Burgess 36815
+ */
+class TestVectorToString extends Object is
+
+  method main : () -> String is
+    new Vector(2,4).toString()
+    
+  method override toString : () -> String is
+	"TestVectorToString"

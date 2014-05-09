@@ -1,0 +1,20 @@
+/**
+* Tests short circuit in boolean expressions. 
+* @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+* @version $id$ 
+*
+*/
+
+class TestShortCircuit extends Object is 
+	
+	method main : () -> String is
+		// Error must not be evaluated inside if conditions to pass the test
+		// "then something" or "else something" to pass syntax checks  
+		if true || error 
+		then if  false && error 
+			 then "something" 
+			 else "pass" 
+		else "something" 
+		
+		//expected output : pass 
+		

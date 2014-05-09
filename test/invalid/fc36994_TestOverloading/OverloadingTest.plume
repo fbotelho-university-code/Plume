@@ -1,0 +1,7 @@
+/**
+ * For testing overloading
+ * @author 36994, César Santos
+ */
+class OverloadingTest extends Object is
+  method test : () -> String is
+    5 + "5"

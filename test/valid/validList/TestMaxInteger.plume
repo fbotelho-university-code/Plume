@@ -1,0 +1,15 @@
+
+/**
+ * 
+ * Classe que verifica o metodo que devolve o maior inteiro de uma lista
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMaxInteger extends Object is
+
+	method main : () -> String is
+    	new ListOperations().maxInteger(new Empty().
+    							insert(10).insert(5).
+    							insert(15).insert(20)).toString()
+    	

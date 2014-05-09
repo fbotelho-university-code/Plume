@@ -1,0 +1,12 @@
+/**
+ * The return type is missing in one method
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MissingReturnType.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class MissingReturnType extends Object is
+
+  field radius : Integer
+  
+  method radius : () is
+    radius

@@ -1,0 +1,13 @@
+/**
+ * logical Nor operation
+ * @author 35237, Marcos Vasco
+ * @version $id$ 
+ */
+
+class TestNor extends Object is 
+
+	method main : () -> String is
+
+		new Nor().calculate(true, false).toString()
+		
+		//expected output : false

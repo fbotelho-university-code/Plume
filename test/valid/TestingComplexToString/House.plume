@@ -1,0 +1,14 @@
+/**
+ * Represents a house
+ *
+ * @author Robin Burgess 36815
+ */
+class House extends Object is
+	field livingroom : Room
+	field bedroom : Room
+	field kitchen : Room
+	field toilet : Room
+	
+	method override toString : () -> String is
+		"House with: " + livingroom.toString() + ";" + bedroom.toString() + ";"
+			+ kitchen.toString() + ";" + toilet.toString()

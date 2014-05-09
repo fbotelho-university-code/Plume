@@ -1,0 +1,11 @@
+/**
+ * Uma classe para testar o metodo top da pilha quando esta apos um pop tem 0 elementos
+ *
+ * @author 37059, Rita Henriques
+ * @version $Id: TestStackTopWith0ElementError.plume 435 2012-05-27 16:29:10Z fc37059 $
+ */
+class TestStackTopWith0ElementError extends Object is
+
+  method main : () -> String is
+    new EmptyStack().push(23).pop().top().toString()
+	// expected output: "<error>"

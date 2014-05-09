@@ -1,0 +1,10 @@
+/**
+ * Tests for class Sum.plume
+ *
+ * @author $Id: TestSum.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class TestSum extends Object is
+	
+	method main : () -> String is
+    	new Sum(4).doSum(5).toString()
+	// expected output: "9"

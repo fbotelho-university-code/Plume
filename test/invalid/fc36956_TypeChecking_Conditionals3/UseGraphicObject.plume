@@ -1,0 +1,16 @@
+/**
+ * UseGraphicObject.plume
+ *
+ * Test: The type of a conditional expression is the least upper 
+ * bound (in the subtyping relation) of the types of the two branches 
+ * (the then and the else)
+ * Wrong: Integer is not an upper bound of Circle nor Rectangle
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: UseGraphicObject.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class UseGraphicObject extends Object is
+		method createGraphicObject : (isCircle : Boolean) -> Integer is
+			if isCircle
+			then new Circle()
+			else new Rectangle()

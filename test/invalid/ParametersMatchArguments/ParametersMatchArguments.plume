@@ -1,0 +1,13 @@
+/**
+ * O numero de parametros nao coincide com o numero de argumentos.
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: ParametersMatchArguments.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class ParametersMatchArguments extends Object is
+  
+  method aux : (price: Integer, maxSpeed: Integer) -> String is
+    "hello"
+
+  method main : () -> String is
+    aux(5)

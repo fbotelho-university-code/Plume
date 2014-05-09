@@ -1,0 +1,12 @@
+/**
+  * Abstract method has body 
+  * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $Id: AbstractWithIsBody.plume 286 2012-05-01 10:24:19Z tcomp000 $ 
+ *
+ */
+ 
+ abstract class AbstractWithIsBody  extends Object is 
+ 	abstract method m : () -> String is
+	    "can not compile" 

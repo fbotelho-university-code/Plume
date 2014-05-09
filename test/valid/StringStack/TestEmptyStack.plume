@@ -1,0 +1,11 @@
+/**
+ * A class to test the empty String Stack
+ *
+ * @author Robin Burgess 36815
+ */
+class TestEmptyStack extends Object is
+  method main : () -> String is
+    new EmptyStack().toString()
+    
+  method override toString : () -> String is
+	"TestEmptyStack"

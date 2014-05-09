@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: StupidCast.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class StupidCast extends Object is
+
+	method m : () -> Object is
+		"hi there" as Object
+		
+	method main : () -> String is
+		m().toString()

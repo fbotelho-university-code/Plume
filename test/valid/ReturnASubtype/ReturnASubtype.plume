@@ -1,0 +1,11 @@
+/**
+ * @author Vasco T. Vasconcelos
+ * @version $Id: ReturnASubtype.plume 482 2012-06-04 19:07:29Z tcomp000 $
+ */
+class ReturnASubtype extends Object is
+
+	method m : () -> Object is
+		"hi there"
+		
+	method main : () -> String is
+		m().toString()

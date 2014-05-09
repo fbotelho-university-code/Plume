@@ -1,0 +1,14 @@
+/**
+ * Sum.plume
+ *
+ * Test: two different parameters cannot 
+ * have the same name
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Sum.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+ class Sum extends Object is
+	method DoSum : (operand : Integer, operand : Integer) -> Integer is
+		if operand < 4
+		then operand
+		else operand

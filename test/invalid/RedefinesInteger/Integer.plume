@@ -1,0 +1,11 @@
+/**
+ * Attempting to redefine Integer
+ *
+ * @author Robin Burgess 36815
+ */
+class Integer extends Object is
+	field value : Integer
+	method add : (b:Integer) -> Integer is
+		value + b
+	method override toString : () -> String is
+		value.toString()

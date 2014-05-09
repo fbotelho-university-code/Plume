@@ -1,0 +1,10 @@
+/**
+ * A class to test operators
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: TestOperators.plume 323 2012-05-03 14:31:56Z fc37017 $
+ */
+class TestOperators extends Object is
+
+  method main : () -> String is
+    (4 < 5 && -3 < 2 && -1 > -2 && 0 > -1 && 4 == 4 && 4 != -1 && "ola" instanceof String && 3 <= 3 && 3 <= 5000 && -198 >= -198 && -198 >= -1111).toString()

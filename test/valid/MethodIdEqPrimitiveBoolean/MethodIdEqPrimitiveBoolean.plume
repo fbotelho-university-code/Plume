@@ -1,0 +1,10 @@
+/**
+ * @author Diogo Marques, 30100
+ */
+class MethodIdEqPrimitiveBoolean extends Object is
+	
+	method Boolean : () -> String is
+		"abc" 
+	
+	method main : () -> String is
+		new MethodIdEqPrimitiveBoolean().Boolean()

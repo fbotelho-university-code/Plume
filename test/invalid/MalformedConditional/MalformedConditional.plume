@@ -1,0 +1,12 @@
+/**
+ * There is a malformed expression
+ *
+ * @author 37017, Joao Ramalho
+ * @version $Id: MalformedConditional.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Radius extends Object is
+
+  field radius : Integer
+  
+  method radius : () -> Integer is
+    if 2 + 3 then 1 else 2

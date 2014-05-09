@@ -1,0 +1,7 @@
+/**
+ * For testing NameSpaces
+ * @author 36994, César Santos
+ */
+class SameNameTest extends Object is
+  method SameNameTest : () -> Boolean is
+    true

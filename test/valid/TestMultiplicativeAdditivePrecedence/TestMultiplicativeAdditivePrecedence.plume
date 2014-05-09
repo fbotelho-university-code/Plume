@@ -1,0 +1,12 @@
+/**
+* Simple test of precedence and associativity 
+* Check that multiplication and addition operations  respect the correct precedence and associativity 
+* @author fc41625@alunos.fc.ul.pt Fabio Botelho 
+* @version $id$ 
+*
+*/
+
+class TestMultiplicativeAdditivePrecedence extends Object is 
+	method main : () -> String is 
+		(10 + 2 * 3 + 15).toString()
+		//expected output : 31

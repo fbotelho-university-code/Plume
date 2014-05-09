@@ -1,0 +1,18 @@
+/**
+ * Invalid Type in arguments   
+ * Compiles into error.
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ *
+ */
+ 
+ class InvalidArgumentsType extends Object is
+  	
+  	//Valid foo.
+  	method validFoo : (InvalidArgumentsType arg) : () -> String is 
+  		"string"
+  	
+  	//Invalid foo.  Invocation of foo expects InvalidArgumentsType arg. 
+ 	method invalidFoo : (InvalidArgumentsType arg) -> String is
+		arg.validFoo("String")  

@@ -1,0 +1,13 @@
+
+/**
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestCast extends Object is
+
+  method main : () -> String is
+  	getName(new Person("Alguem", 1))
+
+  method getName : (o : Object) -> String is
+	(o as Person).getName() as String

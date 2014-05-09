@@ -1,0 +1,8 @@
+/**
+ * @author 35237, Marcos Vasco
+ */
+class ElseBeforeIf extends BinaryLogicalOperation is
+  
+  method calculate : (val1 : Boolean, val2 : Boolean) -> Boolean is
+    else val1 == false && val2 == false then false
+    else true

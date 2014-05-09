@@ -1,0 +1,19 @@
+
+/**
+ * 
+ * Classe que testa se a representação de um Sucessor atraves de Integer esta
+ * correta
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestIntegerValue extends Object is
+
+  method main : () -> String is
+    new Successor(new Successor(new Successor(
+    	new Successor(new Zero())))).getIntegerValue().toString()
+    
+    // 4
+    
+  
+

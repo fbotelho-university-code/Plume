@@ -1,0 +1,17 @@
+/**
+ * An abstract Stack for Strings
+ *
+ * @author Robin Burgess 36815
+ */
+ abstract class StringStack extends Object is
+
+	method push : (input : String) -> StringStackNode is
+		new StringStackNode (input,this)
+		
+	abstract method isEmpty : () -> Boolean
+	
+	abstract method length : () -> Integer
+	
+	abstract method peek : () -> String
+	
+	abstract method pop : () -> StringStack

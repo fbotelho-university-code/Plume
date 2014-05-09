@@ -1,0 +1,14 @@
+/**
+ * A class to test the addition of a 2x2 and a 2x1 matrixes which gives error
+ *
+ * @author Robin Burgess 36815
+ */
+ class TestMatrixAdditionError extends Object is
+  method main : () -> String is
+    new Matrix(2,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),
+    	new Matrix(1,new Matrix(1,new EmptyMatrix(),new EmptyMatrix()),new EmptyMatrix())).add(
+    		new Matrix(0,new EmptyMatrix(),
+    	new Matrix(1,new EmptyMatrix(),new EmptyMatrix()))).toString()
+    	
+  method override toString : () -> String is
+	"TestMatrixAdditionError"

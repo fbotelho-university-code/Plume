@@ -1,0 +1,8 @@
+/**
+ * A class to test use of primitives
+ *
+ * @author Robin Burgess 36815
+ */
+class TestPrimitives extends Object is
+  method main : () -> String is
+    ((1+2*3)%3).toString()+(if !(true && false) then true.toString() else error) + "three".toString()

@@ -1,0 +1,10 @@
+/**
+ * For testing instanceOf
+ * @author 36994, César Santos
+ */
+class InstanceOfTest extends Object is
+  method test : (a: Object) -> Boolean is
+    if (a instanceof Boolean) then
+      a
+    else
+      error

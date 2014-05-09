@@ -1,0 +1,11 @@
+/**
+ * A class to test the String Stack's push
+ *
+ * @author Robin Burgess 36815
+ */
+class TestStackPush extends Object is
+  method main : () -> String is
+    new EmptyStack().push("Hello").toString()
+    
+  method override toString : () -> String is
+	"TestStackPush"

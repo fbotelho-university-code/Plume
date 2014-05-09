@@ -1,0 +1,10 @@
+/**
+ * Class to calculate the logical Negation operation
+ * @author 35237, Marcos Vasco
+ */
+class Negation extends UnaryLogicalOperation is
+  
+  method override calculate : (val : Boolean) -> Boolean is
+    if val == true
+    then false
+    else true

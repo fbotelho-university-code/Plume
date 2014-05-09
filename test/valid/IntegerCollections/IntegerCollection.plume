@@ -1,0 +1,13 @@
+/**
+ * An integer collection. 
+ *
+ * @author Diogo Marques, 30100
+ */
+abstract class IntegerCollection extends Object is
+
+  abstract method size : () -> Integer
+  abstract method first : () -> Integer
+  abstract method max : () -> Integer
+  abstract method min : () -> Integer
+  abstract method sum : () -> Integer
+  

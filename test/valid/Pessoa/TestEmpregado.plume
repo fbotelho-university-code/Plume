@@ -1,0 +1,10 @@
+/**
+ * Classe que testa a criacao de um novo empregado
+ *
+ * @author 37060, Roberto Silva
+ */
+class TestEmpregado extends Object is
+	
+	method main : () -> String is
+    	new Empregado(30, "Antonio", 20, 8, 5, "Medico").toString()
+	// expected output: "Chama-se Antonio e tem: 30 anos. Trabalha 8 horas por dia e recebe 5 por hora."

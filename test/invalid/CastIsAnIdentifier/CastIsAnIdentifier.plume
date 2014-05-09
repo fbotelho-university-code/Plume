@@ -1,0 +1,11 @@
+/**
+ * In a cast expression, we can only place an identifier between parenthesis,
+ * not an arbitrary expression.
+ *
+ * @author Vasco T. Vasconcelos
+ * @version $Id: CastIsAnIdentifier.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class CastIsAnIdentifier extends Object is
+
+  method m : () -> String is
+    (3 + 4) x

@@ -1,0 +1,13 @@
+/**
+ * An abstract class to represent a matrix
+ *
+ * @author Robin Burgess 36815
+ */
+ abstract class AbstractMatrix extends Object is
+	abstract method getHeight : () -> Integer
+	abstract method getLength : () -> Integer
+	abstract method getValue : (x : Integer,y : Integer) -> Integer
+	abstract method add : (m : AbstractMatrix) -> AbstractMatrix
+	abstract method subtract : (m : AbstractMatrix) -> AbstractMatrix
+	abstract method multiply : (m : AbstractMatrix) -> AbstractMatrix
+	abstract method removeFirstColumn : () -> AbstractMatrix

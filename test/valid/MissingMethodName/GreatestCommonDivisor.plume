@@ -1,0 +1,9 @@
+/**
+ * Class to calculate the Greatest Common Divisor of two integers operation
+ * @author 35237, Marcos Vasco
+ */
+class GreatestCommonDivisor extends Object is
+  
+  method calculate : (num1 : Integer, num2 : Integer) -> Integer is
+  	if num2 == 0 then num1
+  	else calculate(num2, num1 % num2)

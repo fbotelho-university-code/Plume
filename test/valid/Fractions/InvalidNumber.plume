@@ -1,0 +1,24 @@
+/**
+ * Represents an invalid number
+ *
+ * @author Robin Burgess 36815
+ */
+class InvalidNumber extends AbstractNumber is
+
+	method override add : (a : AbstractNumber) -> AbstractNumber is
+		this
+	
+	method override subtract : (a : AbstractNumber) -> AbstractNumber is
+		this
+		
+	method override multiply : (a : AbstractNumber) -> AbstractNumber is
+		this
+	
+	method override divideBy : (a : AbstractNumber) -> AbstractNumber is
+		this
+	
+	method override invert : () -> AbstractNumber is
+		this
+		
+	method override toString : () -> String is
+		"Invalid Number"

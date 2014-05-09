@@ -1,0 +1,18 @@
+
+/**
+ * 
+ * A direita do instance of deve estar o nome de uma classe
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidInstanceOf extends Object is
+
+  method main : () -> String is
+  	testInstance(new Integer(5))
+  
+  method testInstance : (o : Object) -> String is
+  	if (o instanceof "word")
+  	then "abc"
+  	else "def"
+    

@@ -1,0 +1,67 @@
+/**
+ * Class to represent a Linkedlist
+ * @author 36994, César Santos
+ */
+class LinkedList extends List is
+  field elem : Object
+  field next : List
+
+  method override add : (o : Object) -> List is
+  	new LinkedList(o, this)
+
+  method override append : (l : List) -> List is
+  	next.append(l)
+  
+  method override empty : () -> Boolean is
+  	false
+  
+  method override size : () -> Integer is
+  	1 + next.size()
+  
+  method override head : () -> Object is
+  	elem
+  
+  method override tail : () -> List is
+  	next
+  
+  method override get : (i : Integer) -> Object is
+  	if (i <= 0) then
+      elem
+    else
+      next.get(i-1)
+  
+  method override contains : (o : Object) -> Boolean is
+  	if (elem == o) then
+      true
+    else
+      next.contains(o)
+  
+  method override count : (o : Object) -> Integer is
+  	if (elem == o) then
+      1 + next.count(o)
+    else
+      next.count(o)
+      
+  method override sort : (c : Comparator) -> List is
+  	(sort(lesser(elem, c))).append(sort(greater(elem, c)).add(head))
+  	
+  method override lesser : (e : Object, c : Comparator) -> List is
+  	if (c.compare(elem, e) < 0) then
+  	  new LinkedList(elem, next.lesser(e, c))
+  	else
+      next.lesser(e, c)
+      
+  method override greater : (e : Object, c : Comparator) -> List is
+  	if (c.compare(elem, e) > 0) then
+  	  new LinkedList(elem, next.greater(e, c))
+  	else
+      next.greater(e, c)
+      
+  method override toString : () -> String is
+    "[" + visualSequence() + "]"
+    
+  method visualSequence : () -> String is
+  	if (next.isEmpty()) then 
+  	  elem 
+  	else 
+  	  elem + ", " + next.visualSequence()

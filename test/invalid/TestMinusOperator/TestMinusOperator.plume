@@ -1,0 +1,12 @@
+
+/**
+ * 
+ * O operador - deve ser usado com Integer
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestMinusOperator extends Object is
+
+  method main : () -> String is
+    (true - false).toString()

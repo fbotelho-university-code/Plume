@@ -1,0 +1,14 @@
+/**
+ * Valid Test.
+ * Test from the assignment text. Different types in then/else expresion have the same result type. 
+ * @author FábioBotelho - 41625@alunos.fc.ul.pt
+ * @version $id 
+ */
+ 
+  class DifferentReturnTypesInIfThenElse extends Object is 
+ 	method test : () -> A is 
+ 		if  1 == 1 
+ 		then new B() 
+ 		else new C() 
+	
+	

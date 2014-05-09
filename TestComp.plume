@@ -1,0 +1,9 @@
+
+
+class TestComp extends Object is
+ 
+    method main : () -> String is
+                cenas() 
+
+    method cenas : () -> String is 
+    	"ola"

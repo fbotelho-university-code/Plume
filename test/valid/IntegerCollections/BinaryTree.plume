@@ -1,0 +1,18 @@
+/**
+ * A binary tree of integers. 
+ *
+ * A binary tree can either be empty or a node, which itself has right and left binary trees.
+ * (Haskell syntax: data BinaryTree = BinaryTreeEmpty | BinaryTreeNode BinaryTree Int BinaryTree)
+ *
+ * The first element of a binary tree is it's root.
+ *
+ * @author Diogo Marques, 30100
+ */
+abstract class BinaryTree extends IntegerCollection is
+	
+	// inherits abstract size(), max(), min() and sum() from IntegerCollection
+	
+	method override first : () -> Integer is
+		root()
+	
+	abstract method root : () -> Integer

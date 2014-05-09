@@ -1,0 +1,16 @@
+/**
+ * Empregado.plume
+ *
+ * Test: type mismatch in arguments and parameters
+ * when calling a method
+ * Wrong: variable 'cor' which type? Integer? String?
+ *
+ * @author Carlos Mao de Ferro
+ * @version $Id: Empregado.plume 286 2012-05-01 10:24:19Z tcomp000 $
+ */
+class Empregado extends Object is
+	method informacaoToalha : (tipo : Integer, cor : Integer, material : String, estado : Boolean) -> Integer is 
+		tipo
+	
+	method setInfo : (tipo : Integer, cor : String, material : String, estado : Boolean) -> Integer is 
+		informacaoToalha (tipo, cor, material, estado)

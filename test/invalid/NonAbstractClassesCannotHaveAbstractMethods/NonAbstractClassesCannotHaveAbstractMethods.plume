@@ -1,0 +1,8 @@
+/**
+ * A non-abstract class cannot have abstract methods.
+ *
+ * @author Diogo Marques, 30100
+ */
+class NonAbstractClassesCannotHaveAbstractMethods extends Object is
+	
+	abstract method hi : () -> String

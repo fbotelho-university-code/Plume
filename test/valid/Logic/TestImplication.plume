@@ -1,0 +1,13 @@
+/**
+* logical implication operation
+* @author 35237, Marcos Vasco
+* @version $id$ 
+*/
+
+class TestImplication extends Object is 
+
+	method main : () -> String is
+
+		new Implication().calculate(true, false).toString()
+		
+		//expected output : false

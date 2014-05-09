@@ -1,0 +1,7 @@
+/**
+ * Repeated inheritance 2
+ * @author 36994, César Santos
+ */
+class RepeatedExtends2 extends Object, Object is
+  method test : () -> Boolean is
+    true

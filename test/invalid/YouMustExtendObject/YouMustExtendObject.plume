@@ -1,0 +1,6 @@
+/**
+ * @author Robin Burgess 36815
+ */
+ class YouMustExtendObject is
+	field aVariable : Integer
+	method aMethod : () -> Integer is aVariable * 2

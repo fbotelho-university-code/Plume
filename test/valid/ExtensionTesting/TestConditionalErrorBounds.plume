@@ -1,0 +1,17 @@
+/**
+ * Tests conditional bounding of error
+ *
+ * @author Robin Burgess 36815
+ */
+class TestConditionalErrorBounds extends Object is
+
+	method main : () -> String is
+		t (3).toString()
+		
+	method t : (i : Integer) -> Parent is
+		if i > 5
+		then new Mother()
+		else error
+		
+	method override toString : () -> String is
+		"Testing Conditional Error Bounds"

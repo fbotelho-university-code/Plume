@@ -1,0 +1,12 @@
+/**
+ * Classe Ponto 2D. 
+ *
+ * @author fc41625@alunos.fc.ul.pt F‡bio Botelho 
+ * @version $id$ 
+ */
+ 
+ class Ponto2D extends Ponto is
+ 	field y : Integer  
+	 	
+ 		 
+ 

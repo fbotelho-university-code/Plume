@@ -1,0 +1,7 @@
+/**
+ * Tests constructors
+ * @author 36994, César Santos
+ */
+class TestConstructors extends Object is
+  method main : () -> String is //expected : 3
+    new Constructor1(1,2).addFields().toString()

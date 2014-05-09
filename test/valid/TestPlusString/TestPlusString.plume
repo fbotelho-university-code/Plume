@@ -1,0 +1,23 @@
+/**
+ * 
+ * Classe que testa a soma de dois numeros 
+ * (sem ser a sua representacao textual)
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestPlusString extends Object is
+
+  method main : () -> String is
+    plus(1, 1)
+    
+    // 2
+  
+    method plus : (o1 : Object, o2 : Object) -> String is
+  	if o1 instanceof Integer
+  	then if o2 instanceof Integer 
+  		 then(o1 + o1).toString()
+  		 else o1.toString() + o2.toString() 
+  	else o1.toString() + o2.toString() 
+  
+    

@@ -1,0 +1,39 @@
+/**
+ * A node in the tree. Has a value and two subtrees.
+ *
+ * @author Diogo Marques, 30100
+ */
+class BinaryTreeNode extends BinaryTree is
+
+	field value : Integer
+	
+	field left : BinaryTree
+	
+	field right : BinaryTree
+	
+	method override size : () -> Integer is
+		1 + left.size() + right.size()
+
+	method override root : () -> Integer is
+		value
+	
+	method override sum : () -> Integer is
+		value + left.sum() + right.sum()
+	
+	method override min : () -> Integer is
+		if this.value <= left.min() && this.value <= right.min()
+		then value
+		else if this.value <= left.min() && this.value >= right.min()
+			then right.min()
+			else left.min()
+	
+	method override max : () -> Integer is
+		if this.value >= left.max() && this.value >= right.max()
+		then value
+		else if this.value >= left.max() && this.value <= right.max()
+			then right.max()
+			else left.max()
+
+	method override toString: () -> String is
+		// infix
+		"(" + left.toString() + " " + value.toString() + " " + right.toString() + ")"

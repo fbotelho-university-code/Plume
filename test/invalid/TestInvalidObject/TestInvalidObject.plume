@@ -1,0 +1,16 @@
+
+/**
+ * 
+ * Deveria ser feito print(new Child())
+ *
+ * @author 37029, Juliana Franco
+ *
+ */
+class TestInvalidObject extends Object is
+
+  method main : () -> String is
+    print(new Parent()) // new Child()
+    
+  method print : (o : Parent) -> String is
+  	 o.getHello()
+    

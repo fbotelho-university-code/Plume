@@ -1,0 +1,7 @@
+/**
+ * Wrong parameter definition
+ * @author 36994, César Santos
+ */
+class WrongParameterDef extends Object is
+  method test : (Integer a) -> Integer is
+    a * a
